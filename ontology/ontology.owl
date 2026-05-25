@@ -18,8 +18,6 @@
         <owl:versionIRI rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/catastro/0.1.0"/>
         <owl:imports rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero"/>
         <owl:imports rdf:resource="http://www.opengis.net/ont/geosparql"/>
-        <dcterms:abstract xml:lang="en">Ontology for modeling Spanish Cadastre core entities (Parcels, Properties, Buildings) with their spatial, administrative, and descriptive attributes.</dcterms:abstract>
-        <dcterms:abstract xml:lang="es">Ontología para modelar las entidades core del Catastro Español (Parcelas, Inmuebles, Construcciones) con sus atributos espaciales, administrativos y descriptivos.</dcterms:abstract>
         <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-09</dcterms:created>
         <dcterms:creator>Daniel Doña</dcterms:creator>
         <dcterms:creator>Edna Ruckhaus</dcterms:creator>
