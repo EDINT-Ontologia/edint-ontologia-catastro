@@ -88,7 +88,7 @@ _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/19
 _:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://vocab.linkeddata.es/datosabiertos/def/catastro/CadastralParcel> .
 _:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
 _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://vocab.linkeddata.es/datosabiertos/def/catastro/hasAddress> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Portal> .
+<http://vocab.linkeddata.es/datosabiertos/def/catastro/hasAddress> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal#DireccionPostal> .
 <http://vocab.linkeddata.es/datosabiertos/def/catastro/hasAddress> <http://www.w3.org/2000/01/rdf-schema#comment> "Relación que vincula un inmueble o parcela con su dirección en el vocabulario callejero. A través de esta relación, se puede obtener información de ubicación (municipio, provincia, código postal) del Portal enlazado."@es .
 <http://vocab.linkeddata.es/datosabiertos/def/catastro/hasAddress> <http://www.w3.org/2000/01/rdf-schema#comment> "Relationship linking a property or parcel to its address in the callejero vocabulary. Through this relationship, location information (municipality, province, postal code) can be obtained from the linked callejero:Portal."@en .
 <http://vocab.linkeddata.es/datosabiertos/def/catastro/hasAddress> <http://www.w3.org/2000/01/rdf-schema#label> "has address"@en .

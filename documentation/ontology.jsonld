@@ -470,7 +470,7 @@
     "@value" : "tiene dirección"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Portal"
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal#DireccionPostal"
   } ]
 }, {
   "@id" : "http://vocab.linkeddata.es/datosabiertos/def/catastro/hasCadastralConstruction",
