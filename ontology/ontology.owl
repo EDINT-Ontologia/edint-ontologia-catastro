@@ -158,9 +158,9 @@
     
 
 
-    <!-- http://vocab.linkeddata.es/datosabiertos/def/catastro/hasAddress -->
+    <!-- http://schema.org/address -->
 
-    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/catastro/hasAddress">
+    <owl:ObjectProperty rdf:about="http://schema.org/address">
         <rdfs:domain>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -170,10 +170,11 @@
             </owl:Class>
         </rdfs:domain>
         <rdfs:range rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal#DireccionPostal"/>
-        <rdfs:comment xml:lang="es">Relación que vincula un inmueble o parcela con su dirección en el vocabulario callejero. A través de esta relación, se puede obtener información de ubicación (municipio, provincia, código postal) del Portal enlazado.</rdfs:comment>
-        <rdfs:comment xml:lang="en">Relationship linking a property or parcel to its address in the callejero vocabulary. Through this relationship, location information (municipality, province, postal code) can be obtained from the linked callejero:Portal.</rdfs:comment>
-        <rdfs:label xml:lang="en">has address</rdfs:label>
-        <rdfs:label xml:lang="es">tiene dirección</rdfs:label>
+        <rdfs:isDefinedBy rdf:resource="http://schema.org"/>
+        <rdfs:comment xml:lang="es">Relación que vincula un inmueble o parcela catastral con su dirección postal. A través de esta relación, se puede obtener información de ubicación (municipio, provincia, código postal) de la DirecciónPostal enlazada.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relationship linking a cadastral property or parcel to its postal address. Through this relationship, location information (municipality, province, postal code) can be obtained from the linked DireccionPostal.</rdfs:comment>
+        <rdfs:label xml:lang="en">address</rdfs:label>
+        <rdfs:label xml:lang="es">dirección</rdfs:label>
     </owl:ObjectProperty>
     
 
