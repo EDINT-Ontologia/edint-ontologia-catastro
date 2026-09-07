@@ -8,9 +8,9 @@
 
  <p>As shown in Figure 1, there are three main concepts in the ontology: <a href="#CadastralParcel">Cadastral Parcel</a>, <a href="#CadastralProperty">Cadastral Property</a> and <a href="#CadastralConstruction">Cadastral Construction</a>, which form a hierarchical relationship.</p>
 
- <p>The class <a href="#CadastralParcel">Cadastral Parcel</a> represents the basic territorial division unit in the Spanish Cadastre. It is a geographically delimited piece of land that may contain one or more cadastral properties. It inherits from <a href="http://www.opengis.net/ont/geosparql#Feature" target="_blank">GeoSPARQL Feature</a>, providing geospatial capabilities. Each parcel has a mandatory <a href="#hasParcelReference">parcel reference</a> (7-character alphanumeric code, e.g. <code>8942103VK</code>), an <a href="#hasAddress">address</a> via the callejero vocabulary, and a <a href="#hasClass">classification</a> (urban/rural) defined in the external SKOS vocabulary of <a href="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/clase" target="_blank">land classification</a>.</p>
+ <p>The class <a href="#CadastralParcel">Cadastral Parcel</a> represents the basic territorial division unit in the Spanish Cadastre. It is a geographically delimited piece of land that may contain one or more cadastral properties. It inherits from <a href="http://www.opengis.net/ont/geosparql#Feature" target="_blank">GeoSPARQL Feature</a>, providing geospatial capabilities. Each parcel has a mandatory <a href="#hasParcelReference">parcel reference</a> (7-character alphanumeric code, e.g. <code>8942103VK</code>), an <a href="#address">address</a> via the postal address vocabulary, and a <a href="#hasClass">classification</a> (urban/rural) defined in the external SKOS vocabulary of <a href="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/clase" target="_blank">land classification</a>.</p>
 
- <p>The class <a href="#CadastralProperty">Cadastral Property</a> represents a real estate unit registered in the Cadastre (e.g. a flat, premises, or any independent use unit within a parcel). It may contain one or more <a href="#CadastralConstruction">Cadastral Constructions</a>. It also inherits from GeoSPARQL Feature and has a mandatory <a href="#hasPropertyReference">property reference</a> (e.g. <code>0001UO</code>). Additional properties include its <a href="#participation">participation percentage</a> in common elements, an <a href="#hasAddress">address</a>, a <a href="#hasUse">primary use</a> from the SKOS vocabulary of <a href="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/uso" target="_blank">uses</a>, and whether it is subject to <a href="#hasHorizontalDivision">horizontal division</a>.</p>
+ <p>The class <a href="#CadastralProperty">Cadastral Property</a> represents a real estate unit registered in the Cadastre (e.g. a flat, premises, or any independent use unit within a parcel). It may contain one or more <a href="#CadastralConstruction">Cadastral Constructions</a>. It also inherits from GeoSPARQL Feature and has a mandatory <a href="#hasPropertyReference">property reference</a> (e.g. <code>0001UO</code>). Additional properties include its <a href="#participation">participation percentage</a> in common elements, an <a href="#address">address</a>, a <a href="#hasUse">primary use</a> from the SKOS vocabulary of <a href="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/uso" target="_blank">uses</a>, and whether it is subject to <a href="#hasHorizontalDivision">horizontal division</a>.</p>
 
  <p>The class <a href="#CadastralConstruction">Cadastral Construction</a> represents a building or construction unit registered on a cadastral property. It includes data on area, use, construction characteristics, and renovations. It inherits from GeoSPARQL Feature and is located on exactly one cadastral property. Properties include its <a href="#constructionYear">construction year</a>, <a href="#hasUse">primary use</a>, <a href="#floor">floor</a>, <a href="#staircase">staircase</a>, <a href="#door">door</a>, and <a href="#supportPercentage">support percentage</a>. It may also have undergone one or more <a href="#hasRenovation">renovations</a>, modelled by the <a href="#Renovation">Renovation</a> class.</p>
 
@@ -25,6 +25,9 @@
  @prefix ex: &lt;https://edint.github.io/edint-ontologia-inmuebles/examples#&gt; .
  @prefix edintcat: &lt;http://vocab.linkeddata.es/datosabiertos/def/catastro#&gt; .
  @prefix callejero: &lt;http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#&gt; .
+ @prefix esdir: &lt;http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal#&gt; .
+ @prefix locn: &lt;http://www.w3.org/ns/locn#&gt; .
+ @prefix schema: &lt;http://schema.org/&gt; .
  @prefix edintkos-clase: &lt;http://vocab.linkeddata.es/datosabiertos/kos/edint/clase/&gt; .
  @prefix edintkos-uso: &lt;http://vocab.linkeddata.es/datosabiertos/kos/edint/uso/&gt; .
  @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
@@ -57,7 +60,7 @@
      edintcat:participation "100.00"^^xsd:decimal ;
      edintcat:hasUse edintkos-uso:Cultural ;
      edintcat:hasClass edintkos-clase:Urban ;
-     edintcat:hasAddress ex:Portal_348B ;
+     schema:address ex:Dir_348B ;
      edintcat:hasCadastralConstruction ex:Construction_3_n2_01 .
 
  ex:Ref_Property
@@ -80,15 +83,15 @@
      edintcat:door "01" .
 
  # ---------------------------------------------------------------------------
- # ADDRESS (callejero vocabulary)
+ # ADDRESS (postal address vocabulary)
  # ---------------------------------------------------------------------------
 
- ex:Portal_348B
-     a callejero:Portal ;
-     callejero:number "348" ;
-     callejero:postalCode "28223" ;
-     callejero:municipality "POZUELO DE ALARCON" ;
-     callejero:province "MADRID" .
+ ex:Dir_348B
+     a esdir:DireccionPostal ;
+     callejero:portal "348" ;
+     locn:postCode "28223" ;
+     locn:postName "POZUELO DE ALARCON" ;
+     locn:addressArea "MADRID" .
 
      </textarea>
  </pre>

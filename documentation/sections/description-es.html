@@ -8,9 +8,9 @@
 
  <p>Como se muestra en la Figura 1, hay tres conceptos principales en la ontolog&iacute;a: <a href="#CadastralParcel">Parcela Catastral</a>, <a href="#CadastralProperty">Inmueble Catastral</a> y <a href="#CadastralConstruction">Construcci&oacute;n Catastral</a>, que forman una relaci&oacute;n jer&aacute;rquica.</p>
 
- <p>La clase <a href="#CadastralParcel">Parcela Catastral</a> representa la unidad b&aacute;sica de divisi&oacute;n territorial en el Catastro Espa&ntilde;ol. Es una porci&oacute;n de terreno delimitada geogr&aacute;ficamente que puede contener uno o m&aacute;s inmuebles catastrales. Hereda de <a href="http://www.opengis.net/ont/geosparql#Feature" target="_blank">GeoSPARQL Feature</a>, lo que le proporciona capacidades geoespaciales. Cada parcela tiene una <a href="#hasParcelReference">referencia de parcela</a> obligatoria (c&oacute;digo alfanum&eacute;rico de 7 caracteres, ej. <code>8942103VK</code>), una <a href="#hasAddress">direcci&oacute;n</a> a trav&eacute;s del vocabulario callejero, y una <a href="#hasClass">clasificaci&oacute;n</a> (urbano/r&uacute;stico) definida en el vocabulario SKOS externo de <a href="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/clase" target="_blank">clase de suelo</a>.</p>
+ <p>La clase <a href="#CadastralParcel">Parcela Catastral</a> representa la unidad b&aacute;sica de divisi&oacute;n territorial en el Catastro Espa&ntilde;ol. Es una porci&oacute;n de terreno delimitada geogr&aacute;ficamente que puede contener uno o m&aacute;s inmuebles catastrales. Hereda de <a href="http://www.opengis.net/ont/geosparql#Feature" target="_blank">GeoSPARQL Feature</a>, lo que le proporciona capacidades geoespaciales. Cada parcela tiene una <a href="#hasParcelReference">referencia de parcela</a> obligatoria (c&oacute;digo alfanum&eacute;rico de 7 caracteres, ej. <code>8942103VK</code>), una <a href="#address">direcci&oacute;n</a> a trav&eacute;s del vocabulario de direcci&oacute;n postal, y una <a href="#hasClass">clasificaci&oacute;n</a> (urbano/r&uacute;stico) definida en el vocabulario SKOS externo de <a href="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/clase" target="_blank">clase de suelo</a>.</p>
 
- <p>La clase <a href="#CadastralProperty">Inmueble Catastral</a> representa una unidad inmobiliaria inscrita en el Catastro (ej. un piso, local o cualquier unidad de uso independiente dentro de una parcela). Puede contener una o m&aacute;s <a href="#CadastralConstruction">Construcciones Catastrales</a>. Tambi&eacute;n hereda de GeoSPARQL Feature y tiene una <a href="#hasPropertyReference">referencia de inmueble</a> obligatoria (ej. <code>0001UO</code>). Adicionalmente, se caracteriza por su <a href="#participation">porcentaje de participaci&oacute;n</a> en elementos comunes, una <a href="#hasAddress">direcci&oacute;n</a>, un <a href="#hasUse">uso principal</a> del vocabulario SKOS de <a href="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/uso" target="_blank">usos</a>, y si est&aacute; sujeto a <a href="#hasHorizontalDivision">divisi&oacute;n horizontal</a>.</p>
+ <p>La clase <a href="#CadastralProperty">Inmueble Catastral</a> representa una unidad inmobiliaria inscrita en el Catastro (ej. un piso, local o cualquier unidad de uso independiente dentro de una parcela). Puede contener una o m&aacute;s <a href="#CadastralConstruction">Construcciones Catastrales</a>. Tambi&eacute;n hereda de GeoSPARQL Feature y tiene una <a href="#hasPropertyReference">referencia de inmueble</a> obligatoria (ej. <code>0001UO</code>). Adicionalmente, se caracteriza por su <a href="#participation">porcentaje de participaci&oacute;n</a> en elementos comunes, una <a href="#address">direcci&oacute;n</a>, un <a href="#hasUse">uso principal</a> del vocabulario SKOS de <a href="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/uso" target="_blank">usos</a>, y si est&aacute; sujeto a <a href="#hasHorizontalDivision">divisi&oacute;n horizontal</a>.</p>
 
  <p>La clase <a href="#CadastralConstruction">Construcci&oacute;n Catastral</a> representa un edificio o unidad constructiva registrada sobre un inmueble catastral. Incluye datos de superficie, uso, caracter&iacute;sticas constructivas y reformas. Hereda de GeoSPARQL Feature y est&aacute; ubicada sobre un &uacute;nico inmueble catastral. Se describe con propiedades como su <a href="#constructionYear">a&ntilde;o de construcci&oacute;n</a>, <a href="#hasUse">uso principal</a>, <a href="#floor">planta</a>, <a href="#staircase">escalera</a>, <a href="#door">puerta</a> y <a href="#supportPercentage">porcentaje de soporte</a>. Adem&aacute;s, puede haber sufrido una o m&aacute;s <a href="#hasRenovation">reformas</a>, modeladas mediante la clase <a href="#Renovation">Reforma</a>.</p>
 
@@ -25,6 +25,9 @@
  @prefix ex: &lt;https://edint.github.io/edint-ontologia-inmuebles/examples#&gt; .
  @prefix edintcat: &lt;http://vocab.linkeddata.es/datosabiertos/def/catastro#&gt; .
  @prefix callejero: &lt;http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#&gt; .
+ @prefix esdir: &lt;http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal#&gt; .
+ @prefix locn: &lt;http://www.w3.org/ns/locn#&gt; .
+ @prefix schema: &lt;http://schema.org/&gt; .
  @prefix edintkos-clase: &lt;http://vocab.linkeddata.es/datosabiertos/kos/edint/clase/&gt; .
  @prefix edintkos-uso: &lt;http://vocab.linkeddata.es/datosabiertos/kos/edint/uso/&gt; .
  @prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
@@ -57,7 +60,7 @@
      edintcat:participation "100.00"^^xsd:decimal ;
      edintcat:hasUse edintkos-uso:Cultural ;
      edintcat:hasClass edintkos-clase:Urban ;
-     edintcat:hasAddress ex:Portal_348B ;
+     schema:address ex:Dir_348B ;
      edintcat:hasCadastralConstruction ex:Construccion_3_n2_01 .
 
  ex:Ref_Inmueble
@@ -80,15 +83,15 @@
      edintcat:door "01" .
 
  # ---------------------------------------------------------------------------
- # DIRECCI&Oacute;N (vocabulario callejero)
+ # DIRECCI&Oacute;N (vocabulario de direcci&oacute;n postal)
  # ---------------------------------------------------------------------------
 
- ex:Portal_348B
-     a callejero:Portal ;
-     callejero:numero "348" ;
-     callejero:codigoPostal "28223" ;
-     callejero:municipio "POZUELO DE ALARCON" ;
-     callejero:provincia "MADRID" .
+ ex:Dir_348B
+     a esdir:DireccionPostal ;
+     callejero:portal "348" ;
+     locn:postCode "28223" ;
+     locn:postName "POZUELO DE ALARCON" ;
+     locn:addressArea "MADRID" .
 
      </textarea>
  </pre>

@@ -80,18 +80,18 @@ xsd:gYear rdf:type rdfs:Datatype .
 #    Object Properties
 #################################################################
 
-###  http://vocab.linkeddata.es/datosabiertos/def/catastro/hasAddress
-:hasAddress rdf:type owl:ObjectProperty ;
+###  http://schema.org/address
+<http://schema.org/address> rdf:type owl:ObjectProperty ;
             rdfs:domain [ rdf:type owl:Class ;
                           owl:unionOf ( :CadastralParcel
                                         :CadastralProperty
                                       )
                         ] ;
-            rdfs:range <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#Portal> ;
-            rdfs:comment "Relación que vincula un inmueble o parcela con su dirección en el vocabulario callejero. A través de esta relación, se puede obtener información de ubicación (municipio, provincia, código postal) del Portal enlazado."@es ,
-                         "Relationship linking a property or parcel to its address in the callejero vocabulary. Through this relationship, location information (municipality, province, postal code) can be obtained from the linked callejero:Portal."@en ;
-            rdfs:label "has address"@en ,
-                       "tiene dirección"@es .
+            rdfs:range <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal#DireccionPostal> ;
+            rdfs:comment "Relación que vincula un inmueble o parcela con su dirección postal. A través de esta relación, se puede obtener información de ubicación (municipio, provincia, código postal) de la DirecciónPostal enlazada."@es ,
+                         "Relationship linking a property or parcel to its postal address. Through this relationship, location information (municipality, province, postal code) can be obtained from the linked DireccionPostal."@en ;
+            rdfs:label "address"@en ,
+                       "dirección"@es .
 
 
 ###  http://vocab.linkeddata.es/datosabiertos/def/catastro/hasCadastralConstruction
