@@ -50,21 +50,27 @@
 
 # --- Address using callejero ontology ---
 
-# Create address entities according to callejero ontology
+# --- Address using the postal address vocabulary (esdir) ---
+
+@prefix schema: <http://schema.org/> .
+@prefix esdir: <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+
+# Create postal address entity according to the direccion-postal vocabulary
 :Via_BADAJOZ
     a callejero:Via ;
     rdfs:label "Calle Badajoz"@es ;
     callejero:nombreVia "BADAJOZ" ;
     callejero:tipoVia "CL" .  # CL = Calle
 
-:Portal_348B
-    a callejero:Portal ;
-    rdfs:label "Portal 348[B]"@es ;
-    callejero:numero "348" ;
-    callejero:codigoPostal "28223" ;
-    callejero:municipio "POZUELO DE ALARCÓN" ;
-    callejero:provincia "MADRID" ;
-    callejero:via :Via_BADAJOZ .
+:Dir_348B
+    a esdir:DireccionPostal ;
+    rdfs:label "Calle Badajoz 348[B]"@es ;
+    callejero:via :Via_BADAJOZ ;
+    callejero:portal "348" ;
+    locn:postCode "28223" ;
+    locn:postName "POZUELO DE ALARCÓN" ;
+    locn:addressArea "MADRID" .
 
 
 # --- Property (Inmueble) ---
@@ -78,7 +84,7 @@
     catastro:onCadastralParcel :Parcela_8942103VK2793 ;
     catastro:hasUse edintkos-uso:Cultural ;
     catastro:hasClass edintkos-clase:Urban ;
-    catastro:hasAddress :Portal_348B ;
+    schema:address :Dir_348B ;
     # Link to ALL constructions (98 total)
     catastro:hasCadastralConstruction :Construccion_3_n2_01, :Construccion_3_n2_02, :Construccion_4_n2_01, :Construccion_4_n2_02, :Construccion_4_n2_03, :Construccion_4_n2_04, :Construccion_5_n2_01, :Construccion_5_n2_02, :Construccion_5_n2_03, :Construccion_6_n2_01, :Construccion_7_n2_01, :Construccion_1_n1_01, :Construccion_2_n1_01, :Construccion_2_n1_02, :Construccion_3_n1_01, :Construccion_4_n1_01, :Construccion_4_n1_02, :Construccion_4_n1_03, :Construccion_4_n1_04, :Construccion_5_n1_01, :Construccion_5_n1_02, :Construccion_6_n1_01, :Construccion_6_n1_02, :Construccion_7_n1_01, :Construccion_8_n1_01, :Construccion_8_n1_02, :Construccion_1_00_01, :Construccion_1_00_02, :Construccion_2_00_01, :Construccion_3_00_01, :Construccion_4_00_01, :Construccion_4_00_03, :Construccion_4_00_04, :Construccion_4_00_05, :Construccion_4_00_06, :Construccion_5_00_01, :Construccion_5_00_02, :Construccion_6_00_01, :Construccion_6_00_02, :Construccion_7_00_01, :Construccion_7_00_02, :Construccion_7_00_03, :Construccion_8_00_01, :Construccion_8_00_02, :Construccion_8_00_03, :Construccion_8_00_04, :Construccion_9_00_01, :Construccion_9_00_02, :Construccion_9_00_03, :Construccion_9_00_04, :Construccion_10_00_01, :Construccion_10_00_02, :Construccion_10_00_03, :Construccion_10_00_05, :Construccion_11_00_01, :Construccion_11_00_02, :Construccion_11_00_03, :Construccion_11_00_04, :Construccion_11_00_05, :Construccion_11_00_06, :Construccion_11_00_07, :Construccion_12_00_01, :Construccion_13_00_01, :Construccion_13_00_02, :Construccion_13_00_03, :Construccion_13_00_04, :Construccion_13_00_05, :Construccion_13_00_06, :Construccion_13_00_07, :Construccion_13_00_08, :Construccion_13_00_09, :Construccion_13_00_15, :Construccion_13_00_16, :Construccion_1_01_01, :Construccion_2_01_01, :Construccion_3_01_01, :Construccion_4_01_01, :Construccion_5_01_01, :Construccion_6_01_01, :Construccion_7_01_01, :Construccion_8_01_01, :Construccion_10_01_01, :Construccion_10_01_02, :Construccion_1_02_01, :Construccion_2_02_01, :Construccion_4_02_01, :Construccion_7_02_01, :Construccion_8_02_01, :Construccion_10_02_01, :Construccion_2_03_01, :Construccion_4_03_01, :Construccion_4_03_02, :Construccion_4_03_03, :Construccion_1_00_03, :Construccion_1_00_04, :Construccion_3_00_02, :Construccion_3_00_03, :Construccion_3_00_04 ;
     dct:source <https://www.sedecatastro.gob.es> .
