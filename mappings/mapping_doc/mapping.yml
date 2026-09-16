@@ -1,5 +1,5 @@
 prefixes:
-  edintcat: "http://vocab.linkeddata.es/datosabiertos/def/catastro#"
+  edintcat: "https://edint.es/def/catastro#"
   callejero: "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#"
   edintkos-clase: "http://vocab.linkeddata.es/datosabiertos/kos/edint/clase/"
   edintkos-uso: "http://vocab.linkeddata.es/datosabiertos/kos/edint/uso/"

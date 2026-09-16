@@ -10,7 +10,7 @@ El propósito de esta ontología es modelar las entidades y relaciones fundament
 
 # Prefijo y espacio de nombres (Prefix and namespace)
 
-El prefijo de esta ontología es `edintcat`. Se publica en el espacio de nombres: http://vocab.linkeddata.es/datosabiertos/def/catastro/
+El prefijo de esta ontología es `edintcat`. Se publica en el espacio de nombres: https://edint.es/def/catastro#
 
 # Modelo conceptual (Ontology conceptualization)
 

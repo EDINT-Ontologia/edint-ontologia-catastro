@@ -197,7 +197,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
     <section class="file-card" id="CAT01_sparql"><div class="file-header">CAT01 - How to identify a cadastral parcel</div><div class="metadata-block"><p><strong>Pregunta:</strong> ¿Cómo se identifica una parcela catastral?</p><p><strong>Respuesta:</strong> Una parcela catastral se identifica mediante una referencia catastral única compuesta por 14 caracteres (7 dígitos de parcela + 7 dígitos de inmueble)</p></div>
                     <div class="query-block">
                         <span class="query-title"></span>
-                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/catastro/&gt;</span>
+                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/catastro#&gt;</span>
 
 <span class="k">SELECT</span> <span class="nv">?parcel</span> <span class="nv">?parcelRef</span> <span class="nv">?propertyRef</span> <span class="k">WHERE</span> <span class="p">{</span>
     <span class="nv">?parcel</span> <span class="k">a</span> <span class="nn">edintcat</span><span class="p">:</span><span class="nt">CadastralParcel</span> <span class="p">;</span>
@@ -213,7 +213,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     
                     <div class="query-block">
                         <span class="query-title"></span>
-                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/catastro/&gt;</span>
+                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/catastro#&gt;</span>
 
 <span class="k">SELECT</span> <span class="nv">?parcel</span> <span class="nv">?propertyRef</span> <span class="k">WHERE</span> <span class="p">{</span>
     <span class="nv">?parcel</span> <span class="k">a</span> <span class="nn">edintcat</span><span class="p">:</span><span class="nt">CadastralParcel</span> <span class="p">;</span>
@@ -229,7 +229,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     
                     <div class="query-block">
                         <span class="query-title"></span>
-                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/catastro/&gt;</span>
+                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/catastro#&gt;</span>
 
 <span class="k">SELECT</span> <span class="nv">?parcel</span> <span class="nv">?parcelRef</span> <span class="nv">?propertyRef</span> <span class="nv">?completeRef</span> <span class="k">WHERE</span> <span class="p">{</span>
     <span class="nv">?parcel</span> <span class="k">a</span> <span class="nn">edintcat</span><span class="p">:</span><span class="nt">CadastralParcel</span> <span class="p">;</span>
@@ -247,7 +247,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     </section><section class="file-card" id="CAT02_sparql"><div class="file-header">CAT02 - What entities compose the Spanish Cadastre</div><div class="metadata-block"><p><strong>Pregunta:</strong> ¿Qué entidades componen el catastro español?</p><p><strong>Respuesta:</strong> El catastro español se compone de tres entidades principales: Parcelas Catastrales, Inmuebles Catastrales y Construcciones Catastrales</p></div>
                     <div class="query-block">
                         <span class="query-title"></span>
-                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/catastro/&gt;</span>
+                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/catastro#&gt;</span>
 
 <span class="k">SELECT</span> <span class="nv">?entityType</span> <span class="p">(</span><span class="nf">COUNT</span><span class="p">(</span><span class="nv">?entity</span><span class="p">)</span> <span class="k">AS</span> <span class="nv">?count</span><span class="p">)</span> <span class="k">WHERE</span> <span class="p">{</span>
     <span class="p">{</span>
@@ -268,7 +268,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     
                     <div class="query-block">
                         <span class="query-title"></span>
-                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/catastro/&gt;</span>
+                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/catastro#&gt;</span>
 
 <span class="k">SELECT</span> <span class="nv">?parcel</span> <span class="nv">?parcelLabel</span> <span class="p">(</span><span class="nf">COUNT</span><span class="p">(</span><span class="nv">?property</span><span class="p">)</span> <span class="k">AS</span> <span class="nv">?propertyCount</span><span class="p">)</span> <span class="k">WHERE</span> <span class="p">{</span>
     <span class="nv">?parcel</span> <span class="k">a</span> <span class="nn">edintcat</span><span class="p">:</span><span class="nt">CadastralParcel</span> <span class="p">;</span>
@@ -282,7 +282,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     
                     <div class="query-block">
                         <span class="query-title"></span>
-                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/catastro/&gt;</span>
+                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/catastro#&gt;</span>
 
 <span class="k">SELECT</span> <span class="nv">?property</span> <span class="nv">?propertyLabel</span> <span class="p">(</span><span class="nf">COUNT</span><span class="p">(</span><span class="nv">?construction</span><span class="p">)</span> <span class="k">AS</span> <span class="nv">?constructionCount</span><span class="p">)</span> <span class="k">WHERE</span> <span class="p">{</span>
     <span class="nv">?property</span> <span class="k">a</span> <span class="nn">edintcat</span><span class="p">:</span><span class="nt">CadastralProperty</span> <span class="p">;</span>
@@ -296,7 +296,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     
                     <div class="query-block">
                         <span class="query-title"></span>
-                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/catastro/&gt;</span>
+                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/catastro#&gt;</span>
 
 <span class="k">SELECT</span> <span class="nv">?parcel</span> <span class="nv">?property</span> <span class="nv">?construction</span> <span class="nv">?propertyLabel</span> <span class="nv">?constructionLabel</span> <span class="k">WHERE</span> <span class="p">{</span>
     <span class="nv">?parcel</span> <span class="k">a</span> <span class="nn">edintcat</span><span class="p">:</span><span class="nt">CadastralParcel</span> <span class="p">;</span>
@@ -315,7 +315,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     </section><section class="file-card" id="CAT03_sparql"><div class="file-header">CAT03 - What information does a cadastral property contain</div><div class="metadata-block"><p><strong>Pregunta:</strong> ¿Qué información contiene un inmueble catastral?</p><p><strong>Respuesta:</strong> Un inmueble catastral contiene: referencia catastral, porcentaje de participación, uso, clasificación, y opcionalmente dirección</p></div>
                     <div class="query-block">
                         <span class="query-title"></span>
-                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/catastro/&gt;</span>
+                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/catastro#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">skos</span><span class="p">:</span> <span class="nl">&lt;http://www.w3.org/2004/02/skos/core#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">callejero</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#&gt;</span>
 
@@ -335,7 +335,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     
                     <div class="query-block">
                         <span class="query-title"></span>
-                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/catastro/&gt;</span>
+                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/catastro#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">skos</span><span class="p">:</span> <span class="nl">&lt;http://www.w3.org/2004/02/skos/core#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">callejero</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#&gt;</span>
 
@@ -358,7 +358,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     
                     <div class="query-block">
                         <span class="query-title"></span>
-                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/catastro/&gt;</span>
+                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/catastro#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">skos</span><span class="p">:</span> <span class="nl">&lt;http://www.w3.org/2004/02/skos/core#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">callejero</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#&gt;</span>
 
@@ -383,7 +383,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     
                     <div class="query-block">
                         <span class="query-title"></span>
-                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/catastro/&gt;</span>
+                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/catastro#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">skos</span><span class="p">:</span> <span class="nl">&lt;http://www.w3.org/2004/02/skos/core#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">callejero</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#&gt;</span>
 
@@ -416,7 +416,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     </section><section class="file-card" id="CAT04_sparql"><div class="file-header">CAT04 - How constructions relate to parcels</div><div class="metadata-block"><p><strong>Pregunta:</strong> ¿Cómo se relacionan las construcciones con las parcelas?</p><p><strong>Respuesta:</strong> Las construcciones se relacionan con las parcelas a través de un inmueble intermedio: Parcela → Inmueble → Construcción</p></div>
                     <div class="query-block">
                         <span class="query-title"></span>
-                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/catastro/&gt;</span>
+                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/catastro#&gt;</span>
 
 <span class="k">SELECT</span> <span class="nv">?construction</span> <span class="nv">?constructionLabel</span> <span class="nv">?property</span> <span class="nv">?propertyLabel</span>
        <span class="nv">?parcel</span> <span class="nv">?parcelLabel</span> <span class="k">WHERE</span> <span class="p">{</span>
@@ -437,7 +437,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     
                     <div class="query-block">
                         <span class="query-title"></span>
-                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/catastro/&gt;</span>
+                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/catastro#&gt;</span>
 
 <span class="k">SELECT</span> <span class="nv">?construction</span> <span class="nv">?constructionLabel</span> <span class="nv">?property</span> <span class="nv">?propertyLabel</span>
        <span class="nv">?parcel</span> <span class="nv">?parcelRef</span> <span class="k">WHERE</span> <span class="p">{</span>
@@ -459,7 +459,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     
                     <div class="query-block">
                         <span class="query-title"></span>
-                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/catastro/&gt;</span>
+                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/catastro#&gt;</span>
 
 <span class="k">SELECT</span> <span class="nv">?parcel</span> <span class="nv">?parcelLabel</span> <span class="p">(</span><span class="nf">COUNT</span><span class="p">(</span><span class="nv">?construction</span><span class="p">)</span> <span class="k">AS</span> <span class="nv">?constructionCount</span><span class="p">)</span> <span class="k">WHERE</span> <span class="p">{</span>
     <span class="nv">?parcel</span> <span class="k">a</span> <span class="nn">edintcat</span><span class="p">:</span><span class="nt">CadastralParcel</span> <span class="p">;</span>
@@ -474,7 +474,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     
                     <div class="query-block">
                         <span class="query-title"></span>
-                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/catastro/&gt;</span>
+                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/catastro#&gt;</span>
 
 <span class="k">SELECT</span> <span class="nv">?construction</span> <span class="nv">?property</span> <span class="nv">?parcel</span> <span class="nv">?parcelRef</span> <span class="nv">?propertyRef</span> <span class="k">WHERE</span> <span class="p">{</span>
     <span class="nv">?construction</span> <span class="k">a</span> <span class="nn">edintcat</span><span class="p">:</span><span class="nt">CadastralConstruction</span> <span class="p">;</span>
@@ -498,7 +498,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     </section><section class="file-card" id="CAT05_sparql"><div class="file-header">CAT05 - What uses can a property have</div><div class="metadata-block"><p><strong>Pregunta:</strong> ¿Qué usos puede tener un inmueble?</p><p><strong>Respuesta:</strong> Los inmuebles pueden tener diferentes usos según el vocabulario KOS de EDINT: Residencial, Comercial, Industrial, etc.</p></div>
                     <div class="query-block">
                         <span class="query-title"></span>
-                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/catastro/&gt;</span>
+                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/catastro#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">skos</span><span class="p">:</span> <span class="nl">&lt;http://www.w3.org/2004/02/skos/core#&gt;</span>
 
 <span class="k">SELECT</span> <span class="nv">?useLabel</span> <span class="p">(</span><span class="nf">COUNT</span><span class="p">(</span><span class="nv">?property</span><span class="p">)</span> <span class="k">AS</span> <span class="nv">?count</span><span class="p">)</span> <span class="k">WHERE</span> <span class="p">{</span>
@@ -516,7 +516,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     
                     <div class="query-block">
                         <span class="query-title"></span>
-                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/catastro/&gt;</span>
+                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/catastro#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">skos</span><span class="p">:</span> <span class="nl">&lt;http://www.w3.org/2004/02/skos/core#&gt;</span>
 
 <span class="k">SELECT</span> <span class="nv">?property</span> <span class="nv">?label</span> <span class="nv">?participation</span> <span class="k">WHERE</span> <span class="p">{</span>
@@ -534,7 +534,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     
                     <div class="query-block">
                         <span class="query-title"></span>
-                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/catastro/&gt;</span>
+                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/catastro#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">skos</span><span class="p">:</span> <span class="nl">&lt;http://www.w3.org/2004/02/skos/core#&gt;</span>
 
 <span class="k">SELECT</span> <span class="nv">?property</span> <span class="nv">?label</span> <span class="nv">?useLabel</span> <span class="nv">?participation</span> <span class="k">WHERE</span> <span class="p">{</span>
@@ -554,7 +554,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     
                     <div class="query-block">
                         <span class="query-title"></span>
-                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/catastro/&gt;</span>
+                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/catastro#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">skos</span><span class="p">:</span> <span class="nl">&lt;http://www.w3.org/2004/02/skos/core#&gt;</span>
 
 <span class="k">SELECT</span> <span class="nv">?useLabel</span> <span class="p">(</span><span class="nf">COUNT</span><span class="p">(</span><span class="nv">?construction</span><span class="p">)</span> <span class="k">AS</span> <span class="nv">?count</span><span class="p">)</span> <span class="k">WHERE</span> <span class="p">{</span>
@@ -572,7 +572,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     
                     <div class="query-block">
                         <span class="query-title"></span>
-                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/catastro/&gt;</span>
+                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/catastro#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">skos</span><span class="p">:</span> <span class="nl">&lt;http://www.w3.org/2004/02/skos/core#&gt;</span>
 
 <span class="k">SELECT</span> <span class="nv">?property</span> <span class="nv">?label</span> <span class="nv">?use</span> <span class="nv">?useLabel</span> <span class="nv">?schemeLabel</span> <span class="k">WHERE</span> <span class="p">{</span>
@@ -592,7 +592,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     </section><section class="file-card" id="CAT06_sparql"><div class="file-header">CAT06 - What cadastral class does a property have</div><div class="metadata-block"><p><strong>Pregunta:</strong> ¿Qué clase catastral tiene un inmueble?</p><p><strong>Respuesta:</strong> Los inmuebles se clasifican según el vocabulario KOS de EDINT en: Urbano, Rústico, o especial BICES</p></div>
                     <div class="query-block">
                         <span class="query-title"></span>
-                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/catastro/&gt;</span>
+                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/catastro#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">skos</span><span class="p">:</span> <span class="nl">&lt;http://www.w3.org/2004/02/skos/core#&gt;</span>
 
 <span class="k">SELECT</span> <span class="nv">?classLabel</span> <span class="p">(</span><span class="nf">COUNT</span><span class="p">(</span><span class="nv">?property</span><span class="p">)</span> <span class="k">AS</span> <span class="nv">?count</span><span class="p">)</span> <span class="k">WHERE</span> <span class="p">{</span>
@@ -610,7 +610,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     
                     <div class="query-block">
                         <span class="query-title"></span>
-                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/catastro/&gt;</span>
+                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/catastro#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">skos</span><span class="p">:</span> <span class="nl">&lt;http://www.w3.org/2004/02/skos/core#&gt;</span>
 
 <span class="k">SELECT</span> <span class="nv">?property</span> <span class="nv">?label</span> <span class="nv">?participation</span> <span class="k">WHERE</span> <span class="p">{</span>
@@ -628,7 +628,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     
                     <div class="query-block">
                         <span class="query-title"></span>
-                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/catastro/&gt;</span>
+                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/catastro#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">skos</span><span class="p">:</span> <span class="nl">&lt;http://www.w3.org/2004/02/skos/core#&gt;</span>
 
 <span class="k">SELECT</span> <span class="nv">?property</span> <span class="nv">?label</span> <span class="nv">?participation</span> <span class="k">WHERE</span> <span class="p">{</span>
@@ -646,7 +646,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     
                     <div class="query-block">
                         <span class="query-title"></span>
-                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/catastro/&gt;</span>
+                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/catastro#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">skos</span><span class="p">:</span> <span class="nl">&lt;http://www.w3.org/2004/02/skos/core#&gt;</span>
 
 <span class="k">SELECT</span> <span class="nv">?parcel</span> <span class="nv">?parcelLabel</span> <span class="nv">?classLabel</span> <span class="nv">?parcelRef</span> <span class="k">WHERE</span> <span class="p">{</span>
@@ -667,7 +667,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     
                     <div class="query-block">
                         <span class="query-title"></span>
-                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/catastro/&gt;</span>
+                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/catastro#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">skos</span><span class="p">:</span> <span class="nl">&lt;http://www.w3.org/2004/02/skos/core#&gt;</span>
 
 <span class="k">SELECT</span> <span class="nv">?property</span> <span class="nv">?label</span> <span class="nv">?classLabel</span> <span class="nv">?useLabel</span> <span class="nv">?participation</span> <span class="k">WHERE</span> <span class="p">{</span>
@@ -690,7 +690,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     </section><section class="file-card" id="CAT07_sparql"><div class="file-header">CAT07 - How to specify location/geometry of a parcel</div><div class="metadata-block"><p><strong>Pregunta:</strong> ¿Cómo se especifica la ubicación/geometría de una parcela?</p><p><strong>Respuesta:</strong> La ubicación se especifica mediante dirección (vocabulario callejero) y geometría (GeoSPARQL)</p></div>
                     <div class="query-block">
                         <span class="query-title"></span>
-                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/catastro/&gt;</span>
+                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/catastro#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">geo</span><span class="p">:</span> <span class="nl">&lt;http://www.opengis.net/ont/geosparql#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">qudt</span><span class="p">:</span> <span class="nl">&lt;http://qudt.org/schema/qudt/&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">qudtunit</span><span class="p">:</span> <span class="nl">&lt;http://qudt.org/vocab/unit/&gt;</span>
@@ -718,7 +718,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     
                     <div class="query-block">
                         <span class="query-title"></span>
-                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/catastro/&gt;</span>
+                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/catastro#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">geo</span><span class="p">:</span> <span class="nl">&lt;http://www.opengis.net/ont/geosparql#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">qudt</span><span class="p">:</span> <span class="nl">&lt;http://qudt.org/schema/qudt/&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">qudtunit</span><span class="p">:</span> <span class="nl">&lt;http://qudt.org/vocab/unit/&gt;</span>
@@ -737,7 +737,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     
                     <div class="query-block">
                         <span class="query-title"></span>
-                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/catastro/&gt;</span>
+                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/catastro#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">geo</span><span class="p">:</span> <span class="nl">&lt;http://www.opengis.net/ont/geosparql#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">qudt</span><span class="p">:</span> <span class="nl">&lt;http://qudt.org/schema/qudt/&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">qudtunit</span><span class="p">:</span> <span class="nl">&lt;http://qudt.org/vocab/unit/&gt;</span>
@@ -759,7 +759,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     
                     <div class="query-block">
                         <span class="query-title"></span>
-                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/catastro/&gt;</span>
+                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/catastro#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">geo</span><span class="p">:</span> <span class="nl">&lt;http://www.opengis.net/ont/geosparql#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">qudt</span><span class="p">:</span> <span class="nl">&lt;http://qudt.org/schema/qudt/&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">qudtunit</span><span class="p">:</span> <span class="nl">&lt;http://qudt.org/vocab/unit/&gt;</span>
@@ -787,7 +787,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     
                     <div class="query-block">
                         <span class="query-title"></span>
-                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/catastro/&gt;</span>
+                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/catastro#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">geo</span><span class="p">:</span> <span class="nl">&lt;http://www.opengis.net/ont/geosparql#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">qudt</span><span class="p">:</span> <span class="nl">&lt;http://qudt.org/schema/qudt/&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">qudtunit</span><span class="p">:</span> <span class="nl">&lt;http://qudt.org/vocab/unit/&gt;</span>
@@ -822,7 +822,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     </section><section class="file-card" id="CAT08_sparql"><div class="file-header">CAT08 - What cadastral reference does a property have</div><div class="metadata-block"><p><strong>Pregunta:</strong> ¿Qué referencia catastral tiene un inmueble?</p><p><strong>Respuesta:</strong> Cada inmueble tiene una referencia catastral única compuesta por referencia de parcela (7 dígitos) y referencia de inmueble (alfanumérico con dígito de control)</p></div>
                     <div class="query-block">
                         <span class="query-title"></span>
-                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/catastro/&gt;</span>
+                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/catastro#&gt;</span>
 
 <span class="k">SELECT</span> <span class="nv">?property</span> <span class="nv">?label</span> <span class="nv">?parcelRef</span> <span class="nv">?propertyRef</span> <span class="nv">?completeRef</span> <span class="k">WHERE</span> <span class="p">{</span>
     <span class="nv">?property</span> <span class="k">a</span> <span class="nn">edintcat</span><span class="p">:</span><span class="nt">CadastralProperty</span> <span class="p">;</span>
@@ -841,7 +841,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     
                     <div class="query-block">
                         <span class="query-title"></span>
-                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/catastro/&gt;</span>
+                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/catastro#&gt;</span>
 
 <span class="k">SELECT</span> <span class="nv">?property</span> <span class="nv">?label</span> <span class="nv">?parcelRef</span> <span class="nv">?propertyRef</span> <span class="k">WHERE</span> <span class="p">{</span>
     <span class="nv">?property</span> <span class="k">a</span> <span class="nn">edintcat</span><span class="p">:</span><span class="nt">CadastralProperty</span> <span class="p">;</span>
@@ -862,7 +862,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     
                     <div class="query-block">
                         <span class="query-title"></span>
-                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/catastro/&gt;</span>
+                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/catastro#&gt;</span>
 
 <span class="k">SELECT</span> <span class="nv">?property</span> <span class="nv">?label</span> <span class="nv">?parcelRef</span> <span class="nv">?propertyRef</span> <span class="nv">?completeRef</span> <span class="k">WHERE</span> <span class="p">{</span>
     <span class="nv">?property</span> <span class="k">a</span> <span class="nn">edintcat</span><span class="p">:</span><span class="nt">CadastralProperty</span> <span class="p">;</span>
@@ -883,7 +883,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     
                     <div class="query-block">
                         <span class="query-title"></span>
-                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/catastro/&gt;</span>
+                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/catastro#&gt;</span>
 
 <span class="k">SELECT</span> <span class="nv">?parcelRef</span> <span class="p">(</span><span class="nf">COUNT</span><span class="p">(</span><span class="nv">?property</span><span class="p">)</span> <span class="k">AS</span> <span class="nv">?propertyCount</span><span class="p">)</span> <span class="k">WHERE</span> <span class="p">{</span>
     <span class="nv">?property</span> <span class="k">a</span> <span class="nn">edintcat</span><span class="p">:</span><span class="nt">CadastralProperty</span> <span class="p">;</span>
@@ -901,7 +901,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     
                     <div class="query-block">
                         <span class="query-title"></span>
-                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/catastro/&gt;</span>
+                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/catastro#&gt;</span>
 
 <span class="k">SELECT</span> <span class="nv">?property</span> <span class="nv">?label</span> <span class="nv">?parcelRef</span> <span class="nv">?propertyRef</span> <span class="nv">?completeRef</span> <span class="nv">?participation</span> <span class="k">WHERE</span> <span class="p">{</span>
     <span class="nv">?property</span> <span class="k">a</span> <span class="nn">edintcat</span><span class="p">:</span><span class="nt">CadastralProperty</span> <span class="p">;</span>
@@ -921,7 +921,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     </section><section class="file-card" id="CAT09_sparql"><div class="file-header">CAT09 - When was a construction built</div><div class="metadata-block"><p><strong>Pregunta:</strong> ¿Cuándo se construyó una construcción?</p><p><strong>Respuesta:</strong> La fecha de construcción de una construcción se almacena como año gregoriano (ej: 2012) utilizando la propiedad constructionYear</p></div>
                     <div class="query-block">
                         <span class="query-title"></span>
-                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/catastro/&gt;</span>
+                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/catastro#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">xsd</span><span class="p">:</span> <span class="nl">&lt;http://www.w3.org/2001/XMLSchema#&gt;</span>
 
 <span class="k">SELECT</span> <span class="nv">?construction</span> <span class="nv">?label</span> <span class="nv">?constructionYear</span> <span class="k">WHERE</span> <span class="p">{</span>
@@ -936,7 +936,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     
                     <div class="query-block">
                         <span class="query-title"></span>
-                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/catastro/&gt;</span>
+                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/catastro#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">xsd</span><span class="p">:</span> <span class="nl">&lt;http://www.w3.org/2001/XMLSchema#&gt;</span>
 
 <span class="k">SELECT</span> <span class="nv">?construction</span> <span class="nv">?label</span> <span class="k">WHERE</span> <span class="p">{</span>
@@ -950,7 +950,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     
                     <div class="query-block">
                         <span class="query-title"></span>
-                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/catastro/&gt;</span>
+                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/catastro#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">xsd</span><span class="p">:</span> <span class="nl">&lt;http://www.w3.org/2001/XMLSchema#&gt;</span>
 
 <span class="k">SELECT</span> <span class="nv">?construction</span> <span class="nv">?label</span> <span class="nv">?constructionYear</span> <span class="k">WHERE</span> <span class="p">{</span>
@@ -967,7 +967,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     
                     <div class="query-block">
                         <span class="query-title"></span>
-                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/catastro/&gt;</span>
+                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/catastro#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">xsd</span><span class="p">:</span> <span class="nl">&lt;http://www.w3.org/2001/XMLSchema#&gt;</span>
 
 <span class="k">SELECT</span> <span class="nv">?constructionYear</span> <span class="p">(</span><span class="nf">COUNT</span><span class="p">(</span><span class="nv">?construction</span><span class="p">)</span> <span class="k">AS</span> <span class="nv">?count</span><span class="p">)</span> <span class="k">WHERE</span> <span class="p">{</span>
@@ -982,7 +982,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     
                     <div class="query-block">
                         <span class="query-title"></span>
-                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/catastro/&gt;</span>
+                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/catastro#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">xsd</span><span class="p">:</span> <span class="nl">&lt;http://www.w3.org/2001/XMLSchema#&gt;</span>
 
 <span class="k">SELECT</span> <span class="p">(</span><span class="nf">MIN</span><span class="p">(</span><span class="nv">?constructionYear</span><span class="p">)</span> <span class="k">AS</span> <span class="nv">?oldestYear</span><span class="p">)</span>
@@ -996,7 +996,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     
                     <div class="query-block">
                         <span class="query-title"></span>
-                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/catastro/&gt;</span>
+                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/catastro#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">xsd</span><span class="p">:</span> <span class="nl">&lt;http://www.w3.org/2001/XMLSchema#&gt;</span>
 
 <span class="k">SELECT</span> <span class="nv">?construction</span> <span class="nv">?label</span> <span class="nv">?constructionYear</span> <span class="k">WHERE</span> <span class="p">{</span>
@@ -1013,7 +1013,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     </section><section class="file-card" id="CAT10_sparql"><div class="file-header">CAT10 - Complex multi-join queries</div><div class="metadata-block"><p><strong>Pregunta:</strong> Complex queries combining multiple filters and joins</p><p><strong>Respuesta:</strong> Demonstrates advanced querying with multiple criteria and joins</p></div>
                     <div class="query-block">
                         <span class="query-title"></span>
-                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/catastro/&gt;</span>
+                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/catastro#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">geo</span><span class="p">:</span> <span class="nl">&lt;http://www.opengis.net/ont/geosparql#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">skos</span><span class="p">:</span> <span class="nl">&lt;http://www.w3.org/2004/02/skos/core#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">xsd</span><span class="p">:</span> <span class="nl">&lt;http://www.w3.org/2001/XMLSchema#&gt;</span>
@@ -1044,7 +1044,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     
                     <div class="query-block">
                         <span class="query-title"></span>
-                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/catastro/&gt;</span>
+                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/catastro#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">geo</span><span class="p">:</span> <span class="nl">&lt;http://www.opengis.net/ont/geosparql#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">skos</span><span class="p">:</span> <span class="nl">&lt;http://www.w3.org/2004/02/skos/core#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">xsd</span><span class="p">:</span> <span class="nl">&lt;http://www.w3.org/2001/XMLSchema#&gt;</span>
@@ -1068,7 +1068,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     
                     <div class="query-block">
                         <span class="query-title"></span>
-                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/catastro/&gt;</span>
+                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/catastro#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">geo</span><span class="p">:</span> <span class="nl">&lt;http://www.opengis.net/ont/geosparql#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">skos</span><span class="p">:</span> <span class="nl">&lt;http://www.w3.org/2004/02/skos/core#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">xsd</span><span class="p">:</span> <span class="nl">&lt;http://www.w3.org/2001/XMLSchema#&gt;</span>
@@ -1100,7 +1100,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     
                     <div class="query-block">
                         <span class="query-title"></span>
-                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/catastro/&gt;</span>
+                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/catastro#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">geo</span><span class="p">:</span> <span class="nl">&lt;http://www.opengis.net/ont/geosparql#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">skos</span><span class="p">:</span> <span class="nl">&lt;http://www.w3.org/2004/02/skos/core#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">xsd</span><span class="p">:</span> <span class="nl">&lt;http://www.w3.org/2001/XMLSchema#&gt;</span>
@@ -1125,7 +1125,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     
                     <div class="query-block">
                         <span class="query-title"></span>
-                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/catastro/&gt;</span>
+                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/catastro#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">geo</span><span class="p">:</span> <span class="nl">&lt;http://www.opengis.net/ont/geosparql#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">skos</span><span class="p">:</span> <span class="nl">&lt;http://www.w3.org/2004/02/skos/core#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">xsd</span><span class="p">:</span> <span class="nl">&lt;http://www.w3.org/2001/XMLSchema#&gt;</span>
@@ -1149,7 +1149,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     
                     <div class="query-block">
                         <span class="query-title"></span>
-                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/catastro/&gt;</span>
+                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/catastro#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">geo</span><span class="p">:</span> <span class="nl">&lt;http://www.opengis.net/ont/geosparql#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">skos</span><span class="p">:</span> <span class="nl">&lt;http://www.w3.org/2004/02/skos/core#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">xsd</span><span class="p">:</span> <span class="nl">&lt;http://www.w3.org/2001/XMLSchema#&gt;</span>
@@ -1187,7 +1187,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     </section><section class="file-card" id="CAT11_sparql"><div class="file-header">CAT11 - How to identify construction units within a building</div><div class="metadata-block"><p><strong>Pregunta:</strong> ¿Cómo se identifican las unidades constructivas dentro de un edificio?</p><p><strong>Respuesta:</strong> Las unidades constructivas se identifican mediante el triplete: escalera + planta + puerta</p></div>
                     <div class="query-block">
                         <span class="query-title"></span>
-                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/catastro/&gt;</span>
+                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/catastro#&gt;</span>
 
 <span class="k">SELECT</span> <span class="nv">?construction</span> <span class="nv">?label</span> <span class="nv">?staircase</span> <span class="nv">?floor</span> <span class="nv">?door</span> <span class="k">WHERE</span> <span class="p">{</span>
     <span class="nv">?construction</span> <span class="k">a</span> <span class="nn">edintcat</span><span class="p">:</span><span class="nt">CadastralConstruction</span> <span class="p">;</span>
@@ -1202,7 +1202,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     
                     <div class="query-block">
                         <span class="query-title"></span>
-                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/catastro/&gt;</span>
+                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/catastro#&gt;</span>
 
 <span class="k">SELECT</span> <span class="nv">?construction</span> <span class="nv">?label</span> <span class="nv">?staircase</span> <span class="nv">?floor</span> <span class="nv">?door</span> <span class="k">WHERE</span> <span class="p">{</span>
     <span class="nv">?construction</span> <span class="k">a</span> <span class="nn">edintcat</span><span class="p">:</span><span class="nt">CadastralConstruction</span> <span class="p">;</span>
@@ -1219,7 +1219,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     
                     <div class="query-block">
                         <span class="query-title"></span>
-                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/catastro/&gt;</span>
+                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/catastro#&gt;</span>
 
 <span class="k">SELECT</span> <span class="nv">?construction</span> <span class="nv">?label</span> <span class="nv">?staircase</span> <span class="nv">?floor</span> <span class="nv">?door</span> <span class="k">WHERE</span> <span class="p">{</span>
     <span class="nv">?construction</span> <span class="k">a</span> <span class="nn">edintcat</span><span class="p">:</span><span class="nt">CadastralConstruction</span> <span class="p">;</span>
@@ -1236,7 +1236,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     
                     <div class="query-block">
                         <span class="query-title"></span>
-                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/catastro/&gt;</span>
+                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/catastro#&gt;</span>
 
 <span class="k">SELECT</span> <span class="nv">?floor</span> <span class="p">(</span><span class="nf">COUNT</span><span class="p">(</span><span class="nv">?construction</span><span class="p">)</span> <span class="k">AS</span> <span class="nv">?count</span><span class="p">)</span> <span class="k">WHERE</span> <span class="p">{</span>
     <span class="nv">?construction</span> <span class="k">a</span> <span class="nn">edintcat</span><span class="p">:</span><span class="nt">CadastralConstruction</span> <span class="p">;</span>
@@ -1250,7 +1250,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     
                     <div class="query-block">
                         <span class="query-title"></span>
-                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/catastro/&gt;</span>
+                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/catastro#&gt;</span>
 
 <span class="k">SELECT</span> <span class="nv">?construction</span> <span class="nv">?label</span> <span class="k">WHERE</span> <span class="p">{</span>
     <span class="nv">?construction</span> <span class="k">a</span> <span class="nn">edintcat</span><span class="p">:</span><span class="nt">CadastralConstruction</span> <span class="p">;</span>
@@ -1265,7 +1265,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     </section><section class="file-card" id="CAT12_sparql"><div class="file-header">CAT12 - What area information does a construction have</div><div class="metadata-block"><p><strong>Pregunta:</strong> ¿Qué información de área tiene una construcción?</p><p><strong>Respuesta:</strong> Las construcciones tienen un área medida en metros cuadrados (m²) utilizando GeoSPARQL</p></div>
                     <div class="query-block">
                         <span class="query-title"></span>
-                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/catastro/&gt;</span>
+                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/catastro#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">geo</span><span class="p">:</span> <span class="nl">&lt;http://www.opengis.net/ont/geosparql#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">skos</span><span class="p">:</span> <span class="nl">&lt;http://www.w3.org/2004/02/skos/core#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">qudt</span><span class="p">:</span> <span class="nl">&lt;http://qudt.org/schema/qudt/&gt;</span>
@@ -1288,7 +1288,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     
                     <div class="query-block">
                         <span class="query-title"></span>
-                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/catastro/&gt;</span>
+                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/catastro#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">geo</span><span class="p">:</span> <span class="nl">&lt;http://www.opengis.net/ont/geosparql#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">skos</span><span class="p">:</span> <span class="nl">&lt;http://www.w3.org/2004/02/skos/core#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">qudt</span><span class="p">:</span> <span class="nl">&lt;http://qudt.org/schema/qudt/&gt;</span>
@@ -1313,7 +1313,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     
                     <div class="query-block">
                         <span class="query-title"></span>
-                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/catastro/&gt;</span>
+                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/catastro#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">geo</span><span class="p">:</span> <span class="nl">&lt;http://www.opengis.net/ont/geosparql#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">skos</span><span class="p">:</span> <span class="nl">&lt;http://www.w3.org/2004/02/skos/core#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">qudt</span><span class="p">:</span> <span class="nl">&lt;http://qudt.org/schema/qudt/&gt;</span>
@@ -1339,7 +1339,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     
                     <div class="query-block">
                         <span class="query-title"></span>
-                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/catastro/&gt;</span>
+                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/catastro#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">geo</span><span class="p">:</span> <span class="nl">&lt;http://www.opengis.net/ont/geosparql#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">skos</span><span class="p">:</span> <span class="nl">&lt;http://www.w3.org/2004/02/skos/core#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">qudt</span><span class="p">:</span> <span class="nl">&lt;http://qudt.org/schema/qudt/&gt;</span>
@@ -1366,7 +1366,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     
                     <div class="query-block">
                         <span class="query-title"></span>
-                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/catastro/&gt;</span>
+                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/catastro#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">geo</span><span class="p">:</span> <span class="nl">&lt;http://www.opengis.net/ont/geosparql#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">skos</span><span class="p">:</span> <span class="nl">&lt;http://www.w3.org/2004/02/skos/core#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">qudt</span><span class="p">:</span> <span class="nl">&lt;http://qudt.org/schema/qudt/&gt;</span>
@@ -1387,7 +1387,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     </section><section class="file-card" id="CAT13_sparql"><div class="file-header">CAT13 - Can a parcel have multiple properties?</div><div class="metadata-block"><p><strong>Pregunta:</strong> ¿Una parcela puede tener múltiples inmuebles?</p><p><strong>Respuesta:</strong> Sí, una parcela puede tener múltiples inmuebles catastrales asociados (común en división horizontal)</p></div>
                     <div class="query-block">
                         <span class="query-title"></span>
-                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/catastro/&gt;</span>
+                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/catastro#&gt;</span>
 
 <span class="k">SELECT</span> <span class="nv">?parcel</span> <span class="nv">?parcelLabel</span> <span class="p">(</span><span class="nf">COUNT</span><span class="p">(</span><span class="nv">?property</span><span class="p">)</span> <span class="k">AS</span> <span class="nv">?propertyCount</span><span class="p">)</span> <span class="k">WHERE</span> <span class="p">{</span>
     <span class="nv">?parcel</span> <span class="k">a</span> <span class="nn">edintcat</span><span class="p">:</span><span class="nt">CadastralParcel</span> <span class="p">;</span>
@@ -1403,7 +1403,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     
                     <div class="query-block">
                         <span class="query-title"></span>
-                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/catastro/&gt;</span>
+                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/catastro#&gt;</span>
 
 <span class="k">SELECT</span> <span class="nv">?property</span> <span class="nv">?label</span> <span class="nv">?participation</span> <span class="nv">?parcelRef</span> <span class="nv">?propertyRef</span> <span class="k">WHERE</span> <span class="p">{</span>
     <span class="nv">?parcel</span> <span class="k">a</span> <span class="nn">edintcat</span><span class="p">:</span><span class="nt">CadastralParcel</span> <span class="p">;</span>
@@ -1429,7 +1429,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     
                     <div class="query-block">
                         <span class="query-title"></span>
-                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/catastro/&gt;</span>
+                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/catastro#&gt;</span>
 
 <span class="k">SELECT</span> <span class="nv">?parcel</span> <span class="nv">?parcelLabel</span> <span class="k">WHERE</span> <span class="p">{</span>
     <span class="nv">?parcel</span> <span class="k">a</span> <span class="nn">edintcat</span><span class="p">:</span><span class="nt">CadastralParcel</span> <span class="p">;</span>
@@ -1444,7 +1444,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     
                     <div class="query-block">
                         <span class="query-title"></span>
-                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/catastro/&gt;</span>
+                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/catastro#&gt;</span>
 
 <span class="k">SELECT</span> <span class="nv">?parcel</span> <span class="nv">?parcelLabel</span> <span class="nv">?property</span> <span class="nv">?label</span> <span class="nv">?hasHorizontalDivision</span> <span class="k">WHERE</span> <span class="p">{</span>
     <span class="nv">?parcel</span> <span class="k">a</span> <span class="nn">edintcat</span><span class="p">:</span><span class="nt">CadastralParcel</span> <span class="p">;</span>
@@ -1461,7 +1461,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     
                     <div class="query-block">
                         <span class="query-title"></span>
-                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/catastro/&gt;</span>
+                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/catastro#&gt;</span>
 
 <span class="k">SELECT</span> <span class="p">(</span><span class="nf">COUNT</span><span class="p">(</span><span class="nv">?parcel</span><span class="p">)</span> <span class="k">AS</span> <span class="nv">?totalParcels</span><span class="p">)</span>
        <span class="p">(</span><span class="nf">SUM</span><span class="p">(</span><span class="nv">?propertyCount</span><span class="p">)</span> <span class="k">AS</span> <span class="nv">?totalProperties</span><span class="p">)</span>
@@ -1481,7 +1481,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     </section><section class="file-card" id="CAT14_sparql"><div class="file-header">CAT14 - Can a property have multiple constructions?</div><div class="metadata-block"><p><strong>Pregunta:</strong> ¿Un inmueble puede tener múltiples construcciones?</p><p><strong>Respuesta:</strong> Sí, un inmueble puede tener múltiples construcciones asociadas</p></div>
                     <div class="query-block">
                         <span class="query-title"></span>
-                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/catastro/&gt;</span>
+                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/catastro#&gt;</span>
 
 <span class="k">SELECT</span> <span class="nv">?property</span> <span class="nv">?propertyLabel</span> <span class="p">(</span><span class="nf">COUNT</span><span class="p">(</span><span class="nv">?construction</span><span class="p">)</span> <span class="k">AS</span> <span class="nv">?constructionCount</span><span class="p">)</span> <span class="k">WHERE</span> <span class="p">{</span>
     <span class="nv">?property</span> <span class="k">a</span> <span class="nn">edintcat</span><span class="p">:</span><span class="nt">CadastralProperty</span> <span class="p">;</span>
@@ -1497,7 +1497,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     
                     <div class="query-block">
                         <span class="query-title"></span>
-                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/catastro/&gt;</span>
+                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/catastro#&gt;</span>
 
 <span class="k">SELECT</span> <span class="nv">?construction</span> <span class="nv">?label</span> <span class="nv">?staircase</span> <span class="nv">?floor</span> <span class="nv">?door</span> <span class="k">WHERE</span> <span class="p">{</span>
     <span class="nv">?property</span> <span class="k">a</span> <span class="nn">edintcat</span><span class="p">:</span><span class="nt">CadastralProperty</span> <span class="p">;</span>
@@ -1525,7 +1525,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     
                     <div class="query-block">
                         <span class="query-title"></span>
-                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/catastro/&gt;</span>
+                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/catastro#&gt;</span>
 
 <span class="k">SELECT</span> <span class="nv">?constructionCountRange</span> <span class="p">(</span><span class="nf">COUNT</span><span class="p">(</span><span class="k">DISTINCT</span> <span class="nv">?property</span><span class="p">)</span> <span class="k">AS</span> <span class="nv">?propertyCount</span><span class="p">)</span> <span class="k">WHERE</span> <span class="p">{</span>
     <span class="nv">?property</span> <span class="k">a</span> <span class="nn">edintcat</span><span class="p">:</span><span class="nt">CadastralProperty</span> <span class="p">;</span>
@@ -1551,7 +1551,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     
                     <div class="query-block">
                         <span class="query-title"></span>
-                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/catastro/&gt;</span>
+                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/catastro#&gt;</span>
 
 <span class="k">SELECT</span> <span class="nv">?property</span> <span class="nv">?propertyLabel</span> <span class="nv">?floor</span> <span class="p">(</span><span class="nf">COUNT</span><span class="p">(</span><span class="nv">?construction</span><span class="p">)</span> <span class="k">AS</span> <span class="nv">?constructionCount</span><span class="p">)</span> <span class="k">WHERE</span> <span class="p">{</span>
     <span class="nv">?property</span> <span class="k">a</span> <span class="nn">edintcat</span><span class="p">:</span><span class="nt">CadastralProperty</span> <span class="p">;</span>
@@ -1570,7 +1570,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     
                     <div class="query-block">
                         <span class="query-title"></span>
-                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/catastro/&gt;</span>
+                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/catastro#&gt;</span>
 
 <span class="k">SELECT</span> <span class="p">(</span><span class="nf">COUNT</span><span class="p">(</span><span class="nv">?property</span><span class="p">)</span> <span class="k">AS</span> <span class="nv">?totalProperties</span><span class="p">)</span>
        <span class="p">(</span><span class="nf">SUM</span><span class="p">(</span><span class="nv">?constructionCount</span><span class="p">)</span> <span class="k">AS</span> <span class="nv">?totalConstructions</span><span class="p">)</span>
@@ -1591,7 +1591,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     </section><section class="file-card" id="CAT15_sparql"><div class="file-header">CAT15 - What is the participation percentage of a property</div><div class="metadata-block"><p><strong>Pregunta:</strong> ¿Cuál es el porcentaje de participación de un inmueble?</p><p><strong>Respuesta:</strong> El porcentaje de participación indica qué parte de los elementos comunes corresponde a un inmueble (ej: 100.00)</p></div>
                     <div class="query-block">
                         <span class="query-title"></span>
-                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/catastro/&gt;</span>
+                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/catastro#&gt;</span>
 
 <span class="k">SELECT</span> <span class="nv">?property</span> <span class="nv">?label</span> <span class="nv">?participation</span> <span class="k">WHERE</span> <span class="p">{</span>
     <span class="nv">?property</span> <span class="k">a</span> <span class="nn">edintcat</span><span class="p">:</span><span class="nt">CadastralProperty</span> <span class="p">;</span>
@@ -1605,7 +1605,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     
                     <div class="query-block">
                         <span class="query-title"></span>
-                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/catastro/&gt;</span>
+                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/catastro#&gt;</span>
 
 <span class="k">SELECT</span> <span class="nv">?property</span> <span class="nv">?label</span> <span class="nv">?parcelRef</span> <span class="nv">?propertyRef</span> <span class="k">WHERE</span> <span class="p">{</span>
     <span class="nv">?property</span> <span class="k">a</span> <span class="nn">edintcat</span><span class="p">:</span><span class="nt">CadastralProperty</span> <span class="p">;</span>
@@ -1625,7 +1625,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     
                     <div class="query-block">
                         <span class="query-title"></span>
-                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/catastro/&gt;</span>
+                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/catastro#&gt;</span>
 
 <span class="k">SELECT</span> <span class="nv">?property</span> <span class="nv">?label</span> <span class="nv">?participation</span> <span class="nv">?useLabel</span> <span class="k">WHERE</span> <span class="p">{</span>
     <span class="nv">?property</span> <span class="k">a</span> <span class="nn">edintcat</span><span class="p">:</span><span class="nt">CadastralProperty</span> <span class="p">;</span>
@@ -1645,7 +1645,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     
                     <div class="query-block">
                         <span class="query-title"></span>
-                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/catastro/&gt;</span>
+                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/catastro#&gt;</span>
 
 <span class="k">SELECT</span> <span class="nv">?property</span> <span class="nv">?label</span> <span class="nv">?participation</span> <span class="k">WHERE</span> <span class="p">{</span>
     <span class="nv">?parcel</span> <span class="k">a</span> <span class="nn">edintcat</span><span class="p">:</span><span class="nt">CadastralParcel</span> <span class="p">;</span>
@@ -1666,7 +1666,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     
                     <div class="query-block">
                         <span class="query-title"></span>
-                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/catastro/&gt;</span>
+                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/catastro#&gt;</span>
 
 <span class="k">SELECT</span> <span class="nv">?parcel</span> <span class="nv">?parcelLabel</span> <span class="p">(</span><span class="nf">SUM</span><span class="p">(</span><span class="nv">?participation</span><span class="p">)</span> <span class="k">AS</span> <span class="nv">?totalParticipation</span><span class="p">)</span> <span class="k">WHERE</span> <span class="p">{</span>
     <span class="nv">?parcel</span> <span class="k">a</span> <span class="nn">edintcat</span><span class="p">:</span><span class="nt">CadastralParcel</span> <span class="p">;</span>
@@ -1682,7 +1682,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     </section><section class="file-card" id="CAT16_sparql"><div class="file-header">CAT16 - What is the support percentage of a construction</div><div class="metadata-block"><p><strong>Pregunta:</strong> ¿Qué es el porcentaje de soporte de una construcción?</p><p><strong>Respuesta:</strong> El porcentaje de soporte indica qué parte del área es área de soporte (elementos comunes), expresado como porcentaje (ej: 50.00)</p></div>
                     <div class="query-block">
                         <span class="query-title"></span>
-                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/catastro/&gt;</span>
+                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/catastro#&gt;</span>
 
 <span class="k">SELECT</span> <span class="nv">?construction</span> <span class="nv">?label</span> <span class="nv">?supportPercentage</span> <span class="k">WHERE</span> <span class="p">{</span>
     <span class="nv">?construction</span> <span class="k">a</span> <span class="nn">edintcat</span><span class="p">:</span><span class="nt">CadastralConstruction</span> <span class="p">;</span>
@@ -1696,7 +1696,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     
                     <div class="query-block">
                         <span class="query-title"></span>
-                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/catastro/&gt;</span>
+                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/catastro#&gt;</span>
 
 <span class="k">SELECT</span> <span class="nv">?construction</span> <span class="nv">?label</span> <span class="nv">?floor</span> <span class="nv">?door</span> <span class="k">WHERE</span> <span class="p">{</span>
     <span class="nv">?construction</span> <span class="k">a</span> <span class="nn">edintcat</span><span class="p">:</span><span class="nt">CadastralConstruction</span> <span class="p">;</span>
@@ -1713,7 +1713,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     
                     <div class="query-block">
                         <span class="query-title"></span>
-                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/catastro/&gt;</span>
+                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/catastro#&gt;</span>
 
 <span class="k">SELECT</span> <span class="nv">?construction</span> <span class="nv">?label</span> <span class="nv">?supportPercentage</span> <span class="nv">?floor</span> <span class="nv">?door</span> <span class="k">WHERE</span> <span class="p">{</span>
     <span class="nv">?construction</span> <span class="k">a</span> <span class="nn">edintcat</span><span class="p">:</span><span class="nt">CadastralConstruction</span> <span class="p">;</span>
@@ -1731,7 +1731,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     
                     <div class="query-block">
                         <span class="query-title"></span>
-                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/catastro/&gt;</span>
+                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/catastro#&gt;</span>
 
 <span class="k">SELECT</span> <span class="nv">?construction</span> <span class="nv">?label</span> <span class="nv">?floor</span> <span class="nv">?door</span> <span class="k">WHERE</span> <span class="p">{</span>
     <span class="nv">?construction</span> <span class="k">a</span> <span class="nn">edintcat</span><span class="p">:</span><span class="nt">CadastralConstruction</span> <span class="p">;</span>
@@ -1750,7 +1750,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     
                     <div class="query-block">
                         <span class="query-title"></span>
-                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/catastro/&gt;</span>
+                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/catastro#&gt;</span>
 
 <span class="k">SELECT</span> <span class="nv">?floor</span> <span class="p">(</span><span class="nf">AVG</span><span class="p">(</span><span class="nv">?supportPercentage</span><span class="p">)</span> <span class="k">AS</span> <span class="nv">?avgSupportPercentage</span><span class="p">)</span>
        <span class="p">(</span><span class="nf">COUNT</span><span class="p">(</span><span class="nv">?construction</span><span class="p">)</span> <span class="k">AS</span> <span class="nv">?constructionCount</span><span class="p">)</span> <span class="k">WHERE</span> <span class="p">{</span>
@@ -1766,7 +1766,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     </section><section class="file-card" id="CAT17_sparql"><div class="file-header">CAT17 - How to register renovations of a construction</div><div class="metadata-block"><p><strong>Pregunta:</strong> ¿Cómo se registran las reformas de una construcción?</p><p><strong>Respuesta:</strong> Las reformas se registran como instancias de Renovation, vinculadas a una construcción con tipo y fecha</p></div>
                     <div class="query-block">
                         <span class="query-title"></span>
-                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/catastro/&gt;</span>
+                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/catastro#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">xsd</span><span class="p">:</span> <span class="nl">&lt;http://www.w3.org/2001/XMLSchema#&gt;</span>
 
 <span class="k">SELECT</span> <span class="nv">?construction</span> <span class="nv">?constructionLabel</span> <span class="k">WHERE</span> <span class="p">{</span>
@@ -1781,7 +1781,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     
                     <div class="query-block">
                         <span class="query-title"></span>
-                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/catastro/&gt;</span>
+                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/catastro#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">xsd</span><span class="p">:</span> <span class="nl">&lt;http://www.w3.org/2001/XMLSchema#&gt;</span>
 
 <span class="k">SELECT</span> <span class="nv">?renovation</span> <span class="nv">?renovationType</span> <span class="nv">?renovationDate</span> <span class="k">WHERE</span> <span class="p">{</span>
@@ -1799,7 +1799,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     
                     <div class="query-block">
                         <span class="query-title"></span>
-                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/catastro/&gt;</span>
+                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/catastro#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">xsd</span><span class="p">:</span> <span class="nl">&lt;http://www.w3.org/2001/XMLSchema#&gt;</span>
 
 <span class="k">SELECT</span> <span class="nv">?renovation</span> <span class="nv">?renovationType</span> <span class="nv">?renovationDate</span> <span class="nv">?construction</span> <span class="nv">?constructionLabel</span> <span class="k">WHERE</span> <span class="p">{</span>
@@ -1821,7 +1821,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     
                     <div class="query-block">
                         <span class="query-title"></span>
-                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/catastro/&gt;</span>
+                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/catastro#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">xsd</span><span class="p">:</span> <span class="nl">&lt;http://www.w3.org/2001/XMLSchema#&gt;</span>
 
 <span class="k">SELECT</span> <span class="nv">?renovationType</span> <span class="p">(</span><span class="nf">COUNT</span><span class="p">(</span><span class="nv">?renovation</span><span class="p">)</span> <span class="k">AS</span> <span class="nv">?count</span><span class="p">)</span> <span class="k">WHERE</span> <span class="p">{</span>
@@ -1836,7 +1836,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     
                     <div class="query-block">
                         <span class="query-title"></span>
-                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/catastro/&gt;</span>
+                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/catastro#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">xsd</span><span class="p">:</span> <span class="nl">&lt;http://www.w3.org/2001/XMLSchema#&gt;</span>
 
 <span class="k">SELECT</span> <span class="nv">?renovation</span> <span class="nv">?renovationType</span> <span class="nv">?renovationDate</span> <span class="nv">?construction</span> <span class="nv">?constructionLabel</span> <span class="k">WHERE</span> <span class="p">{</span>
@@ -1857,7 +1857,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     
                     <div class="query-block">
                         <span class="query-title"></span>
-                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/catastro/&gt;</span>
+                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/catastro#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">xsd</span><span class="p">:</span> <span class="nl">&lt;http://www.w3.org/2001/XMLSchema#&gt;</span>
 
 <span class="k">SELECT</span> <span class="nv">?construction</span> <span class="nv">?constructionLabel</span> <span class="p">(</span><span class="nf">COUNT</span><span class="p">(</span><span class="nv">?renovation</span><span class="p">)</span> <span class="k">AS</span> <span class="nv">?renovationCount</span><span class="p">)</span> <span class="k">WHERE</span> <span class="p">{</span>
@@ -1874,7 +1874,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     </section><section class="file-card" id="CAT18_sparql"><div class="file-header">CAT18 - Can a construction be associated with multiple properties?</div><div class="metadata-block"><p><strong>Pregunta:</strong> ¿Una construcción puede estar asociada a múltiples inmuebles?</p><p><strong>Respuesta:</strong> La ontología define que una construcción está asociada a un inmueble específico, pero el modelo permite múltiples relaciones a través de propiedades inversas</p></div>
                     <div class="query-block">
                         <span class="query-title"></span>
-                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/catastro/&gt;</span>
+                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/catastro#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">skos</span><span class="p">:</span> <span class="nl">&lt;http://www.w3.org/2004/02/skos/core#&gt;</span>
 
 <span class="k">SELECT</span> <span class="nv">?construction</span> <span class="nv">?constructionLabel</span> <span class="nv">?property</span> <span class="nv">?propertyLabel</span> <span class="k">WHERE</span> <span class="p">{</span>
@@ -1892,7 +1892,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     
                     <div class="query-block">
                         <span class="query-title"></span>
-                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/catastro/&gt;</span>
+                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/catastro#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">skos</span><span class="p">:</span> <span class="nl">&lt;http://www.w3.org/2004/02/skos/core#&gt;</span>
 
 <span class="k">SELECT</span> <span class="nv">?construction</span> <span class="p">(</span><span class="nf">COUNT</span><span class="p">(</span><span class="nv">?property</span><span class="p">)</span> <span class="k">AS</span> <span class="nv">?propertyCount</span><span class="p">)</span> <span class="k">WHERE</span> <span class="p">{</span>
@@ -1907,7 +1907,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     
                     <div class="query-block">
                         <span class="query-title"></span>
-                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/catastro/&gt;</span>
+                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/catastro#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">skos</span><span class="p">:</span> <span class="nl">&lt;http://www.w3.org/2004/02/skos/core#&gt;</span>
 
 <span class="k">SELECT</span> <span class="nv">?construction</span> <span class="nv">?property1</span> <span class="nv">?property2</span> <span class="k">WHERE</span> <span class="p">{</span>
@@ -1924,7 +1924,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     
                     <div class="query-block">
                         <span class="query-title"></span>
-                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/catastro/&gt;</span>
+                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/catastro#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">skos</span><span class="p">:</span> <span class="nl">&lt;http://www.w3.org/2004/02/skos/core#&gt;</span>
 
 <span class="k">SELECT</span> <span class="nv">?classLabel</span> <span class="p">(</span><span class="nf">COUNT</span><span class="p">(</span><span class="nv">?construction</span><span class="p">)</span> <span class="k">AS</span> <span class="nv">?constructionCount</span><span class="p">)</span> <span class="k">WHERE</span> <span class="p">{</span>
@@ -1945,7 +1945,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                     
                     <div class="query-block">
                         <span class="query-title"></span>
-                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;http://vocab.linkeddata.es/datosabiertos/def/catastro/&gt;</span>
+                        <div class="sparql-code"><pre><span></span><span class="k">PREFIX</span> <span class="nn">edintcat</span><span class="p">:</span> <span class="nl">&lt;https://edint.es/def/catastro#&gt;</span>
 <span class="k">PREFIX</span> <span class="nn">skos</span><span class="p">:</span> <span class="nl">&lt;http://www.w3.org/2004/02/skos/core#&gt;</span>
 
 <span class="k">SELECT</span> <span class="p">(</span><span class="nf">COUNT</span><span class="p">(</span><span class="nv">?construction</span><span class="p">)</span> <span class="k">AS</span> <span class="nv">?totalConstructions</span><span class="p">)</span>
