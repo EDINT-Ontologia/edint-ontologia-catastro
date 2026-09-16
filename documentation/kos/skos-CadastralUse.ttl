@@ -4,15 +4,15 @@
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix edintkos: <http://vocab.linkeddata.es/datosabiertos/kos/edint/> .
+@prefix edintkos: <https://edint.es/kos/> .
 
-@prefix edintkos-use: <http://vocab.linkeddata.es/datosabiertos/kos/edint/uso/> .
+@prefix edintkos-use: <https://edint.es/kos/CadastralUse/> .
 
 # =============================================================================
 # CONCEPT SCHEME
 # =============================================================================
 
-edintkos:Uso a skos:ConceptScheme ;
+edintkos:CadastralUse a skos:ConceptScheme ;
     dct:issued "2026-04-13"^^xsd:date ;
     dct:modified "2026-04-13"^^xsd:date ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
@@ -46,140 +46,140 @@ edintkos:Uso a skos:ConceptScheme ;
 # =============================================================================
 
 edintkos-use:Residential a skos:Concept ;
-    skos:inScheme edintkos:Uso ;
+    skos:inScheme edintkos:CadastralUse ;
     skos:prefLabel "Residential"@en ;
     skos:prefLabel "Residencial"@es ;
     skos:definition "Property used for housing and living purposes."@en ;
     skos:definition "Inmueble destinado a vivienda."@es ;
     skos:altLabel "Vivienda"@es ;
     dct:source <https://www.boe.es/buscar/act.php?id=BOE-A-1993-19265#ane> ;
-    skos:topConceptOf edintkos:Uso .
+    skos:topConceptOf edintkos:CadastralUse .
 
 edintkos-use:Industrial a skos:Concept ;
-    skos:inScheme edintkos:Uso ;
+    skos:inScheme edintkos:CadastralUse ;
     skos:prefLabel "Industrial"@en ;
     skos:prefLabel "Industrial"@es ;
     skos:definition "Property used for manufacturing, production, or industrial activities."@en ;
     skos:definition "Inmueble utilizado para actividades de fabricación, producción o industria."@es ;
     dct:source <https://www.boe.es/buscar/act.php?id=BOE-A-1993-19265#ane> ;
-    skos:topConceptOf edintkos:Uso .
+    skos:topConceptOf edintkos:CadastralUse .
 
 edintkos-use:Offices a skos:Concept ;
-    skos:inScheme edintkos:Uso ;
+    skos:inScheme edintkos:CadastralUse ;
     skos:prefLabel "Offices"@en ;
     skos:prefLabel "Oficinas"@es ;
     skos:definition "Property used for administrative, corporate, or professional office activities."@en ;
     skos:definition "Inmueble utilizado para actividades administrativas, corporativas o despachos profesionales."@es ;
     dct:source <https://www.boe.es/buscar/act.php?id=BOE-A-1993-19265#ane> ;
-    skos:topConceptOf edintkos:Uso .
+    skos:topConceptOf edintkos:CadastralUse .
 
 edintkos-use:Commercial a skos:Concept ;
-    skos:inScheme edintkos:Uso ;
+    skos:inScheme edintkos:CadastralUse ;
     skos:prefLabel "Commercial"@en ;
     skos:prefLabel "Comercial"@es ;
     skos:definition "Property used for retail and commercial business activities."@en ;
     skos:definition "Inmueble utilizado para comercio y venta al por menor."@es ;
     dct:source <https://www.boe.es/buscar/act.php?id=BOE-A-1993-19265#ane> ;
-    skos:topConceptOf edintkos:Uso .
+    skos:topConceptOf edintkos:CadastralUse .
 
 edintkos-use:Sports a skos:Concept ;
-    skos:inScheme edintkos:Uso ;
+    skos:inScheme edintkos:CadastralUse ;
     skos:prefLabel "Sports"@en ;
     skos:prefLabel "Deportes"@es ;
     skos:definition "Property used for sports and recreational activities."@en ;
     skos:definition "Inmueble utilizado para actividades deportivas."@es ;
     dct:source <https://www.boe.es/buscar/act.php?id=BOE-A-1993-19265#ane> ;
-    skos:topConceptOf edintkos:Uso .
+    skos:topConceptOf edintkos:CadastralUse .
 
 edintkos-use:Entertainment a skos:Concept ;
-    skos:inScheme edintkos:Uso ;
+    skos:inScheme edintkos:CadastralUse ;
     skos:prefLabel "Entertainment and Shows"@en ;
     skos:prefLabel "Espectáculos"@es ;
     skos:definition "Property used for public shows, theaters, and entertainment venues."@en ;
     skos:definition "Inmueble utilizado para espectáculos públicos, cines y teatros."@es ;
     dct:source <https://www.boe.es/buscar/act.php?id=BOE-A-1993-19265#ane> ;
-    skos:topConceptOf edintkos:Uso .
+    skos:topConceptOf edintkos:CadastralUse .
 
 edintkos-use:LeisureHospitality a skos:Concept ;
-    skos:inScheme edintkos:Uso ;
+    skos:inScheme edintkos:CadastralUse ;
     skos:prefLabel "Leisure and Hospitality"@en ;
     skos:prefLabel "Ocio y Hostelería"@es ;
     skos:definition "Property used for tourist accommodation, restaurants, bars, and leisure services."@en ;
     skos:definition "Inmueble utilizado para alojamiento turístico, restaurantes, bares y servicios de ocio."@es ;
     skos:altLabel "Turístico"@es ;
     dct:source <https://www.boe.es/buscar/act.php?id=BOE-A-1993-19265#ane> ;
-    skos:topConceptOf edintkos:Uso .
+    skos:topConceptOf edintkos:CadastralUse .
 
 edintkos-use:Healthcare a skos:Concept ;
-    skos:inScheme edintkos:Uso ;
+    skos:inScheme edintkos:CadastralUse ;
     skos:prefLabel "Healthcare and Charity"@en ;
     skos:prefLabel "Sanidad y Beneficencia"@es ;
     skos:definition "Property used for hospitals, clinics, and charitable institutions."@en ;
     skos:definition "Inmueble utilizado para hospitales, clínicas y beneficencia."@es ;
     dct:source <https://www.boe.es/buscar/act.php?id=BOE-A-1993-19265#ane> ;
-    skos:topConceptOf edintkos:Uso .
+    skos:topConceptOf edintkos:CadastralUse .
 
 edintkos-use:Cultural a skos:Concept ;
-    skos:inScheme edintkos:Uso ;
+    skos:inScheme edintkos:CadastralUse ;
     skos:prefLabel "Cultural"@en ;
     skos:prefLabel "Cultural"@es ;
     skos:definition "Property used for museums, libraries, and cultural exhibitions."@en ;
     skos:definition "Inmueble utilizado para museos, bibliotecas y exhibiciones culturales."@es ;
     dct:source <https://www.boe.es/buscar/act.php?id=BOE-A-1993-19265#ane> ;
-    skos:topConceptOf edintkos:Uso .
+    skos:topConceptOf edintkos:CadastralUse .
 
 edintkos-use:Religious a skos:Concept ;
-    skos:inScheme edintkos:Uso ;
+    skos:inScheme edintkos:CadastralUse ;
     skos:prefLabel "Religious"@en ;
     skos:prefLabel "Religioso"@es ;
     skos:definition "Property used for religious worship and activities."@en ;
     skos:definition "Inmueble utilizado para el culto y actividades religiosas."@es ;
     dct:source <https://www.boe.es/buscar/act.php?id=BOE-A-1993-19265#ane> ;
-    skos:topConceptOf edintkos:Uso .
+    skos:topConceptOf edintkos:CadastralUse .
 
 edintkos-use:Educational a skos:Concept ;
-    skos:inScheme edintkos:Uso ;
+    skos:inScheme edintkos:CadastralUse ;
     skos:prefLabel "Educational"@en ;
     skos:prefLabel "Educativo"@es ;
     skos:definition "Property used for educational purposes, including schools and universities."@en ;
     skos:definition "Inmueble utilizado para fines educativos, incluyendo escuelas y universidades."@es ;
     dct:source <https://www.boe.es/buscar/act.php?id=BOE-A-1993-19265#ane> ;
-    skos:topConceptOf edintkos:Uso .
+    skos:topConceptOf edintkos:CadastralUse .
 
 edintkos-use:Singular a skos:Concept ;
-    skos:inScheme edintkos:Uso ;
+    skos:inScheme edintkos:CadastralUse ;
     skos:prefLabel "Singular Buildings"@en ;
     skos:prefLabel "Edificios Singulares"@es ;
     skos:definition "Unique properties that do not fit into standard categories, often requiring specific valuation."@en ;
     skos:definition "Inmuebles únicos que no encajan en categorías estándar, requiriendo a menudo una valoración específica."@es ;
     dct:source <https://www.boe.es/buscar/act.php?id=BOE-A-1993-19265#ane> ;
-    skos:topConceptOf edintkos:Uso .
+    skos:topConceptOf edintkos:CadastralUse .
 
 edintkos-use:StorageParking a skos:Concept ;
-    skos:inScheme edintkos:Uso ;
+    skos:inScheme edintkos:CadastralUse ;
     skos:prefLabel "Storage and Parking"@en ;
     skos:prefLabel "Almacén y Estacionamiento"@es ;
     skos:definition "Property used for storage, warehousing, and vehicle parking."@en ;
     skos:definition "Inmueble utilizado para almacenamiento, depósito y aparcamiento de vehículos."@es ;
     dct:source <https://www.boe.es/buscar/act.php?id=BOE-A-1993-19265#ane> ;
-    skos:topConceptOf edintkos:Uso .
+    skos:topConceptOf edintkos:CadastralUse .
 
 edintkos-use:GreenSpace a skos:Concept ;
-    skos:inScheme edintkos:Uso ;
+    skos:inScheme edintkos:CadastralUse ;
     skos:prefLabel "Green Space and Urbanization"@en ;
     skos:prefLabel "Obras de urbanización y jardinería"@es ;
     skos:definition "Land designated as parks, gardens, or urbanized public spaces."@en ;
     skos:definition "Suelo designado como parques, jardines u obras de urbanización."@es ;
     skos:altLabel "Espacio Verde"@es ;
     dct:source <https://www.boe.es/buscar/act.php?id=BOE-A-1993-19265#ane> ;
-    skos:topConceptOf edintkos:Uso .
+    skos:topConceptOf edintkos:CadastralUse .
 
 edintkos-use:Agricultural a skos:Concept ;
-    skos:inScheme edintkos:Uso ;
+    skos:inScheme edintkos:CadastralUse ;
     skos:prefLabel "Agricultural"@en ;
     skos:prefLabel "Agrario"@es ;
     skos:definition "Property used for farming, livestock, and forestry activities."@en ;
     skos:definition "Inmueble utilizado para actividades agrícolas, ganaderas y forestales."@es ;
     skos:altLabel "Agrícola"@es ;
     dct:source <https://www.boe.es/buscar/act.php?id=BOE-A-1993-19265#ane> ;
-    skos:topConceptOf edintkos:Uso .
+    skos:topConceptOf edintkos:CadastralUse .

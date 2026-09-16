@@ -1,8 +1,8 @@
 prefixes:
   edintcat: "https://edint.es/def/catastro#"
   callejero: "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#"
-  edintkos-clase: "http://vocab.linkeddata.es/datosabiertos/kos/edint/clase/"
-  edintkos-uso: "http://vocab.linkeddata.es/datosabiertos/kos/edint/uso/"
+  edintkos-clase: "https://edint.es/kos/CadastralClass/"
+  edintkos-uso: "https://edint.es/kos/CadastralUse/"
   rdfs: "http://www.w3.org/2000/01/rdf-schema#"
   xsd: "http://www.w3.org/2001/XMLSchema#"
   dct: "http://purl.org/dc/terms/"
