@@ -32,8 +32,8 @@
         <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-09</dcterms:issued>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-17</dcterms:modified>
-        <dcterms:title xml:lang="es">Ontología del Catastro Español</dcterms:title>
-        <dcterms:title xml:lang="en">Spanish Cadastre Ontology</dcterms:title>
+        <dcterms:title xml:lang="es">Ontología EDINT del Catastro Español</dcterms:title>
+        <dcterms:title xml:lang="en">EDINT Spanish Cadastre Ontology</dcterms:title>
         <vann:preferredNamespacePrefix>edintcat</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri>https://edint.es/def/catastro#</vann:preferredNamespaceUri>
         <rdfs:comment xml:lang="en">Initial draft version focusing on core classes: CadastralParcel, CadastralProperty, and CadastralConstruction with their relationships and properties.</rdfs:comment>
