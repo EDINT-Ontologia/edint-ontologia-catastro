@@ -4,7 +4,7 @@
 # Answer: Cada inmueble tiene una referencia catastral única compuesta por referencia de parcela (7 dígitos) y referencia de inmueble (alfanumérico con dígito de control)
 # =============================================================================
 
-PREFIX edintcat: <http://vocab.linkeddata.es/datosabiertos/def/catastro/>
+PREFIX edintcat: <https://edint.es/def/catastro#>
 
 # -----------------------------------------------------------------------------
 # Query 1: Properties with complete cadastral reference

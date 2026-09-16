@@ -4,7 +4,7 @@
 # Answer: El porcentaje de soporte indica qué parte del área es área de soporte (elementos comunes), expresado como porcentaje (ej: 50.00)
 # =============================================================================
 
-PREFIX edintcat: <http://vocab.linkeddata.es/datosabiertos/def/catastro/>
+PREFIX edintcat: <https://edint.es/def/catastro#>
 
 # -----------------------------------------------------------------------------
 # Query 1: Constructions with support percentage
