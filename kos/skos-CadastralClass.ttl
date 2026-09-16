@@ -4,15 +4,15 @@
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix cc: <http://creativecommons.org/ns#> .
-@prefix edintkos: <http://vocab.linkeddata.es/datosabiertos/kos/edint/> .
+@prefix edintkos: <https://edint.es/kos/> .
 
-@prefix edintkos-clase: <http://vocab.linkeddata.es/datosabiertos/kos/edint/clase/> .
+@prefix edintkos-clase: <https://edint.es/kos/CadastralClass/> .
 
 # =============================================================================
 # CONCEPT SCHEME
 # =============================================================================
 
-edintkos:Clase a skos:ConceptScheme ;
+edintkos:CadastralClass a skos:ConceptScheme ;
     dct:issued "2026-04-13"^^xsd:date ;
     dct:modified "2026-04-13"^^xsd:date ;
     cc:license <https://creativecommons.org/licenses/by/4.0/> ;
@@ -34,25 +34,25 @@ edintkos:Clase a skos:ConceptScheme ;
 # =============================================================================
 
 edintkos-clase:Urban a skos:Concept ;
-    skos:inScheme edintkos:Clase ;
+    skos:inScheme edintkos:CadastralClass ;
     skos:prefLabel "Urban"@en ;
     skos:prefLabel "Urbano"@es ;
     skos:definition "Property classified as urban based on the nature of its soil, in accordance with applicable urban planning legislation."@en ;
     skos:definition "Inmueble clasificado como urbano en función de la naturaleza de su suelo, de acuerdo con la legislación urbanística aplicable."@es ;
     dct:source <https://www.boe.es/buscar/act.php?id=BOE-A-2004-4163#art7> ;
-    skos:topConceptOf edintkos:Clase .
+    skos:topConceptOf edintkos:CadastralClass .
 
 edintkos-clase:Rural a skos:Concept ;
-    skos:inScheme edintkos:Clase ;
+    skos:inScheme edintkos:CadastralClass ;
     skos:prefLabel "Rural"@en ;
     skos:prefLabel "Rústico"@es ;
     skos:definition "Property classified as rural based on the nature of its soil, explicitly excluding properties designated as urban or special."@en ;
     skos:definition "Inmueble clasificado como rústico en función de la naturaleza de su suelo, excluyendo expresamente aquellos designados como urbanos o de características especiales."@es ;
     dct:source <https://www.boe.es/buscar/act.php?id=BOE-A-2004-4163#art7> ;
-    skos:topConceptOf edintkos:Clase .
+    skos:topConceptOf edintkos:CadastralClass .
 
 edintkos-clase:BICES a skos:Concept ;
-    skos:inScheme edintkos:Clase ;
+    skos:inScheme edintkos:CadastralClass ;
     skos:prefLabel "Real Estate of Special Characteristics (BICES)"@en ;
     skos:prefLabel "Bienes Inmuebles de Características Especiales (BICES)"@es ;
     skos:definition "Complex real estate properties with special characteristics such as nuclear power plants, dams, airports, commercial ports, and toll highways."@en ;
@@ -60,7 +60,7 @@ edintkos-clase:BICES a skos:Concept ;
     dct:source <https://www.boe.es/buscar/act.php?id=BOE-A-2004-4163#art8> ;
     skos:altLabel "Special"@en ;
     skos:altLabel "Especial"@es ;
-    skos:topConceptOf edintkos:Clase ;
+    skos:topConceptOf edintkos:CadastralClass ;
     skos:narrower edintkos-clase:BICES-A ,
                   edintkos-clase:BICES-B ,
                   edintkos-clase:BICES-C ,
@@ -71,7 +71,7 @@ edintkos-clase:BICES a skos:Concept ;
 # =============================================================================
 
 edintkos-clase:BICES-A a skos:Concept ;
-    skos:inScheme edintkos:Clase ;
+    skos:inScheme edintkos:CadastralClass ;
     skos:prefLabel "Energy and Refining Infrastructure"@en ;
     skos:prefLabel "Infraestructuras de energía y refino"@es ;
     skos:definition "Properties destined for the production of electrical energy and gas, oil refining, and nuclear power plants."@en ;
@@ -80,7 +80,7 @@ edintkos-clase:BICES-A a skos:Concept ;
     dct:source <https://www.boe.es/buscar/act.php?id=BOE-A-2004-4163#art8> .
 
 edintkos-clase:BICES-B a skos:Concept ;
-    skos:inScheme edintkos:Clase ;
+    skos:inScheme edintkos:CadastralClass ;
     skos:prefLabel "Dams and Reservoirs"@en ;
     skos:prefLabel "Presas y embalses"@es ;
     skos:definition "Dams, waterfalls, and reservoirs, including their bed or basin, except those destined exclusively for irrigation."@en ;
@@ -89,7 +89,7 @@ edintkos-clase:BICES-B a skos:Concept ;
     dct:source <https://www.boe.es/buscar/act.php?id=BOE-A-2004-4163#art8> .
 
 edintkos-clase:BICES-C a skos:Concept ;
-    skos:inScheme edintkos:Clase ;
+    skos:inScheme edintkos:CadastralClass ;
     skos:prefLabel "Toll Roads and Tunnels"@en ;
     skos:prefLabel "Autopistas, carreteras y túneles de peaje"@es ;
     skos:definition "Toll highways, toll roads, and toll tunnels."@en ;
@@ -98,7 +98,7 @@ edintkos-clase:BICES-C a skos:Concept ;
     dct:source <https://www.boe.es/buscar/act.php?id=BOE-A-2004-4163#art8> .
 
 edintkos-clase:BICES-D a skos:Concept ;
-    skos:inScheme edintkos:Clase ;
+    skos:inScheme edintkos:CadastralClass ;
     skos:prefLabel "Airports and Commercial Ports"@en ;
     skos:prefLabel "Aeropuertos y puertos comerciales"@es ;
     skos:definition "Airports and commercial ports."@en ;

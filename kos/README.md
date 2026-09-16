@@ -12,7 +12,7 @@ This folder includes three main KOS vocabularies of the Cadastre:
 
 ## 1. Vocabulario de Usos (`catastro-use.ttl`)
 
-- **URI**: `http://vocab.linkeddata.es/datosabiertos/kos/edint/uso`
+- **URI**: `https://edint.es/kos/CadastralUse`
 - **Versión**: 0.1.1
 - **Conceptos**: 16 conceptos principales + jerarquía
 - **Descripción**: Vocabulario de usos para el Catastro Español según RD 1020/1993
@@ -156,7 +156,7 @@ The concept scheme has the following top-level concepts:
 ### Ejemplo de uso (Usage Example)
 
 ```turtle
-@prefix edintkos-use: <http://vocab.linkeddata.es/datosabiertos/kos/edint/uso/> .
+@prefix edintkos-use: <https://edint.es/kos/CadastralUse/> .
 
 :MyProperty edintcat:hasUse edintkos-use:Educational .
 ```
@@ -165,7 +165,7 @@ The concept scheme has the following top-level concepts:
 
 ## 2. Vocabulario de Clasificaciones (`catastro-clase.ttl`)
 
-- **URI**: `http://vocab.linkeddata.es/datosabiertos/kos/edint/clase`
+- **URI**: `https://edint.es/kos/CadastralClass`
 - **Versión**: 0.1.2
 - **Conceptos**: 8 conceptos principales + jerarquía
 - **Descripción**: Vocabulario de clasificación de inmuebles según RDLeg 1/2004
@@ -227,7 +227,7 @@ The BICES concept groups 4 subcategories of special characteristic properties:
 ### Ejemplo de clasificación (Classification Example)
 
 ```turtle
-@prefix edintkos-clase: <http://vocab.linkeddata.es/datosabiertos/kos/edint/clase/> .
+@prefix edintkos-clase: <https://edint.es/kos/CadastralClass/> .
 
 :MyParcel edintcat:hasClass edintkos-clase:Urban .
 :MyRuralProperty edintcat:hasClass edintkos-clase:Rural .
@@ -238,7 +238,7 @@ The BICES concept groups 4 subcategories of special characteristic properties:
 
 ## 3. Vocabulario de Estados de Conservación (`catastro-estado.ttl`)
 
-- **URI**: `http://vocab.linkeddata.es/datosabiertos/kos/edint/estado`
+- **URI**: `https://edint.es/kos/estado`
 - **Versión**: 0.1.1
 - **Conceptos**: 5 conceptos
 - **Descripción**: Vocabulario de estados de conservación de construcciones según RD 1020/1993
@@ -268,7 +268,7 @@ Conservation states are defined in Standard 14 of the Technical Valuation Norms 
 ### Ejemplo de estado de conservación (Conservation State Example)
 
 ```turtle
-@prefix edintkos-estado: <http://vocab.linkeddata.es/datosabiertos/kos/edint/estado/> .
+@prefix edintkos-estado: <https://edint.es/kos/estado/> .
 
 :MyConstruction a :Property ;
     edintcat:hasConservationState edintkos-estado:Normal .
@@ -289,7 +289,7 @@ The KOS vocabularies are integrated in the Cadastre ontology through the followi
           edintcat:hasUse ?use .
 
 ?use a skos:Concept ;
-     skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/edint/uso> .
+     skos:inScheme <https://edint.es/kos/CadastralUse> .
 ```
 
 ### Para Clases (For Classes)
@@ -299,7 +299,7 @@ The KOS vocabularies are integrated in the Cadastre ontology through the followi
         edintcat:hasClass ?class .
 
 ?class a skos:Concept ;
-      skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/edint/clase> .
+      skos:inScheme <https://edint.es/kos/CadastralClass> .
 ```
 
 ### Para Estados (For States)
@@ -309,7 +309,7 @@ The KOS vocabularies are integrated in the Cadastre ontology through the followi
                edintcat:hasConservationState ?state .
 
 ?state a skos:Concept ;
-       skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/edint/estado> .
+       skos:inScheme <https://edint.es/kos/estado> .
 ```
 
 ---

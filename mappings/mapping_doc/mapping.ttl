@@ -1,7 +1,7 @@
 @prefix edintcat: <https://edint.es/def/catastro#>.
 @prefix callejero: <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#>.
-@prefix edintkos-clase: <http://vocab.linkeddata.es/datosabiertos/kos/edint/clase/>.
-@prefix edintkos-uso: <http://vocab.linkeddata.es/datosabiertos/kos/edint/uso/>.
+@prefix edintkos-clase: <https://edint.es/kos/CadastralClass/>.
+@prefix edintkos-uso: <https://edint.es/kos/CadastralUse/>.
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 @prefix dct: <http://purl.org/dc/terms/>.
@@ -173,7 +173,7 @@ map:rules_000 schema:contributor map:person_000 ;
 		];
 		rr:objectMap [
 			a rr:ObjectMap;
-			rr:template "http://vocab.linkeddata.es/datosabiertos/kos/edint/clase/{clase_propiedad}";
+			rr:template "https://edint.es/kos/CadastralClass/{clase_propiedad}";
 			rr:termType rr:IRI
 		];
 	];
@@ -184,7 +184,7 @@ map:rules_000 schema:contributor map:person_000 ;
 		];
 		rr:objectMap [
 			a rr:ObjectMap;
-			rr:template "http://vocab.linkeddata.es/datosabiertos/kos/edint/uso/{tipo_uso_propiedad}";
+			rr:template "https://edint.es/kos/CadastralUse/{tipo_uso_propiedad}";
 			rr:termType rr:IRI
 		];
 	];
