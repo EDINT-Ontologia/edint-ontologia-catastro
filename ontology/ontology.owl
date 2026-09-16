@@ -15,17 +15,31 @@
      xmlns:qudtunit="http://qudt.org/vocab/unit/"
      xmlns:callejero="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#"
      xmlns:schema="http://schema.org/"
-     xmlns:bibo="http://purl.org/ontology/bibo/">
-    <owl:Ontology rdf:about="https://edint.es/def/catastro#">
+     xmlns:bibo="http://purl.org/ontology/bibo/" xmlns:foaf="http://xmlns.com/foaf/0.1/">    <owl:Ontology rdf:about="https://edint.es/def/catastro#">
         <owl:versionIRI rdf:resource="https://edint.es/def/catastro#0.1.0"/>
         <owl:imports rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero"/>
         <owl:imports rdf:resource="http://www.opengis.net/ont/geosparql"/>
         <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-09</dcterms:created>
-        <dcterms:creator>Daniel Doña</dcterms:creator>
-        <dcterms:creator>Edna Ruckhaus</dcterms:creator>
-        <dcterms:creator>Lucía Sánchez</dcterms:creator>
-        <dcterms:creator>Maria del Socorro Bernardos</dcterms:creator>
-        <dcterms:creator>Oscar Corcho</dcterms:creator>
+        <dcterms:creator rdf:parseType="Resource">
+            <foaf:name>Daniel Doña</foaf:name>
+            <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
+        </dcterms:creator>
+        <dcterms:creator rdf:parseType="Resource">
+            <foaf:name>Edna Ruckhaus</foaf:name>
+            <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
+        </dcterms:creator>
+        <dcterms:creator rdf:parseType="Resource">
+            <foaf:name>Lucía Sánchez</foaf:name>
+            <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
+        </dcterms:creator>
+        <dcterms:creator rdf:parseType="Resource">
+            <foaf:name>Maria del Socorro Bernardos</foaf:name>
+            <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
+        </dcterms:creator>
+        <dcterms:creator rdf:parseType="Resource">
+            <foaf:name>Oscar Corcho</foaf:name>
+            <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
+        </dcterms:creator>
         <dcterms:description xml:lang="en">Ontology for modeling Spanish Cadastre entities, focused on Parcels, Properties and Buildings. Reuses GeoSPARQL, INSPIRE concepts, and the Spanish street catalog (callejero) vocabulary.</dcterms:description>
         <dcterms:description xml:lang="es">Ontología para modelar las entidades del Catastro Español, centrada en Parcelas, Inmuebles y Construcciones. Reutiliza GeoSPARQL, conceptos INSPIRE y el vocabulario de callejero español.</dcterms:description>
         <dcterms:hasFormat rdf:resource="https://edint.es/def/catastro#ontology.owl"/>
@@ -45,6 +59,9 @@
     <dcterms:abstract xml:lang="es">Ontología para modelar las entidades del Catastro Español, centrada en Parcelas, Inmuebles y Construcciones. Reutiliza GeoSPARQL, conceptos INSPIRE y el vocabulario de callejero español.</dcterms:abstract>
     <dcterms:abstract xml:lang="en">Ontología para modelar las entidades del Catastro Español, centrada en Parcelas, Inmuebles y Construcciones. Reutiliza GeoSPARQL, conceptos INSPIRE y el vocabulario de callejero español.</dcterms:abstract>
 </owl:Ontology>
+    <foaf:Organization rdf:about="https://oeg.fi.upm.es/">
+        <foaf:name>Ontology Engineering Group, UPM</foaf:name>
+    </foaf:Organization>
     
 
 
