@@ -13,7 +13,9 @@
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:edintcat="https://edint.es/def/catastro#"
      xmlns:qudtunit="http://qudt.org/vocab/unit/"
-     xmlns:callejero="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#">
+     xmlns:callejero="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#"
+     xmlns:schema="http://schema.org/"
+     xmlns:bibo="http://purl.org/ontology/bibo/">
     <owl:Ontology rdf:about="https://edint.es/def/catastro#">
         <owl:versionIRI rdf:resource="https://edint.es/def/catastro#0.1.0"/>
         <owl:imports rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero"/>
@@ -37,7 +39,12 @@
         <rdfs:comment xml:lang="en">Initial draft version focusing on core classes: CadastralParcel, CadastralProperty, and CadastralConstruction with their relationships and properties.</rdfs:comment>
         <rdfs:comment xml:lang="es">Versión inicial centrada en las clases principales: ParcelaCatastral, Inmueble y Construcción con sus relaciones y propiedades.</rdfs:comment>
         <owl:versionInfo>0.1.0</owl:versionInfo>
-    </owl:Ontology>
+        <dcterms:publisher rdf:resource="https://www.femp.es/"/>
+    <dcterms:bibliographicCitation xml:lang="es">Ontología EDINT del Catastro Español. EDINT. Revision: v0.1.0.</dcterms:bibliographicCitation>
+    <schema:creativeWorkStatus xml:lang="en">Ontology Specification</schema:creativeWorkStatus>
+    <dcterms:abstract xml:lang="es">Ontología para modelar las entidades del Catastro Español, centrada en Parcelas, Inmuebles y Construcciones. Reutiliza GeoSPARQL, conceptos INSPIRE y el vocabulario de callejero español.</dcterms:abstract>
+    <dcterms:abstract xml:lang="en">Ontología para modelar las entidades del Catastro Español, centrada en Parcelas, Inmuebles y Construcciones. Reutiliza GeoSPARQL, conceptos INSPIRE y el vocabulario de callejero español.</dcterms:abstract>
+</owl:Ontology>
     
 
 
