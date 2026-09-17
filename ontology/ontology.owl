@@ -61,7 +61,8 @@
             <foaf:homepage rdf:resource="https://www.femp.es/"/>
             <schema:affiliation>Federación Española de Municipios y Provincias</schema:affiliation>
         </dcterms:publisher>
-    <dcterms:bibliographicCitation xml:lang="es">Ontología EDINT del Catastro Español. EDINT. Revision: v0.1.0.</dcterms:bibliographicCitation>
+    <dcterms:bibliographicCitation xml:lang="es">Ontología EDINT del Catastro Español. EDINT. Revision: v0.2.1.</dcterms:bibliographicCitation>
+    <dcterms:bibliographicCitation xml:lang="en">EDINT Spanish Cadastre Ontology. EDINT. Revision: v0.2.1.</dcterms:bibliographicCitation>
     <schema:creativeWorkStatus xml:lang="en">Ontology Specification</schema:creativeWorkStatus>
     <dcterms:abstract xml:lang="es">Ontología para modelar las entidades del Catastro Español, centrada en Parcelas, Inmuebles y Construcciones. Reutiliza GeoSPARQL, conceptos INSPIRE y el vocabulario de callejero español.</dcterms:abstract>
     <dcterms:abstract xml:lang="en">Ontología para modelar las entidades del Catastro Español, centrada en Parcelas, Inmuebles y Construcciones. Reutiliza GeoSPARQL, conceptos INSPIRE y el vocabulario de callejero español.</dcterms:abstract>
