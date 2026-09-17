@@ -19,7 +19,6 @@
         <owl:versionIRI rdf:resource="https://edint.es/def/catastro/0.2.1"/>
         <owl:imports rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero"/>
         <owl:imports rdf:resource="http://www.opengis.net/ont/geosparql"/>
-        <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-09</dcterms:created>
         <dcterms:creator rdf:parseType="Resource">
             <foaf:name>Daniel Doña</foaf:name>
             <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
@@ -43,9 +42,7 @@
         <dcterms:description xml:lang="en">Ontology for modeling Spanish Cadastre entities, focused on Parcels, Properties and Buildings. Reuses GeoSPARQL, INSPIRE concepts, and the Spanish street catalog (callejero) vocabulary.</dcterms:description>
         <dcterms:description xml:lang="es">Ontología para modelar las entidades del Catastro Español, centrada en Parcelas, Inmuebles y Construcciones. Reutiliza GeoSPARQL, conceptos INSPIRE y el vocabulario de callejero español.</dcterms:description>
         <dcterms:hasFormat rdf:resource="https://edint.es/def/catastro#ontology.owl"/>
-        <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-09</dcterms:issued>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
-        <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-17</dcterms:modified>
         <dcterms:title xml:lang="es">Ontología EDINT del Catastro Español</dcterms:title>
         <dcterms:title xml:lang="en">EDINT Spanish Cadastre Ontology</dcterms:title>
         <vann:preferredNamespacePrefix>edintcat</vann:preferredNamespacePrefix>
@@ -53,6 +50,9 @@
         <rdfs:comment xml:lang="en">Initial draft version focusing on core classes: CadastralParcel, CadastralProperty, and CadastralConstruction with their relationships and properties.</rdfs:comment>
         <rdfs:comment xml:lang="es">Versión inicial centrada en las clases principales: ParcelaCatastral, Inmueble y Construcción con sus relaciones y propiedades.</rdfs:comment>
         <owl:versionInfo>0.2.1</owl:versionInfo>
+        <dcterms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-04-09</dcterms:created>
+        <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-09-17</dcterms:issued>
+        <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-09-17</dcterms:modified>
         <owl:priorVersion rdf:resource="https://github.com/EDINT-Ontologia/edint-ontologia-catastro/releases/tag/v0.2.0"/>
         <dcterms:publisher rdf:parseType="Resource">
             <foaf:name>FEMP</foaf:name>
