@@ -1,4 +1,4 @@
-# Ontología para la representación del Catastro Inmobiliario Español
+# Ontología EDINT del Catastro Español
 
 [![Documentación](https://img.shields.io/badge/documentaci%C3%B3n-edint.es-blue)](https://edint.es/def/catastro)
 ![Prefijo](https://img.shields.io/badge/prefijo-edintcat-informational)
