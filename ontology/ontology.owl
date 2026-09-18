@@ -14,7 +14,7 @@
      xmlns:edintcat="https://edint.es/def/catastro#"
      xmlns:qudtunit="http://qudt.org/vocab/unit/"
      xmlns:callejero="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#"
-     xmlns:schema="http://schema.org/"
+     xmlns:schema="https://schema.org/"
      xmlns:bibo="http://purl.org/ontology/bibo/" xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:widoco="https://w3id.org/widoco/vocab#">    <owl:Ontology rdf:about="https://edint.es/def/catastro#">
         <owl:versionIRI rdf:resource="https://edint.es/def/catastro/0.2.1"/>
@@ -42,14 +42,13 @@
         </dcterms:creator>
         <dcterms:description xml:lang="en">Ontology for modeling Spanish Cadastre entities, focused on Parcels, Properties and Buildings. Reuses GeoSPARQL, INSPIRE concepts, and the Spanish street catalog (callejero) vocabulary.</dcterms:description>
         <dcterms:description xml:lang="es">Ontología para modelar las entidades del Catastro Español, centrada en Parcelas, Inmuebles y Construcciones. Reutiliza GeoSPARQL, conceptos INSPIRE y el vocabulario de callejero español.</dcterms:description>
-        <dcterms:hasFormat rdf:resource="https://edint.es/def/catastro#ontology.owl"/>
         <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <dcterms:title xml:lang="es">Ontología EDINT del Catastro Español</dcterms:title>
         <dcterms:title xml:lang="en">EDINT Spanish Cadastre Ontology</dcterms:title>
         <rdfs:label xml:lang="es">Catastro Español</rdfs:label>
         <rdfs:label xml:lang="en">Spanish Cadastre</rdfs:label>
         <vann:preferredNamespacePrefix>edintcat</vann:preferredNamespacePrefix>
-        <vann:preferredNamespaceUri>https://edint.es/def/catastro#</vann:preferredNamespaceUri>
+        <vann:preferredNamespaceUri rdf:resource="https://edint.es/def/catastro#"/>
         <rdfs:comment xml:lang="en">Initial draft version focusing on core classes: CadastralParcel, CadastralProperty, and CadastralConstruction with their relationships and properties.</rdfs:comment>
         <rdfs:comment xml:lang="es">Versión inicial centrada en las clases principales: ParcelaCatastral, Inmueble y Construcción con sus relaciones y propiedades.</rdfs:comment>
         <owl:versionInfo>0.2.1</owl:versionInfo>
