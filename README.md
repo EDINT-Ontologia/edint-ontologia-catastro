@@ -1,4 +1,4 @@
-# Ontología EDINT del Catastro Español
+# Ontología para la representación del Catastro Inmobiliario Español
 
 Esta ontología permite representar el dominio del Catastro Inmobiliario Español, centrada en parcelas catastrales, inmuebles catastrales y construcciones catastrales.
 
