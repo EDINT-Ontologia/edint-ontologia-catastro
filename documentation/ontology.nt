@@ -1,63 +1,61 @@
-<https://edint.es/def/catastro#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
-<https://edint.es/def/catastro#> <http://www.w3.org/2002/07/owl#versionIRI> <https://edint.es/def/catastro/0.2.1> .
-<https://edint.es/def/catastro#> <http://www.w3.org/2002/07/owl#imports> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> .
-<https://edint.es/def/catastro#> <http://www.w3.org/2002/07/owl#imports> <http://www.opengis.net/ont/geosparql> .
-<https://edint.es/def/catastro#> <http://purl.org/dc/terms/abstract> "Ontología para modelar las entidades del Catastro Español, centrada en Parcelas, Inmuebles y Construcciones. Reutiliza GeoSPARQL, conceptos INSPIRE y el vocabulario de callejero español."@en .
-<https://edint.es/def/catastro#> <http://purl.org/dc/terms/abstract> "Ontología para modelar las entidades del Catastro Español, centrada en Parcelas, Inmuebles y Construcciones. Reutiliza GeoSPARQL, conceptos INSPIRE y el vocabulario de callejero español."@es .
-<https://edint.es/def/catastro#> <http://purl.org/dc/terms/bibliographicCitation> "EDINT Spanish Cadastre Ontology. EDINT. Revision: v0.2.1."@en .
-<https://edint.es/def/catastro#> <http://purl.org/dc/terms/bibliographicCitation> "Ontología EDINT del Catastro Español. EDINT. Revisión: v0.2.1."@es .
-<https://edint.es/def/catastro#> <http://purl.org/dc/terms/created> "2026-04-09"^^<http://www.w3.org/2001/XMLSchema#date> .
-<https://edint.es/def/catastro#> <http://purl.org/dc/terms/creator> _:genid1 .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> <http://www.w3.org/2002/07/owl#imports> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> <http://www.w3.org/2002/07/owl#imports> <http://www.opengis.net/ont/geosparql> .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> <http://purl.org/dc/terms/abstract> "Ontología para modelar las entidades del Catastro Español, centrada en Parcelas, Inmuebles y Construcciones. Reutiliza GeoSPARQL, conceptos INSPIRE y el vocabulario de callejero español."@en .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> <http://purl.org/dc/terms/abstract> "Ontología para modelar las entidades del Catastro Español, centrada en Parcelas, Inmuebles y Construcciones. Reutiliza GeoSPARQL, conceptos INSPIRE y el vocabulario de callejero español."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> <http://purl.org/dc/terms/bibliographicCitation> "EDINT Spanish Cadastre Ontology. EDINT. Revision: v0.2.1."@en .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> <http://purl.org/dc/terms/bibliographicCitation> "Ontología EDINT del Catastro Español. EDINT. Revisión: v0.2.1."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> <http://purl.org/dc/terms/created> "2026-04-09"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> <http://purl.org/dc/terms/creator> _:genid1 .
+_:genid1 <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
 _:genid1 <http://xmlns.com/foaf/0.1/name> "Maria del Socorro Bernardos" .
-_:genid1 <http://schema.org/affiliation> <https://oeg.fi.upm.es/> .
-<https://edint.es/def/catastro#> <http://purl.org/dc/terms/creator> _:genid2 .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> <http://purl.org/dc/terms/creator> _:genid2 .
+_:genid2 <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
 _:genid2 <http://xmlns.com/foaf/0.1/name> "Oscar Corcho" .
-_:genid2 <http://schema.org/affiliation> <https://oeg.fi.upm.es/> .
-<https://edint.es/def/catastro#> <http://purl.org/dc/terms/creator> _:genid3 .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> <http://purl.org/dc/terms/creator> _:genid3 .
+_:genid3 <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
 _:genid3 <http://xmlns.com/foaf/0.1/name> "Daniel Doña" .
-_:genid3 <http://schema.org/affiliation> <https://oeg.fi.upm.es/> .
-<https://edint.es/def/catastro#> <http://purl.org/dc/terms/creator> _:genid4 .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> <http://purl.org/dc/terms/creator> _:genid4 .
+_:genid4 <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
 _:genid4 <http://xmlns.com/foaf/0.1/name> "Edna Ruckhaus" .
-_:genid4 <http://schema.org/affiliation> <https://oeg.fi.upm.es/> .
-<https://edint.es/def/catastro#> <http://purl.org/dc/terms/creator> _:genid5 .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> <http://purl.org/dc/terms/creator> _:genid5 .
+_:genid5 <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
 _:genid5 <http://xmlns.com/foaf/0.1/name> "Lucía Sánchez" .
-_:genid5 <http://schema.org/affiliation> <https://oeg.fi.upm.es/> .
-<https://edint.es/def/catastro#> <http://purl.org/dc/terms/description> "Ontology for modeling Spanish Cadastre entities, focused on Parcels, Properties and Buildings. Reuses GeoSPARQL, INSPIRE concepts, and the Spanish street catalog (callejero) vocabulary."@en .
-<https://edint.es/def/catastro#> <http://purl.org/dc/terms/description> "Ontología para modelar las entidades del Catastro Español, centrada en Parcelas, Inmuebles y Construcciones. Reutiliza GeoSPARQL, conceptos INSPIRE y el vocabulario de callejero español."@es .
-<https://edint.es/def/catastro#> <http://purl.org/dc/terms/hasFormat> <https://edint.es/def/catastro#ontology.owl> .
-<https://edint.es/def/catastro#> <http://purl.org/dc/terms/issued> "2026-09-17"^^<http://www.w3.org/2001/XMLSchema#date> .
-<https://edint.es/def/catastro#> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
-<https://edint.es/def/catastro#> <http://purl.org/dc/terms/modified> "2026-09-17"^^<http://www.w3.org/2001/XMLSchema#date> .
-<https://edint.es/def/catastro#> <http://purl.org/dc/terms/publisher> _:genid6 .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> <http://purl.org/dc/terms/description> "Ontology for modeling Spanish Cadastre entities, focused on Parcels, Properties and Buildings. Reuses GeoSPARQL, INSPIRE concepts, and the Spanish street catalog (callejero) vocabulary."@en .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> <http://purl.org/dc/terms/description> "Ontología para modelar las entidades del Catastro Español, centrada en Parcelas, Inmuebles y Construcciones. Reutiliza GeoSPARQL, conceptos INSPIRE y el vocabulario de callejero español."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> <http://purl.org/dc/terms/issued> "2026-09-17"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> <http://purl.org/dc/terms/modified> "2026-09-17"^^<http://www.w3.org/2001/XMLSchema#date> .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> <http://purl.org/dc/terms/publisher> _:genid6 .
+_:genid6 <https://schema.org/affiliation> "Federación Española de Municipios y Provincias" .
 _:genid6 <http://xmlns.com/foaf/0.1/name> "FEMP" .
 _:genid6 <http://xmlns.com/foaf/0.1/homepage> <https://www.femp.es/> .
-_:genid6 <http://schema.org/affiliation> "Federación Española de Municipios y Provincias" .
-<https://edint.es/def/catastro#> <http://purl.org/dc/terms/title> "EDINT Spanish Cadastre Ontology"@en .
-<https://edint.es/def/catastro#> <http://purl.org/dc/terms/title> "Ontología EDINT del Catastro Español"@es .
-<https://edint.es/def/catastro#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "edintcat" .
-<https://edint.es/def/catastro#> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://edint.es/def/catastro#" .
-<https://edint.es/def/catastro#> <http://schema.org/codeRepository> <https://github.com/EDINT-Ontologia/edint-ontologia-catastro> .
-<https://edint.es/def/catastro#> <http://schema.org/creativeWorkStatus> "Ontology Specification"@en .
-<https://edint.es/def/catastro#> <http://schema.org/funding> "Espacio de Datos para las Infraestructuras Urbanas Inteligentes (EDINT)" .
-<https://edint.es/def/catastro#> <http://www.w3.org/2000/01/rdf-schema#comment> "Initial draft version focusing on core classes: CadastralParcel, CadastralProperty, and CadastralConstruction with their relationships and properties."@en .
-<https://edint.es/def/catastro#> <http://www.w3.org/2000/01/rdf-schema#comment> "Versión inicial centrada en las clases principales: ParcelaCatastral, Inmueble y Construcción con sus relaciones y propiedades."@es .
-<https://edint.es/def/catastro#> <http://www.w3.org/2000/01/rdf-schema#label> "Catastro Español"@es .
-<https://edint.es/def/catastro#> <http://www.w3.org/2000/01/rdf-schema#label> "Spanish Cadastre"@en .
-<https://edint.es/def/catastro#> <http://www.w3.org/2002/07/owl#priorVersion> <https://github.com/EDINT-Ontologia/edint-ontologia-catastro/releases/tag/v0.2.0> .
-<https://edint.es/def/catastro#> <http://www.w3.org/2002/07/owl#versionInfo> "0.2.1" .
-<https://edint.es/def/catastro#> <https://w3id.org/widoco/vocab#jsonldSerialization> "ontology.jsonld" .
-<https://edint.es/def/catastro#> <https://w3id.org/widoco/vocab#ntSerialization> "ontology.nt" .
-<https://edint.es/def/catastro#> <https://w3id.org/widoco/vocab#rdfxmlSerialization> "ontology.rdf" .
-<https://edint.es/def/catastro#> <https://w3id.org/widoco/vocab#turtleSerialization> "ontology.ttl" .
-<https://edint.es/def/catastro#> <https://w3id.org/widoco/vocab#vocabularyLabel> _:genid7 .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> <http://purl.org/dc/terms/title> "EDINT Spanish Cadastre Ontology"@en .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> <http://purl.org/dc/terms/title> "Ontología EDINT del Catastro Español"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> <http://purl.org/vocab/vann/preferredNamespacePrefix> "edintcat" .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> <http://purl.org/vocab/vann/preferredNamespaceUri> <https://edint.es/def/catastro#> .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> <http://www.w3.org/2000/01/rdf-schema#comment> "Initial draft version focusing on core classes: CadastralParcel, CadastralProperty, and CadastralConstruction with their relationships and properties."@en .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> <http://www.w3.org/2000/01/rdf-schema#comment> "Versión inicial centrada en las clases principales: ParcelaCatastral, Inmueble y Construcción con sus relaciones y propiedades."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> <http://www.w3.org/2000/01/rdf-schema#label> "Catastro Español"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> <http://www.w3.org/2000/01/rdf-schema#label> "Spanish Cadastre"@en .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> <http://www.w3.org/2002/07/owl#priorVersion> <https://github.com/EDINT-Ontologia/edint-ontologia-catastro/releases/tag/v0.2.0> .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> <http://www.w3.org/2002/07/owl#versionInfo> "0.2.1" .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> <https://schema.org/codeRepository> <https://github.com/EDINT-Ontologia/edint-ontologia-catastro> .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> <https://schema.org/creativeWorkStatus> "Ontology Specification"@en .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> <https://schema.org/funding> "Espacio de Datos para las Infraestructuras Urbanas Inteligentes (EDINT)" .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> <https://w3id.org/widoco/vocab#jsonldSerialization> "ontology.jsonld" .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> <https://w3id.org/widoco/vocab#ntSerialization> "ontology.nt" .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> <https://w3id.org/widoco/vocab#rdfxmlSerialization> "ontology.rdf" .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> <https://w3id.org/widoco/vocab#turtleSerialization> "ontology.ttl" .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> <https://w3id.org/widoco/vocab#vocabularyLabel> _:genid7 .
 _:genid7 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.opengis.net/ont/geosparql> .
 _:genid7 <http://www.w3.org/2000/01/rdf-schema#label> "GeoSPARQL"@es .
 _:genid7 <http://www.w3.org/2000/01/rdf-schema#label> "GeoSPARQL"@en .
-<https://edint.es/def/catastro#> <https://w3id.org/widoco/vocab#vocabularyLabel> _:genid8 .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> <https://w3id.org/widoco/vocab#vocabularyLabel> _:genid8 .
 _:genid8 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal> .
 _:genid8 <http://www.w3.org/2000/01/rdf-schema#label> "Postal Address (esdir)"@en .
 _:genid8 <http://www.w3.org/2000/01/rdf-schema#label> "Dirección Postal (esdir)"@es .
-<https://edint.es/def/catastro#> <https://w3id.org/widoco/vocab#vocabularyLabel> _:genid9 .
+<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> <https://w3id.org/widoco/vocab#vocabularyLabel> _:genid9 .
 _:genid9 <https://w3id.org/widoco/vocab#vocabularyIRI> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> .
 _:genid9 <http://www.w3.org/2000/01/rdf-schema#label> "Street catalogue (escjr)"@en .
 _:genid9 <http://www.w3.org/2000/01/rdf-schema#label> "Callejero (escjr)"@es .
@@ -112,23 +110,23 @@ _:genid9 <http://www.w3.org/2000/01/rdf-schema#label> "Callejero (escjr)"@es .
 # http://qudt.org/schema/qudt/unit
 <http://qudt.org/schema/qudt/unit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
-# http://schema.org/affiliation
-<http://schema.org/affiliation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# http://schema.org/codeRepository
-<http://schema.org/codeRepository> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# http://schema.org/creativeWorkStatus
-<http://schema.org/creativeWorkStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
-# http://schema.org/funding
-<http://schema.org/funding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
-# 
 # http://xmlns.com/foaf/0.1/homepage
 <http://xmlns.com/foaf/0.1/homepage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # http://xmlns.com/foaf/0.1/name
 <http://xmlns.com/foaf/0.1/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://schema.org/affiliation
+<https://schema.org/affiliation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://schema.org/codeRepository
+<https://schema.org/codeRepository> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://schema.org/creativeWorkStatus
+<https://schema.org/creativeWorkStatus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://schema.org/funding
+<https://schema.org/funding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
 # https://w3id.org/widoco/vocab#jsonldSerialization
 <https://w3id.org/widoco/vocab#jsonldSerialization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .

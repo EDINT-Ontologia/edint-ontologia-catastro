@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://edint.es/def/catastro#"
-     xml:base="https://edint.es/def/catastro"
+<rdf:RDF xmlns="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#"
+     xml:base="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:ns="http://creativecommons.org/ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -14,10 +14,8 @@
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:vocab="https://w3id.org/widoco/vocab#"
-     xmlns:schema="http://schema.org/"
-     xmlns:schema1="https://schema.org/">
-    <owl:Ontology rdf:about="https://edint.es/def/catastro#">
-        <owl:versionIRI rdf:resource="https://edint.es/def/catastro/0.2.1"/>
+     xmlns:schema="https://schema.org/">
+    <owl:Ontology rdf:about="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero">
         <owl:imports rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero"/>
         <owl:imports rdf:resource="http://www.opengis.net/ont/geosparql"/>
         <terms:abstract xml:lang="en">Ontología para modelar las entidades del Catastro Español, centrada en Parcelas, Inmuebles y Construcciones. Reutiliza GeoSPARQL, conceptos INSPIRE y el vocabulario de callejero español.</terms:abstract>
@@ -32,7 +30,6 @@
         <terms:creator rdf:nodeID="genid5"/>
         <terms:description xml:lang="en">Ontology for modeling Spanish Cadastre entities, focused on Parcels, Properties and Buildings. Reuses GeoSPARQL, INSPIRE concepts, and the Spanish street catalog (callejero) vocabulary.</terms:description>
         <terms:description xml:lang="es">Ontología para modelar las entidades del Catastro Español, centrada en Parcelas, Inmuebles y Construcciones. Reutiliza GeoSPARQL, conceptos INSPIRE y el vocabulario de callejero español.</terms:description>
-        <terms:hasFormat rdf:resource="https://edint.es/def/catastro#ontology.owl"/>
         <terms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-09-17</terms:issued>
         <terms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
         <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-09-17</terms:modified>
@@ -40,16 +37,16 @@
         <terms:title xml:lang="en">EDINT Spanish Cadastre Ontology</terms:title>
         <terms:title xml:lang="es">Ontología EDINT del Catastro Español</terms:title>
         <vann:preferredNamespacePrefix>edintcat</vann:preferredNamespacePrefix>
-        <vann:preferredNamespaceUri>https://edint.es/def/catastro#</vann:preferredNamespaceUri>
-        <schema:codeRepository rdf:resource="https://github.com/EDINT-Ontologia/edint-ontologia-catastro"/>
-        <schema:creativeWorkStatus xml:lang="en">Ontology Specification</schema:creativeWorkStatus>
-        <schema:funding>Espacio de Datos para las Infraestructuras Urbanas Inteligentes (EDINT)</schema:funding>
+        <vann:preferredNamespaceUri rdf:resource="https://edint.es/def/catastro#"/>
         <rdfs:comment xml:lang="en">Initial draft version focusing on core classes: CadastralParcel, CadastralProperty, and CadastralConstruction with their relationships and properties.</rdfs:comment>
         <rdfs:comment xml:lang="es">Versión inicial centrada en las clases principales: ParcelaCatastral, Inmueble y Construcción con sus relaciones y propiedades.</rdfs:comment>
         <rdfs:label xml:lang="es">Catastro Español</rdfs:label>
         <rdfs:label xml:lang="en">Spanish Cadastre</rdfs:label>
         <owl:priorVersion rdf:resource="https://github.com/EDINT-Ontologia/edint-ontologia-catastro/releases/tag/v0.2.0"/>
         <owl:versionInfo>0.2.1</owl:versionInfo>
+        <schema:codeRepository rdf:resource="https://github.com/EDINT-Ontologia/edint-ontologia-catastro"/>
+        <schema:creativeWorkStatus xml:lang="en">Ontology Specification</schema:creativeWorkStatus>
+        <schema:funding>Espacio de Datos para las Infraestructuras Urbanas Inteligentes (EDINT)</schema:funding>
         <vocab:jsonldSerialization>ontology.jsonld</vocab:jsonldSerialization>
         <vocab:ntSerialization>ontology.nt</vocab:ntSerialization>
         <vocab:rdfxmlSerialization>ontology.rdf</vocab:rdfxmlSerialization>
@@ -59,29 +56,29 @@
         <vocab:vocabularyLabel rdf:nodeID="genid9"/>
     </owl:Ontology>
     <rdf:Description rdf:nodeID="genid1">
-        <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
         <foaf:name>Maria del Socorro Bernardos</foaf:name>
+        <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid2">
-        <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
         <foaf:name>Oscar Corcho</foaf:name>
+        <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid3">
-        <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
         <foaf:name>Daniel Doña</foaf:name>
+        <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid4">
-        <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
         <foaf:name>Edna Ruckhaus</foaf:name>
+        <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid5">
-        <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
         <foaf:name>Lucía Sánchez</foaf:name>
+        <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid6">
-        <schema:affiliation>Federación Española de Municipios y Provincias</schema:affiliation>
         <foaf:homepage rdf:resource="https://www.femp.es/"/>
         <foaf:name>FEMP</foaf:name>
+        <schema:affiliation>Federación Española de Municipios y Provincias</schema:affiliation>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid7">
         <rdfs:label xml:lang="en">GeoSPARQL</rdfs:label>
@@ -211,34 +208,6 @@
     
 
 
-    <!-- http://schema.org/affiliation -->
-
-
-    <owl:AnnotationProperty rdf:about="http://schema.org/affiliation"/>
-    
-
-
-    <!-- http://schema.org/codeRepository -->
-
-
-    <owl:AnnotationProperty rdf:about="http://schema.org/codeRepository"/>
-    
-
-
-    <!-- http://schema.org/creativeWorkStatus -->
-
-
-    <owl:AnnotationProperty rdf:about="http://schema.org/creativeWorkStatus"/>
-    
-
-
-    <!-- http://schema.org/funding -->
-
-
-    <owl:AnnotationProperty rdf:about="http://schema.org/funding"/>
-    
-
-
     <!-- http://xmlns.com/foaf/0.1/homepage -->
 
 
@@ -250,6 +219,34 @@
 
 
     <owl:AnnotationProperty rdf:about="http://xmlns.com/foaf/0.1/name"/>
+    
+
+
+    <!-- https://schema.org/affiliation -->
+
+
+    <owl:AnnotationProperty rdf:about="https://schema.org/affiliation"/>
+    
+
+
+    <!-- https://schema.org/codeRepository -->
+
+
+    <owl:AnnotationProperty rdf:about="https://schema.org/codeRepository"/>
+    
+
+
+    <!-- https://schema.org/creativeWorkStatus -->
+
+
+    <owl:AnnotationProperty rdf:about="https://schema.org/creativeWorkStatus"/>
+    
+
+
+    <!-- https://schema.org/funding -->
+
+
+    <owl:AnnotationProperty rdf:about="https://schema.org/funding"/>
     
 
 
