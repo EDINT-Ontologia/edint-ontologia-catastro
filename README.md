@@ -1,22 +1,26 @@
-# Ontología para la representación del Catastro Inmobiliario Español
+# Ontología EDINT del Catastro Español
+
+[![Documentación](https://img.shields.io/badge/documentaci%C3%B3n-edint.es-blue)](https://edint.es/def/catastro)
+![Prefijo](https://img.shields.io/badge/prefijo-edintcat-informational)
+[![Licencia](https://img.shields.io/badge/licencia-CC%20BY--SA%204.0-lightgrey)](LICENSE)
 
 Esta ontología permite representar el dominio del Catastro Inmobiliario Español, centrada en parcelas catastrales, inmuebles catastrales y construcciones catastrales.
 
 Está siendo desarrollada en el contexto del Espacio de Datos para las Infraestructuras Urbanas Inteligentes ([EDINT](https://edint.es/)).
 
-# Propósito y alcance de la ontología (Purpose and scope of the ontology)
+## Propósito y alcance de la ontología (Purpose and scope of the ontology)
 
 El propósito de esta ontología es modelar las entidades y relaciones fundamentales del Catastro Inmobiliario Español para habilitar la interoperabilidad de datos catastrales en el contexto de los datos enlazados (Linked Data). El alcance se limita a parcelas catastrales, inmuebles catastrales, construcciones catastrales, referencias catastrales, direcciones, usos y clasificaciones, y geometrías y áreas. Quedan fuera del alcance aspectos como titularidad de bienes, valoración catastral, datos de transmisiones y procesos administrativos.
 
-# Prefijo y espacio de nombres (Prefix and namespace)
+## Prefijo y espacio de nombres (Prefix and namespace)
 
-El prefijo de esta ontología es `edintcat`. Se publica en el espacio de nombres: https://edint.es/def/catastro#
+El prefijo de esta ontología es `edintcat` y se publica bajo el espacio de nombres https://edint.es/def/catastro#
 
-# Modelo conceptual (Ontology conceptualization)
+## Modelo conceptual (Ontology conceptualization)
 
 ![Diagrama del modelo conceptual](diagrams/diagram.png)
 
-# Estructura del repositorio (Repository structure)
+## Estructura del repositorio (Repository structure)
 
 | Carpeta | Descripción |
 |--------|--------------|
@@ -29,11 +33,11 @@ El prefijo de esta ontología es `edintcat`. Se publica en el espacio de nombres
 | **shapes/**       | Contiene los SHACL shapes utilizadas para definir y validar las restricciones de la ontología.                                                                                |
 
 
-# Mantenimiento y evolución (Maintenance and evolution)
+## Mantenimiento y evolución (Maintenance and evolution)
 
 Para manejar las incidencias o mejoras sugeridas con respecto a la ontología, recomendamos seguir las guías proporcionadas en ([Issues Management](./ISSUES.md)) para generar una incidencia.
 
-# Financiación (Funding)
+## Financiación (Funding)
 
 Esta ontología ha sido desarrollada en el contexto del Espacio de Datos para las Infraestructuras Urbanas Inteligentes ([EDINT](https://edint.es)).
 
