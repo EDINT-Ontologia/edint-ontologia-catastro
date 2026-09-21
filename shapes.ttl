@@ -1,0 +1,525 @@
+@prefix : <https://edint.es/def/catastro#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://astrea.linkeddata.es/shapes#0f7eb90b4cb130fce1cceb779515eb78> rdfs:label "Relationship that assigns a primary use to a property or construction. Use concepts are defined in the external SKOS vocabulary at http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/uso."@en,
+        "has use"@en,
+        "Relación que asigna un uso principal a un inmueble o construcción. Los conceptos de uso se definen en el vocabulario SKOS externo en http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/uso."@es,
+        "tiene uso"@es ;
+    sh:description "Relationship that assigns a primary use to a property or construction. Use concepts are defined in the external SKOS vocabulary at http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/uso."@en,
+        "Relación que asigna un uso principal a un inmueble o construcción. Los conceptos de uso se definen en el vocabulario SKOS externo en http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/uso."@es ;
+    sh:name "has use"@en,
+        "tiene uso"@es ;
+    sh:nodeKind sh:BlankNodeOrIRI .
+
+<https://astrea.linkeddata.es/shapes#2336519c9c9cd7ad6102943ee19a0898> a sh:NodeShape ;
+    rdfs:label "Property Reference"@en,
+        "Referencia de Inmueble"@es ;
+    sh:description "Reference identifying a cadastral property, composed of the parcel reference and the property reference with check digit (e.g., TF8006N0001HZ)."@en,
+        "Referencia que identifica un inmueble catastral, compuesta por la referencia de parcela y la referencia de inmueble con dígito de control (ej. TF8006N0001HZ)."@es ;
+    sh:name "Property Reference"@en,
+        "Referencia de Inmueble"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:property <https://astrea.linkeddata.es/shapes#a722f0ea42fb5bcf4cb26551c1985ae9>,
+        <https://astrea.linkeddata.es/shapes#bf4da7495c1399fd5ee020482009a966> ;
+    sh:targetClass :PropertyReference .
+
+<https://astrea.linkeddata.es/shapes#3348f96caa15fb50d86f0a2231585642> a sh:PropertyShape ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path geo:hasGeometry .
+
+<https://astrea.linkeddata.es/shapes#3398ed0391751bb3a09e0aed51fffdb6> a sh:NodeShape ;
+    rdfs:label "Cadastral Property"@en,
+        "Inmueble Catastral"@es ;
+    sh:description "Real estate property registered in the Cadastre. Can be a premises, dwelling, or any independent use unit within a parcel. A cadastral property may have one or more constructions associated."@en,
+        "Bien inmueble inscrito en el Catastro. Puede ser un local, vivienda, o cualquier unidad de uso independiente dentro de una parcela. Un inmueble catastral puede tener una o más construcciones asociadas."@es ;
+    sh:name "Cadastral Property"@en,
+        "Inmueble Catastral"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:property <https://astrea.linkeddata.es/shapes#08e6abceb828f880538f271d87230b8b>,
+        <https://astrea.linkeddata.es/shapes#32e998930587e77a8284db5638b8dd31>,
+        <https://astrea.linkeddata.es/shapes#54946491d22a70316959ee832ffce949>,
+        <https://astrea.linkeddata.es/shapes#6a3bcdfbf4c72096ddf7b94913fcd4a3>,
+        <https://astrea.linkeddata.es/shapes#6f6b769150b57d3fd3f5bf02b78b4d55>,
+        <https://astrea.linkeddata.es/shapes#a61f24e04d2e214626edcb5e375f699f>,
+        <https://astrea.linkeddata.es/shapes#a8e74258e87fb3c4024b032361152260>,
+        <https://astrea.linkeddata.es/shapes#aef3f240da3ec9510801e72aef4bd36e>,
+        <https://astrea.linkeddata.es/shapes#bb6d5f6cbc988e4d2fa3f35e0fbc0ab8>,
+        <https://astrea.linkeddata.es/shapes#f9d764da48ccdb44131d410d53b29c4c>,
+        <https://astrea.linkeddata.es/shapes#fea714d8c045434e5f46b5eb0696935c> ;
+    sh:targetClass :CadastralProperty .
+
+<https://astrea.linkeddata.es/shapes#38cb778c472c6f4158e9b7f00d2b97f0> a sh:NodeShape ;
+    rdfs:label "Cadastral Reference"@en,
+        "Referencia Catastral"@es ;
+    sh:description "Abstract parent class for cadastral reference types."@en,
+        "Clase padre abstracta para los tipos de referencia catastral."@es ;
+    sh:name "Cadastral Reference"@en,
+        "Referencia Catastral"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass :CadastralReference .
+
+<https://astrea.linkeddata.es/shapes#5192bd4012546876e17387cec79301a1> a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass foaf:Organization .
+
+<https://astrea.linkeddata.es/shapes#57641836fd88fb7d8ec56dfe026fc923> sh:nodeKind sh:Literal .
+
+<https://astrea.linkeddata.es/shapes#69bfc24827569ed9036ecae89a53d3c7> a sh:PropertyShape ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path skos:inScheme .
+
+<https://astrea.linkeddata.es/shapes#6b9df9ba72f692c8cbf45876084f99ae> a sh:NodeShape ;
+    rdfs:label "Renovation"@en,
+        "Reforma"@es ;
+    sh:description "Event or process of renovating a construction, including information about when it occurred and what type of renovation was performed."@en,
+        "Evento o proceso de reforma de una construcción, incluyendo información sobre cuándo ocurrió y qué tipo de reforma se realizó."@es ;
+    sh:name "Renovation"@en,
+        "Reforma"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:property <https://astrea.linkeddata.es/shapes#8ca8813e5bae4c2c3333aac11304e4c0>,
+        <https://astrea.linkeddata.es/shapes#96873d6c46021232ea1928117c128f45>,
+        <https://astrea.linkeddata.es/shapes#e021b93335c64c82f0e1cb1e48e82701> ;
+    sh:targetClass :Renovation .
+
+<https://astrea.linkeddata.es/shapes#81e523fa0547196430bd95017a977063> rdfs:label "Relationship that assigns a classification (urban/rural) to a parcel or property. Classification concepts are defined in external SKOS vocabulary at http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/clase."@en,
+        "has class"@en,
+        "Relación que asigna una clasificación (urbano/rústico) a una parcela o inmueble. Los conceptos de clasificación se definen en el vocabulario SKOS externo en http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/clase."@es,
+        "tiene clase"@es ;
+    sh:description "Relationship that assigns a classification (urban/rural) to a parcel or property. Classification concepts are defined in external SKOS vocabulary at http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/clase."@en,
+        "Relación que asigna una clasificación (urbano/rústico) a una parcela o inmueble. Los conceptos de clasificación se definen en el vocabulario SKOS externo en http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/clase."@es ;
+    sh:name "has class"@en,
+        "tiene clase"@es ;
+    sh:nodeKind sh:BlankNodeOrIRI .
+
+<https://astrea.linkeddata.es/shapes#8c9f0a3ef50fe390869f7c693885d425> a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass geo:Feature .
+
+<https://astrea.linkeddata.es/shapes#935de781bd2b203ac772a1157389be5d> a sh:NodeShape ;
+    rdfs:label "Parcel Reference"@en,
+        "Referencia de Parcela"@es ;
+    sh:description "Reference identifying a cadastral parcel (7-character alphanumeric code)."@en,
+        "Referencia que identifica una parcela catastral (código alfanumérico de 7 caracteres)."@es ;
+    sh:name "Parcel Reference"@en,
+        "Referencia de Parcela"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:property <https://astrea.linkeddata.es/shapes#3c4ddc2dd46a5c86fefad1a27abc6dc3>,
+        <https://astrea.linkeddata.es/shapes#f50fb4cff7a463421e56a23c477dba37> ;
+    sh:targetClass :ParcelReference .
+
+<https://astrea.linkeddata.es/shapes#9d89b27e37b1c0e86e24c55d42749f18> a sh:NodeShape ;
+    rdfs:label "Cadastral Parcel"@en,
+        "Parcela Catastral"@es ;
+    sh:description "Basic unit of territorial division in the Spanish Cadastre. Represents a plot of land delimited geographically, which may contain one or more properties."@en,
+        "Unidad básica de división territorial en el Catastro Español. Representa una porción de terreno delimitada geográficamente, que puede contener uno o más inmuebles."@es ;
+    sh:name "Cadastral Parcel"@en,
+        "Parcela Catastral"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:property <https://astrea.linkeddata.es/shapes#07c2ba031fd350ab33e445bcde558142>,
+        <https://astrea.linkeddata.es/shapes#618bdd017d378a08322e38e3b1758c79>,
+        <https://astrea.linkeddata.es/shapes#a61f24e04d2e214626edcb5e375f699f>,
+        <https://astrea.linkeddata.es/shapes#ad3c69b2a6ef5e5e3cfebf680920de4c>,
+        <https://astrea.linkeddata.es/shapes#d8d02667d65ab6e294a3c4e3615f56d6>,
+        <https://astrea.linkeddata.es/shapes#fea714d8c045434e5f46b5eb0696935c> ;
+    sh:targetClass :CadastralParcel .
+
+<https://astrea.linkeddata.es/shapes#9e81a8547fd8cabc79752e243c8d2b67> a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass geo:Geometry .
+
+<https://astrea.linkeddata.es/shapes#b8840ae319dd17775a4c3ff2c43caeca> sh:nodeKind sh:Literal .
+
+<https://astrea.linkeddata.es/shapes#eb84c50e4c74697fb0c1c93ba0fa974c> a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal#DireccionPostal> .
+
+<https://astrea.linkeddata.es/shapes#f1c29a16e858b156b3525585aa27f2d0> a sh:NodeShape ;
+    rdfs:label "Cadastral Construction"@en,
+        "Construcción Catastral"@es ;
+    sh:description "Building or construction registered on a cadastral property. Includes data on area, use, construction characteristics, and renovations. A cadastral construction is located on exactly one cadastral property."@en,
+        "Edificio o construcción registrada sobre un inmueble catastral. Incluye datos de superficie, uso, características constructivas y reformas. Una construcción catastral está ubicada sobre un único inmueble catastral."@es ;
+    sh:name "Cadastral Construction"@en,
+        "Construcción Catastral"@es ;
+    sh:nodeKind sh:IRI ;
+    sh:property <https://astrea.linkeddata.es/shapes#1753e51bfbf3de779e5f9675224e070f>,
+        <https://astrea.linkeddata.es/shapes#2ee5058bc602ff370373ef20233dc610>,
+        <https://astrea.linkeddata.es/shapes#5789d056d9607ee49296501e3c36add4>,
+        <https://astrea.linkeddata.es/shapes#6b258ba1b3988c5b9065c41ae2de66fa>,
+        <https://astrea.linkeddata.es/shapes#7fe94d870d8e5f7b148acfc7fe7c7263>,
+        <https://astrea.linkeddata.es/shapes#91bbd5c762f6d13d3aa945f5fe096fca>,
+        <https://astrea.linkeddata.es/shapes#d43ecf11d2280fa0d665a1ee7e4ec963>,
+        <https://astrea.linkeddata.es/shapes#e09fc7fa1f34b26079683f1e3f430788> ;
+    sh:targetClass :CadastralConstruction .
+
+<https://astrea.linkeddata.es/shapes#ffeaf0d3664c31215f614a64f5bb45a5> a sh:NodeShape ;
+    sh:nodeKind sh:IRI ;
+    sh:targetClass skos:Concept .
+
+<https://astrea.linkeddata.es/shapes#07c2ba031fd350ab33e445bcde558142> a sh:PropertyShape ;
+    rdfs:label "Relationship linking a cadastral parcel to its parcel reference."@en,
+        "has parcel reference"@en,
+        "Relación que vincula una parcela catastral con su referencia de parcela."@es,
+        "tiene referencia de parcela"@es ;
+    sh:class :ParcelReference ;
+    sh:description "Relationship linking a cadastral parcel to its parcel reference."@en,
+        "Relación que vincula una parcela catastral con su referencia de parcela."@es ;
+    sh:name "has parcel reference"@en,
+        "tiene referencia de parcela"@es ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path :hasParcelReference .
+
+<https://astrea.linkeddata.es/shapes#08e6abceb828f880538f271d87230b8b> a sh:PropertyShape ;
+    rdfs:label "Relationship linking a cadastral property to its property reference."@en,
+        "has property reference"@en,
+        "Relación que vincula un inmueble catastral con su referencia de inmueble."@es,
+        "tiene referencia de inmueble"@es ;
+    sh:class :PropertyReference ;
+    sh:description "Relationship linking a cadastral property to its property reference."@en,
+        "Relación que vincula un inmueble catastral con su referencia de inmueble."@es ;
+    sh:name "has property reference"@en,
+        "tiene referencia de inmueble"@es ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path :hasPropertyReference .
+
+<https://astrea.linkeddata.es/shapes#1753e51bfbf3de779e5f9675224e070f> a sh:PropertyShape ;
+    rdfs:label "Relationship indicating that a construction has undergone one or more renovation events."@en,
+        "has renovation"@en,
+        "Relación que indica que una construcción ha sufrido una o más reformas."@es,
+        "tiene reforma"@es ;
+    sh:class :Renovation ;
+    sh:description "Relationship indicating that a construction has undergone one or more renovation events."@en,
+        "Relación que indica que una construcción ha sufrido una o más reformas."@es ;
+    sh:name "has renovation"@en,
+        "tiene reforma"@es ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path :hasRenovation .
+
+<https://astrea.linkeddata.es/shapes#2ee5058bc602ff370373ef20233dc610> a sh:PropertyShape ;
+    rdfs:label "Relationship indicating that a cadastral construction is located on a specific cadastral property."@en,
+        "on cadastral property"@en,
+        "Relación que indica que una construcción catastral está ubicada sobre un inmueble catastral específico."@es,
+        "en inmueble catastral"@es ;
+    sh:class :CadastralProperty ;
+    sh:description "Relationship indicating that a cadastral construction is located on a specific cadastral property."@en,
+        "Relación que indica que una construcción catastral está ubicada sobre un inmueble catastral específico."@es ;
+    sh:name "on cadastral property"@en,
+        "en inmueble catastral"@es ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path :onCadastralProperty .
+
+<https://astrea.linkeddata.es/shapes#32e998930587e77a8284db5638b8dd31> a sh:PropertyShape ;
+    rdfs:label "Relationship indicating the specific constructive units (locales/parts) that make up a cadastral property."@en,
+        "has cadastral construction"@en,
+        "Relación que indica las unidades constructivas específicas (locales/partes) que conforman un inmueble catastral."@es,
+        "tiene construcción catastral"@es ;
+    sh:class :CadastralConstruction ;
+    sh:description "Relationship indicating the specific constructive units (locales/parts) that make up a cadastral property."@en,
+        "Relación que indica las unidades constructivas específicas (locales/partes) que conforman un inmueble catastral."@es ;
+    sh:name "has cadastral construction"@en,
+        "tiene construcción catastral"@es ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path :hasCadastralConstruction .
+
+<https://astrea.linkeddata.es/shapes#3c4ddc2dd46a5c86fefad1a27abc6dc3> a sh:PropertyShape ;
+    rdfs:label "Relationship indicating that a parcel reference identifies a specific cadastral parcel."@en,
+        "parcel reference for"@en,
+        "Relación que indica que una referencia de parcela identifica una parcela catastral específica."@es,
+        "referencia de parcela para"@es ;
+    sh:class :CadastralParcel ;
+    sh:description "Relationship indicating that a parcel reference identifies a specific cadastral parcel."@en,
+        "Relación que indica que una referencia de parcela identifica una parcela catastral específica."@es ;
+    sh:name "parcel reference for"@en,
+        "referencia de parcela para"@es ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path :parcelReferenceFor .
+
+<https://astrea.linkeddata.es/shapes#54946491d22a70316959ee832ffce949> a sh:PropertyShape ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path :hasPropertyReference ;
+    sh:qualifiedMaxCount 1 ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape [ sh:class :PropertyReference ] .
+
+<https://astrea.linkeddata.es/shapes#5789d056d9607ee49296501e3c36add4> a sh:PropertyShape ;
+    rdfs:label "Floor level identifier for a construction unit (can include basement levels like -1, -2)."@en,
+        "floor"@en,
+        "Identificador de planta para una unidad de construcción (puede incluir plantas sótano como -1, -2)."@es,
+        "planta"@es ;
+    sh:datatype xsd:string ;
+    sh:description "Floor level identifier for a construction unit (can include basement levels like -1, -2)."@en,
+        "Identificador de planta para una unidad de construcción (puede incluir plantas sótano como -1, -2)."@es ;
+    sh:name "floor"@en,
+        "planta"@es ;
+    sh:nodeKind sh:Literal ;
+    sh:path :floor ;
+    sh:pattern ".*" .
+
+<https://astrea.linkeddata.es/shapes#618bdd017d378a08322e38e3b1758c79> a sh:PropertyShape ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path :hasParcelReference ;
+    sh:qualifiedMaxCount 1 ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape [ sh:class :ParcelReference ] .
+
+<https://astrea.linkeddata.es/shapes#6a3bcdfbf4c72096ddf7b94913fcd4a3> a sh:PropertyShape ;
+    rdfs:label "Relationship indicating that a cadastral property is located on exactly one cadastral parcel."@en,
+        "on cadastral parcel"@en,
+        "Relación que indica que un inmueble catastral está ubicado sobre una única parcela catastral."@es,
+        "sobre parcela catastral"@es ;
+    sh:class :CadastralParcel ;
+    sh:description "Relationship indicating that a cadastral property is located on exactly one cadastral parcel."@en,
+        "Relación que indica que un inmueble catastral está ubicado sobre una única parcela catastral."@es ;
+    sh:name "on cadastral parcel"@en,
+        "sobre parcela catastral"@es ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path :onCadastralParcel .
+
+<https://astrea.linkeddata.es/shapes#6b258ba1b3988c5b9065c41ae2de66fa> a sh:PropertyShape ;
+    rdfs:label "Door or unit identifier within a floor and staircase."@en,
+        "door"@en,
+        "Identificador de puerta o unidad dentro de una planta y escalera."@es,
+        "puerta"@es ;
+    sh:datatype xsd:string ;
+    sh:description "Door or unit identifier within a floor and staircase."@en,
+        "Identificador de puerta o unidad dentro de una planta y escalera."@es ;
+    sh:name "door"@en,
+        "puerta"@es ;
+    sh:nodeKind sh:Literal ;
+    sh:path :door ;
+    sh:pattern ".*" .
+
+<https://astrea.linkeddata.es/shapes#6f6b769150b57d3fd3f5bf02b78b4d55> a sh:PropertyShape ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path :hasCadastralConstruction .
+
+<https://astrea.linkeddata.es/shapes#7fe94d870d8e5f7b148acfc7fe7c7263> a sh:PropertyShape ;
+    rdfs:label "Staircase identifier for a construction unit within a building."@en,
+        "staircase"@en,
+        "Identificador de escalera para una unidad de construcción dentro de un edificio."@es,
+        "escalera"@es ;
+    sh:datatype xsd:string ;
+    sh:description "Staircase identifier for a construction unit within a building."@en,
+        "Identificador de escalera para una unidad de construcción dentro de un edificio."@es ;
+    sh:name "staircase"@en,
+        "escalera"@es ;
+    sh:nodeKind sh:Literal ;
+    sh:path :staircase ;
+    sh:pattern ".*" .
+
+<https://astrea.linkeddata.es/shapes#8ca8813e5bae4c2c3333aac11304e4c0> a sh:PropertyShape ;
+    rdfs:label "Type of renovation performed."@en,
+        "renovation type"@en,
+        "Tipo de reforma realizada."@es,
+        "tipo de reforma"@es ;
+    sh:datatype xsd:string ;
+    sh:description "Type of renovation performed."@en,
+        "Tipo de reforma realizada."@es ;
+    sh:name "renovation type"@en,
+        "tipo de reforma"@es ;
+    sh:nodeKind sh:Literal ;
+    sh:path :renovationType ;
+    sh:pattern ".*" .
+
+<https://astrea.linkeddata.es/shapes#91bbd5c762f6d13d3aa945f5fe096fca> a sh:PropertyShape ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path :onCadastralProperty ;
+    sh:qualifiedMaxCount 1 ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape [ sh:class :CadastralProperty ] .
+
+<https://astrea.linkeddata.es/shapes#96873d6c46021232ea1928117c128f45> a sh:PropertyShape ;
+    rdfs:label "Date when the renovation was performed."@en,
+        "renovation date"@en,
+        "Fecha en que se realizó la reforma."@es,
+        "fecha de reforma"@es ;
+    sh:datatype xsd:date ;
+    sh:description "Date when the renovation was performed."@en,
+        "Fecha en que se realizó la reforma."@es ;
+    sh:name "renovation date"@en,
+        "fecha de reforma"@es ;
+    sh:nodeKind sh:Literal ;
+    sh:path :renovationDate ;
+    sh:pattern "-?([1-9][0-9]{3,}|0[0-9]{3})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?" .
+
+<https://astrea.linkeddata.es/shapes#a722f0ea42fb5bcf4cb26551c1985ae9> a sh:PropertyShape ;
+    rdfs:label "Relationship indicating that a property reference identifies a specific cadastral property."@en,
+        "property reference for"@en,
+        "Relación que indica que una referencia de inmueble identifica un inmueble catastral específico."@es,
+        "referencia de inmueble para"@es ;
+    sh:class :CadastralProperty ;
+    sh:description "Relationship indicating that a property reference identifies a specific cadastral property."@en,
+        "Relación que indica que una referencia de inmueble identifica un inmueble catastral específico."@es ;
+    sh:name "property reference for"@en,
+        "referencia de inmueble para"@es ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path :propertyReferenceFor .
+
+<https://astrea.linkeddata.es/shapes#a8e74258e87fb3c4024b032361152260> a sh:PropertyShape ;
+    rdfs:label "Technical value of the land and buildings in rural and urban properties and properties with special characteristics, prepared by the Cadastral Management and Tax Cooperation Center, which serves as the taxable base for the property tax and as a reference value in other taxes."@en,
+        "cadastral value"@en,
+        "Valor técnico del suelo y de las construcciones en los inmuebles rústicos y urbanos y de características especiales, elaborado por el Centro de Gestión Catastral y Cooperación Tributaria, que sirve de base imponible al impuesto sobre bienes inmuebles y como valor de referencia en otros tributos."@es,
+        "valor catastral"@es ;
+    sh:datatype xsd:float ;
+    sh:description "Technical value of the land and buildings in rural and urban properties and properties with special characteristics, prepared by the Cadastral Management and Tax Cooperation Center, which serves as the taxable base for the property tax and as a reference value in other taxes."@en,
+        "Valor técnico del suelo y de las construcciones en los inmuebles rústicos y urbanos y de características especiales, elaborado por el Centro de Gestión Catastral y Cooperación Tributaria, que sirve de base imponible al impuesto sobre bienes inmuebles y como valor de referencia en otros tributos."@es ;
+    sh:name "cadastral value"@en,
+        "valor catastral"@es ;
+    sh:nodeKind sh:Literal ;
+    sh:path :cadastralValue ;
+    sh:pattern "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)([Ee](\\+|-)?[0-9]+)?|(\\+|-)?INF|NaN" .
+
+<https://astrea.linkeddata.es/shapes#ad3c69b2a6ef5e5e3cfebf680920de4c> a sh:PropertyShape ;
+    rdfs:label "Relationship indicating that a cadastral parcel contains one or more cadastral properties (e.g., flats in a horizontal division)."@en,
+        "has cadastral property"@en,
+        "Relación que indica que una parcela catastral contiene uno o más inmuebles catastrales (ej. pisos en una división horizontal)."@es,
+        "tiene inmueble catastral"@es ;
+    sh:class :CadastralProperty ;
+    sh:description "Relationship indicating that a cadastral parcel contains one or more cadastral properties (e.g., flats in a horizontal division)."@en,
+        "Relación que indica que una parcela catastral contiene uno o más inmuebles catastrales (ej. pisos en una división horizontal)."@es ;
+    sh:name "has cadastral property"@en,
+        "tiene inmueble catastral"@es ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path :hasCadastralProperty .
+
+<https://astrea.linkeddata.es/shapes#aef3f240da3ec9510801e72aef4bd36e> a sh:PropertyShape ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path :onCadastralParcel ;
+    sh:qualifiedMaxCount 1 ;
+    sh:qualifiedMinCount 1 ;
+    sh:qualifiedValueShape [ sh:class :CadastralParcel ] .
+
+<https://astrea.linkeddata.es/shapes#bb6d5f6cbc988e4d2fa3f35e0fbc0ab8> a sh:PropertyShape ;
+    rdfs:label "Percentage of participation in common elements of the property."@en,
+        "participation"@en,
+        "Porcentaje de participación en elementos comunes del inmueble."@es,
+        "participación"@es ;
+    sh:datatype xsd:decimal ;
+    sh:description "Percentage of participation in common elements of the property."@en,
+        "Porcentaje de participación en elementos comunes del inmueble."@es ;
+    sh:name "participation"@en,
+        "participación"@es ;
+    sh:nodeKind sh:Literal ;
+    sh:path :participation ;
+    sh:pattern "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)" .
+
+<https://astrea.linkeddata.es/shapes#bf4da7495c1399fd5ee020482009a966> a sh:PropertyShape ;
+    rdfs:label "The property reference part including check digit. Format: alphanumeric with check (e.g., TF8006N0001HZ)."@en,
+        "property reference"@en,
+        "La parte de referencia de inmueble incluyendo dígito de control. Formato: alfanumérico con control (ej. TF8006N0001HZ)."@es,
+        "referencia de inmueble"@es ;
+    rdfs:seeAlso <https://www.sedecatastro.gob.es> ;
+    sh:datatype xsd:string ;
+    sh:description "The property reference part including check digit. Format: alphanumeric with check (e.g., TF8006N0001HZ)."@en,
+        "La parte de referencia de inmueble incluyendo dígito de control. Formato: alfanumérico con control (ej. TF8006N0001HZ)."@es ;
+    sh:name "property reference"@en,
+        "referencia de inmueble"@es ;
+    sh:nodeKind sh:Literal ;
+    sh:path :propertyReference ;
+    sh:pattern ".*" .
+
+<https://astrea.linkeddata.es/shapes#d43ecf11d2280fa0d665a1ee7e4ec963> a sh:PropertyShape ;
+    rdfs:label "Percentage of the construction area that is considered support area (common elements)."@en,
+        "support percentage"@en,
+        "Porcentaje del área de construcción que se considera área de soporte (elementos comunes)."@es,
+        "porcentaje de soporte"@es ;
+    sh:datatype xsd:decimal ;
+    sh:description "Percentage of the construction area that is considered support area (common elements)."@en,
+        "Porcentaje del área de construcción que se considera área de soporte (elementos comunes)."@es ;
+    sh:name "support percentage"@en,
+        "porcentaje de soporte"@es ;
+    sh:nodeKind sh:Literal ;
+    sh:path :supportPercentage ;
+    sh:pattern "(\\+|-)?([0-9]+(\\.[0-9]*)?|\\.[0-9]+)" .
+
+<https://astrea.linkeddata.es/shapes#d8d02667d65ab6e294a3c4e3615f56d6> a sh:PropertyShape ;
+    sh:nodeKind sh:IRIOrLiteral ;
+    sh:path geo:hasGeometry .
+
+<https://astrea.linkeddata.es/shapes#e021b93335c64c82f0e1cb1e48e82701> a sh:PropertyShape ;
+    rdfs:label "Relationship indicating that a renovation event applies to a specific construction."@en,
+        "renovation of"@en,
+        "Relación que indica que un evento de reforma se aplica a una construcción específica."@es,
+        "reforma de"@es ;
+    sh:class :CadastralConstruction ;
+    sh:description "Relationship indicating that a renovation event applies to a specific construction."@en,
+        "Relación que indica que un evento de reforma se aplica a una construcción específica."@es ;
+    sh:name "renovation of"@en,
+        "reforma de"@es ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path :renovationOf .
+
+<https://astrea.linkeddata.es/shapes#e09fc7fa1f34b26079683f1e3f430788> a sh:PropertyShape ;
+    rdfs:label "Year in which the building was constructed."@en,
+        "construction year"@en,
+        "Año en que se construyó el edificio."@es,
+        "año de construcción"@es ;
+    sh:datatype xsd:gYear ;
+    sh:description "Year in which the building was constructed."@en,
+        "Año en que se construyó el edificio."@es ;
+    sh:name "construction year"@en,
+        "año de construcción"@es ;
+    sh:nodeKind sh:Literal ;
+    sh:path :constructionYear ;
+    sh:pattern "-?([1-9][0-9]{3,}|0[0-9]{3})(Z|(\\+|-)((0[0-9]|1[0-3]):[0-5][0-9]|14:00))?" .
+
+<https://astrea.linkeddata.es/shapes#f50fb4cff7a463421e56a23c477dba37> a sh:PropertyShape ;
+    rdfs:label "The 7-character alphanumeric parcel reference code (e.g., 0569302VK)."@en,
+        "parcel reference"@en,
+        "El código alfanumérico de 7 caracteres de la referencia de parcela (ej. 0569302VK)."@es,
+        "referencia de parcela"@es ;
+    rdfs:seeAlso <https://www.sedecatastro.gob.es> ;
+    sh:datatype xsd:string ;
+    sh:description "The 7-character alphanumeric parcel reference code (e.g., 0569302VK)."@en,
+        "El código alfanumérico de 7 caracteres de la referencia de parcela (ej. 0569302VK)."@es ;
+    sh:name "parcel reference"@en,
+        "referencia de parcela"@es ;
+    sh:nodeKind sh:Literal ;
+    sh:path :parcelReference ;
+    sh:pattern ".*" .
+
+<https://astrea.linkeddata.es/shapes#f9d764da48ccdb44131d410d53b29c4c> a sh:PropertyShape ;
+    rdfs:label "Boolean indicating whether a cadastral property is subject to horizontal division regime."@en,
+        "has horizontal division"@en,
+        "Booleano que indica si un inmueble catastral está sujeto a régimen de división horizontal."@es,
+        "tiene división horizontal"@es ;
+    sh:datatype xsd:boolean ;
+    sh:description "Boolean indicating whether a cadastral property is subject to horizontal division regime."@en,
+        "Booleano que indica si un inmueble catastral está sujeto a régimen de división horizontal."@es ;
+    sh:name "has horizontal division"@en,
+        "tiene división horizontal"@es ;
+    sh:nodeKind sh:Literal ;
+    sh:path :hasHorizontalDivision ;
+    sh:pattern "true|false|0|1" .
+
+<https://astrea.linkeddata.es/shapes#a61f24e04d2e214626edcb5e375f699f> a sh:PropertyShape ;
+    rdfs:label "Relationship that relates a cadastral parcel or property with its cadastral reference."@en,
+        "has cadastral reference"@en,
+        "Relación que relaciona una parcela catastral o una propiedad catastral con su referencia catastral."@es,
+        "tiene referencia catastral"@es ;
+    sh:class :CadastralReference ;
+    sh:description "Relationship that relates a cadastral parcel or property with its cadastral reference."@en,
+        "Relación que relaciona una parcela catastral o una propiedad catastral con su referencia catastral."@es ;
+    sh:name "has cadastral reference"@en,
+        "tiene referencia catastral"@es ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path :hasCadastralReference .
+
+<https://astrea.linkeddata.es/shapes#fea714d8c045434e5f46b5eb0696935c> a sh:PropertyShape ;
+    rdfs:label "Relationship linking a cadastral property or parcel to its postal address. Through this relationship, location information (municipality, province, postal code) can be obtained from the linked DireccionPostal."@en,
+        "address"@en,
+        "Relación que vincula un inmueble o parcela catastral con su dirección postal. A través de esta relación, se puede obtener información de ubicación (municipio, provincia, código postal) de la DirecciónPostal enlazada."@es,
+        "dirección"@es ;
+    rdfs:isDefinedBy <http://schema.org> ;
+    sh:class <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal#DireccionPostal> ;
+    sh:description "Relationship linking a cadastral property or parcel to its postal address. Through this relationship, location information (municipality, province, postal code) can be obtained from the linked DireccionPostal."@en,
+        "Relación que vincula un inmueble o parcela catastral con su dirección postal. A través de esta relación, se puede obtener información de ubicación (municipio, provincia, código postal) de la DirecciónPostal enlazada."@es ;
+    sh:name "address"@en,
+        "dirección"@es ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:path <http://schema.org/address> .
+
