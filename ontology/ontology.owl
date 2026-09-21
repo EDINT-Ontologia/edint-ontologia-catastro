@@ -333,26 +333,6 @@
     
 
 
-    <!-- http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#hasCadastralReference -->
-
-    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#hasCadastralReference">
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://edint.es/def/catastro#CadastralParcel"/>
-                    <rdf:Description rdf:about="https://edint.es/def/catastro#CadastralProperty"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
-        <rdfs:range rdf:resource="https://edint.es/def/catastro#CadastralReference"/>
-        <rdfs:comment xml:lang="es">Relación que relaciona una parcela catastral o una propiedad catastral con su referencia catastral.</rdfs:comment>
-        <rdfs:comment xml:lang="en">Relationship that relates a cadastral parcel or property with its cadastral reference.</rdfs:comment>
-        <rdfs:label xml:lang="en">has cadastral reference</rdfs:label>
-        <rdfs:label xml:lang="es">tiene referencia catastral</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://www.opengis.net/ont/geosparql#hasGeometry -->
 
     <owl:ObjectProperty rdf:about="http://www.opengis.net/ont/geosparql#hasGeometry"/>
@@ -389,6 +369,26 @@
         <rdfs:comment xml:lang="en">Relationship indicating that a cadastral parcel contains one or more cadastral properties (e.g., flats in a horizontal division).</rdfs:comment>
         <rdfs:label xml:lang="en">has cadastral property</rdfs:label>
         <rdfs:label xml:lang="es">tiene inmueble catastral</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://edint.es/def/catastro#hasCadastralReference -->
+
+    <owl:ObjectProperty rdf:about="https://edint.es/def/catastro#hasCadastralReference">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://edint.es/def/catastro#CadastralParcel"/>
+                    <rdf:Description rdf:about="https://edint.es/def/catastro#CadastralProperty"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="https://edint.es/def/catastro#CadastralReference"/>
+        <rdfs:comment xml:lang="es">Relación que relaciona una parcela catastral o una propiedad catastral con su referencia catastral.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relationship that relates a cadastral parcel or property with its cadastral reference.</rdfs:comment>
+        <rdfs:label xml:lang="en">has cadastral reference</rdfs:label>
+        <rdfs:label xml:lang="es">tiene referencia catastral</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -568,6 +568,19 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- https://edint.es/def/catastro#cadastralValue -->
+
+    <owl:DatatypeProperty rdf:about="https://edint.es/def/catastro#cadastralValue">
+        <rdfs:domain rdf:resource="https://edint.es/def/catastro#CadastralProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment xml:lang="en">Technical value of the land and buildings in rural and urban properties and properties with special characteristics, prepared by the Cadastral Management and Tax Cooperation Center, which serves as the taxable base for the property tax and as a reference value in other taxes.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Valor técnico del suelo y de las construcciones en los inmuebles rústicos y urbanos y de características especiales, elaborado por el Centro de Gestión Catastral y Cooperación Tributaria, que sirve de base imponible al impuesto sobre bienes inmuebles y como valor de referencia en otros tributos.</rdfs:comment>
+        <rdfs:label xml:lang="en">cadastral value</rdfs:label>
+        <rdfs:label xml:lang="es">valor catastral</rdfs:label>
+    </owl:DatatypeProperty>
     
 
 
