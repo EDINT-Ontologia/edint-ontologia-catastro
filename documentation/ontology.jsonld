@@ -1,7 +1,7 @@
 [ {
   "@id" : "_:genid1",
   "http://xmlns.com/foaf/0.1/name" : [ {
-    "@value" : "Maria del Socorro Bernardos"
+    "@value" : "Edna Ruckhaus"
   } ],
   "https://schema.org/affiliation" : [ {
     "@id" : "https://oeg.fi.upm.es/"
@@ -29,21 +29,22 @@
 }, {
   "@id" : "_:genid16",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "https://edint.es/def/catastro#CadastralParcel"
+    }, {
+      "@id" : "https://edint.es/def/catastro#CadastralProperty"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid19",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
       "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
     }, {
-      "@id" : "_:genid18"
+      "@id" : "_:genid21"
     } ]
-  } ]
-}, {
-  "@id" : "_:genid18",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#hasValue" : [ {
-    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/clase"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
   } ]
 }, {
   "@id" : "_:genid2",
@@ -54,7 +55,16 @@
     "@id" : "https://oeg.fi.upm.es/"
   } ]
 }, {
-  "@id" : "_:genid20",
+  "@id" : "_:genid21",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/clase"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
+  } ]
+}, {
+  "@id" : "_:genid23",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
@@ -64,17 +74,17 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid23",
+  "@id" : "_:genid26",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
       "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
     }, {
-      "@id" : "_:genid25"
+      "@id" : "_:genid28"
     } ]
   } ]
 }, {
-  "@id" : "_:genid25",
+  "@id" : "_:genid28",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#hasValue" : [ {
     "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/uso"
@@ -83,7 +93,15 @@
     "@id" : "http://www.w3.org/2004/02/skos/core#inScheme"
   } ]
 }, {
-  "@id" : "_:genid27",
+  "@id" : "_:genid3",
+  "http://xmlns.com/foaf/0.1/name" : [ {
+    "@value" : "Maria del Socorro Bernardos"
+  } ],
+  "https://schema.org/affiliation" : [ {
+    "@id" : "https://oeg.fi.upm.es/"
+  } ]
+}, {
+  "@id" : "_:genid30",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "https://edint.es/def/catastro#CadastralProperty"
@@ -96,7 +114,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid28",
+  "@id" : "_:genid31",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://www.opengis.net/ont/geosparql#hasGeometry"
@@ -105,7 +123,7 @@
     "@id" : "http://www.opengis.net/ont/geosparql#Geometry"
   } ]
 }, {
-  "@id" : "_:genid29",
+  "@id" : "_:genid32",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "https://edint.es/def/catastro#ParcelReference"
@@ -118,15 +136,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid3",
-  "http://xmlns.com/foaf/0.1/name" : [ {
-    "@value" : "Daniel Doña"
-  } ],
-  "https://schema.org/affiliation" : [ {
-    "@id" : "https://oeg.fi.upm.es/"
-  } ]
-}, {
-  "@id" : "_:genid30",
+  "@id" : "_:genid33",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "https://edint.es/def/catastro#hasCadastralConstruction"
@@ -135,7 +145,7 @@
     "@id" : "https://edint.es/def/catastro#CadastralConstruction"
   } ]
 }, {
-  "@id" : "_:genid31",
+  "@id" : "_:genid34",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "https://edint.es/def/catastro#PropertyReference"
@@ -148,7 +158,7 @@
     "@value" : "1"
   } ]
 }, {
-  "@id" : "_:genid32",
+  "@id" : "_:genid35",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onClass" : [ {
     "@id" : "https://edint.es/def/catastro#CadastralParcel"
@@ -163,7 +173,7 @@
 }, {
   "@id" : "_:genid4",
   "http://xmlns.com/foaf/0.1/name" : [ {
-    "@value" : "Edna Ruckhaus"
+    "@value" : "Lucía Sánchez"
   } ],
   "https://schema.org/affiliation" : [ {
     "@id" : "https://oeg.fi.upm.es/"
@@ -171,7 +181,7 @@
 }, {
   "@id" : "_:genid5",
   "http://xmlns.com/foaf/0.1/name" : [ {
-    "@value" : "Lucía Sánchez"
+    "@value" : "Daniel Doña"
   } ],
   "https://schema.org/affiliation" : [ {
     "@id" : "https://oeg.fi.upm.es/"
@@ -190,18 +200,6 @@
 }, {
   "@id" : "_:genid7",
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "es",
-    "@value" : "GeoSPARQL"
-  }, {
-    "@language" : "en",
-    "@value" : "GeoSPARQL"
-  } ],
-  "https://w3id.org/widoco/vocab#vocabularyIRI" : [ {
-    "@id" : "http://www.opengis.net/ont/geosparql"
-  } ]
-}, {
-  "@id" : "_:genid8",
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Postal Address (esdir)"
   }, {
@@ -212,7 +210,7 @@
     "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal"
   } ]
 }, {
-  "@id" : "_:genid9",
+  "@id" : "_:genid8",
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Street catalogue (escjr)"
@@ -222,6 +220,18 @@
   } ],
   "https://w3id.org/widoco/vocab#vocabularyIRI" : [ {
     "@id" : "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero"
+  } ]
+}, {
+  "@id" : "_:genid9",
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "GeoSPARQL"
+  }, {
+    "@language" : "en",
+    "@value" : "GeoSPARQL"
+  } ],
+  "https://w3id.org/widoco/vocab#vocabularyIRI" : [ {
+    "@id" : "http://www.opengis.net/ont/geosparql"
   } ]
 }, {
   "@id" : "http://purl.org/dc/terms/abstract",
@@ -379,6 +389,9 @@
   "http://www.w3.org/2002/07/owl#priorVersion" : [ {
     "@id" : "https://github.com/EDINT-Ontologia/edint-ontologia-catastro/releases/tag/v0.2.0"
   } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "https://edint.es/def/catastro/0.2.1"
+  } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@value" : "0.2.1"
   } ],
@@ -442,6 +455,9 @@
   "@id" : "http://www.w3.org/2004/02/skos/core#inScheme",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 }, {
+  "@id" : "http://xmlns.com/foaf/0.1/Organization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
   "@id" : "http://xmlns.com/foaf/0.1/homepage",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
@@ -467,7 +483,7 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.opengis.net/ont/geosparql#Feature"
   }, {
-    "@id" : "_:genid27"
+    "@id" : "_:genid30"
   } ]
 }, {
   "@id" : "https://edint.es/def/catastro#CadastralParcel",
@@ -489,9 +505,9 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.opengis.net/ont/geosparql#Feature"
   }, {
-    "@id" : "_:genid28"
+    "@id" : "_:genid31"
   }, {
-    "@id" : "_:genid29"
+    "@id" : "_:genid32"
   } ]
 }, {
   "@id" : "https://edint.es/def/catastro#CadastralProperty",
@@ -513,11 +529,11 @@
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://www.opengis.net/ont/geosparql#Feature"
   }, {
-    "@id" : "_:genid30"
+    "@id" : "_:genid33"
   }, {
-    "@id" : "_:genid31"
+    "@id" : "_:genid34"
   }, {
-    "@id" : "_:genid32"
+    "@id" : "_:genid35"
   } ]
 }, {
   "@id" : "https://edint.es/def/catastro#CadastralReference",
@@ -592,6 +608,29 @@
   }, {
     "@language" : "en",
     "@value" : "Renovation"
+  } ]
+}, {
+  "@id" : "https://edint.es/def/catastro#cadastralValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Technical value of the land and buildings in rural and urban properties and properties with special characteristics, prepared by the Cadastral Management and Tax Cooperation Center, which serves as the taxable base for the property tax and as a reference value in other taxes."
+  }, {
+    "@language" : "es",
+    "@value" : "Valor técnico del suelo y de las construcciones en los inmuebles rústicos y urbanos y de características especiales, elaborado por el Centro de Gestión Catastral y Cooperación Tributaria, que sirve de base imponible al impuesto sobre bienes inmuebles y como valor de referencia en otros tributos."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://edint.es/def/catastro#CadastralProperty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "cadastral value"
+  }, {
+    "@language" : "es",
+    "@value" : "valor catastral"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
   } ]
 }, {
   "@id" : "https://edint.es/def/catastro#constructionYear",
@@ -715,6 +754,29 @@
     "@id" : "https://edint.es/def/catastro#onCadastralParcel"
   } ]
 }, {
+  "@id" : "https://edint.es/def/catastro#hasCadastralReference",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Relación que relaciona una parcela catastral o una propiedad catastral con su referencia catastral."
+  }, {
+    "@language" : "en",
+    "@value" : "Relationship that relates a cadastral parcel or property with its cadastral reference."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid13"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "has cadastral reference"
+  }, {
+    "@language" : "es",
+    "@value" : "tiene referencia catastral"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://edint.es/def/catastro#CadastralReference"
+  } ]
+}, {
   "@id" : "https://edint.es/def/catastro#hasClass",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -725,7 +787,7 @@
     "@value" : "Relationship that assigns a classification (urban/rural) to a parcel or property. Classification concepts are defined in external SKOS vocabulary at http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/clase."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid13"
+    "@id" : "_:genid16"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -735,7 +797,7 @@
     "@value" : "tiene clase"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid16"
+    "@id" : "_:genid19"
   } ]
 }, {
   "@id" : "https://edint.es/def/catastro#hasHorizontalDivision",
@@ -849,7 +911,7 @@
     "@value" : "Relationship that assigns a primary use to a property or construction. Use concepts are defined in the external SKOS vocabulary at http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/uso."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "_:genid20"
+    "@id" : "_:genid23"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -859,7 +921,7 @@
     "@value" : "tiene uso"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "_:genid23"
+    "@id" : "_:genid26"
   } ]
 }, {
   "@id" : "https://edint.es/def/catastro#onCadastralParcel",
@@ -1151,6 +1213,7 @@
   } ]
 }, {
   "@id" : "https://oeg.fi.upm.es/",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
   "http://xmlns.com/foaf/0.1/name" : [ {
     "@value" : "Ontology Engineering Group, UPM"
   } ]

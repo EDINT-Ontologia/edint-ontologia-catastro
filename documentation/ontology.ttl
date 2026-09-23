@@ -7,6 +7,7 @@
 @base <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#> .
 
 <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> rdf:type owl:Ontology ;
+                                                                                     owl:versionIRI <https://edint.es/def/catastro/0.2.1> ;
                                                                                      owl:imports <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> ,
                                                                                                  <http://www.opengis.net/ont/geosparql> ;
                                                                                      <http://purl.org/dc/terms/abstract> "Ontología para modelar las entidades del Catastro Español, centrada en Parcelas, Inmuebles y Construcciones. Reutiliza GeoSPARQL, conceptos INSPIRE y el vocabulario de callejero español."@en ,
@@ -46,36 +47,36 @@
                                                                                                                                      _:genid8 ,
                                                                                                                                      _:genid9 .
 
-_:genid1 <http://xmlns.com/foaf/0.1/name> "Maria del Socorro Bernardos" ;
+_:genid1 <http://xmlns.com/foaf/0.1/name> "Edna Ruckhaus" ;
           <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
 
 _:genid2 <http://xmlns.com/foaf/0.1/name> "Oscar Corcho" ;
           <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
 
-_:genid3 <http://xmlns.com/foaf/0.1/name> "Daniel Doña" ;
+_:genid3 <http://xmlns.com/foaf/0.1/name> "Maria del Socorro Bernardos" ;
           <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
 
-_:genid4 <http://xmlns.com/foaf/0.1/name> "Edna Ruckhaus" ;
+_:genid4 <http://xmlns.com/foaf/0.1/name> "Lucía Sánchez" ;
           <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
 
-_:genid5 <http://xmlns.com/foaf/0.1/name> "Lucía Sánchez" ;
+_:genid5 <http://xmlns.com/foaf/0.1/name> "Daniel Doña" ;
           <https://schema.org/affiliation> <https://oeg.fi.upm.es/> .
 
 _:genid6 <http://xmlns.com/foaf/0.1/homepage> <https://www.femp.es/> ;
           <http://xmlns.com/foaf/0.1/name> "FEMP" ;
           <https://schema.org/affiliation> "Federación Española de Municipios y Provincias" .
 
-_:genid7 rdfs:label "GeoSPARQL"@en ,
-                     "GeoSPARQL"@es ;
-          <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.opengis.net/ont/geosparql> .
-
-_:genid8 rdfs:label "Dirección Postal (esdir)"@es ,
+_:genid7 rdfs:label "Dirección Postal (esdir)"@es ,
                      "Postal Address (esdir)"@en ;
           <https://w3id.org/widoco/vocab#vocabularyIRI> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal> .
 
-_:genid9 rdfs:label "Callejero (escjr)"@es ,
+_:genid8 rdfs:label "Callejero (escjr)"@es ,
                      "Street catalogue (escjr)"@en ;
           <https://w3id.org/widoco/vocab#vocabularyIRI> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> .
+
+_:genid9 rdfs:label "GeoSPARQL"@en ,
+                     "GeoSPARQL"@es ;
+          <https://w3id.org/widoco/vocab#vocabularyIRI> <http://www.opengis.net/ont/geosparql> .
 
 #################################################################
 #    Annotation properties
@@ -246,6 +247,20 @@ xsd:gYear rdf:type rdfs:Datatype .
                                                                 "tiene inmueble catastral"@es .
 
 
+###  https://edint.es/def/catastro#hasCadastralReference
+<https://edint.es/def/catastro#hasCadastralReference> rdf:type owl:ObjectProperty ;
+                                                      rdfs:domain [ rdf:type owl:Class ;
+                                                                    owl:unionOf ( <https://edint.es/def/catastro#CadastralParcel>
+                                                                                  <https://edint.es/def/catastro#CadastralProperty>
+                                                                                )
+                                                                  ] ;
+                                                      rdfs:range <https://edint.es/def/catastro#CadastralReference> ;
+                                                      rdfs:comment "Relación que relaciona una parcela catastral o una propiedad catastral con su referencia catastral."@es ,
+                                                                   "Relationship that relates a cadastral parcel or property with its cadastral reference."@en ;
+                                                      rdfs:label "has cadastral reference"@en ,
+                                                                 "tiene referencia catastral"@es .
+
+
 ###  https://edint.es/def/catastro#hasClass
 <https://edint.es/def/catastro#hasClass> rdf:type owl:ObjectProperty ;
                                          rdfs:domain [ rdf:type owl:Class ;
@@ -374,6 +389,16 @@ xsd:gYear rdf:type rdfs:Datatype .
 #################################################################
 #    Data properties
 #################################################################
+
+###  https://edint.es/def/catastro#cadastralValue
+<https://edint.es/def/catastro#cadastralValue> rdf:type owl:DatatypeProperty ;
+                                               rdfs:domain <https://edint.es/def/catastro#CadastralProperty> ;
+                                               rdfs:range xsd:float ;
+                                               rdfs:comment "Technical value of the land and buildings in rural and urban properties and properties with special characteristics, prepared by the Cadastral Management and Tax Cooperation Center, which serves as the taxable base for the property tax and as a reference value in other taxes."@en ,
+                                                            "Valor técnico del suelo y de las construcciones en los inmuebles rústicos y urbanos y de características especiales, elaborado por el Centro de Gestión Catastral y Cooperación Tributaria, que sirve de base imponible al impuesto sobre bienes inmuebles y como valor de referencia en otros tributos."@es ;
+                                               rdfs:label "cadastral value"@en ,
+                                                          "valor catastral"@es .
+
 
 ###  https://edint.es/def/catastro#constructionYear
 <https://edint.es/def/catastro#constructionYear> rdf:type owl:DatatypeProperty ;
@@ -509,6 +534,10 @@ xsd:gYear rdf:type rdfs:Datatype .
 <http://www.w3.org/2004/02/skos/core#Concept> rdf:type owl:Class .
 
 
+###  http://xmlns.com/foaf/0.1/Organization
+<http://xmlns.com/foaf/0.1/Organization> rdf:type owl:Class .
+
+
 ###  https://edint.es/def/catastro#CadastralConstruction
 <https://edint.es/def/catastro#CadastralConstruction> rdf:type owl:Class ;
                                                       rdfs:subClassOf <http://www.opengis.net/ont/geosparql#Feature> ,
@@ -610,11 +639,9 @@ xsd:gYear rdf:type rdfs:Datatype .
 <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/uso> rdf:type owl:NamedIndividual .
 
 
-#################################################################
-#    Annotations
-#################################################################
-
-<https://oeg.fi.upm.es/> <http://xmlns.com/foaf/0.1/name> "Ontology Engineering Group, UPM" .
+###  https://oeg.fi.upm.es/
+<https://oeg.fi.upm.es/> rdf:type owl:NamedIndividual ;
+                         <http://xmlns.com/foaf/0.1/name> "Ontology Engineering Group, UPM" .
 
 
 ###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
