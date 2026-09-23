@@ -16,6 +16,7 @@
      xmlns:vocab="https://w3id.org/widoco/vocab#"
      xmlns:schema="https://schema.org/">
     <owl:Ontology rdf:about="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero">
+        <owl:versionIRI rdf:resource="https://edint.es/def/catastro/0.2.1"/>
         <owl:imports rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero"/>
         <owl:imports rdf:resource="http://www.opengis.net/ont/geosparql"/>
         <terms:abstract xml:lang="en">Ontología para modelar las entidades del Catastro Español, centrada en Parcelas, Inmuebles y Construcciones. Reutiliza GeoSPARQL, conceptos INSPIRE y el vocabulario de callejero español.</terms:abstract>
@@ -56,7 +57,7 @@
         <vocab:vocabularyLabel rdf:nodeID="genid9"/>
     </owl:Ontology>
     <rdf:Description rdf:nodeID="genid1">
-        <foaf:name>Maria del Socorro Bernardos</foaf:name>
+        <foaf:name>Edna Ruckhaus</foaf:name>
         <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid2">
@@ -64,15 +65,15 @@
         <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid3">
-        <foaf:name>Daniel Doña</foaf:name>
+        <foaf:name>Maria del Socorro Bernardos</foaf:name>
         <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid4">
-        <foaf:name>Edna Ruckhaus</foaf:name>
+        <foaf:name>Lucía Sánchez</foaf:name>
         <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid5">
-        <foaf:name>Lucía Sánchez</foaf:name>
+        <foaf:name>Daniel Doña</foaf:name>
         <schema:affiliation rdf:resource="https://oeg.fi.upm.es/"/>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid6">
@@ -81,19 +82,19 @@
         <schema:affiliation>Federación Española de Municipios y Provincias</schema:affiliation>
     </rdf:Description>
     <rdf:Description rdf:nodeID="genid7">
-        <rdfs:label xml:lang="en">GeoSPARQL</rdfs:label>
-        <rdfs:label xml:lang="es">GeoSPARQL</rdfs:label>
-        <vocab:vocabularyIRI rdf:resource="http://www.opengis.net/ont/geosparql"/>
-    </rdf:Description>
-    <rdf:Description rdf:nodeID="genid8">
         <rdfs:label xml:lang="es">Dirección Postal (esdir)</rdfs:label>
         <rdfs:label xml:lang="en">Postal Address (esdir)</rdfs:label>
         <vocab:vocabularyIRI rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/direccion-postal"/>
     </rdf:Description>
-    <rdf:Description rdf:nodeID="genid9">
+    <rdf:Description rdf:nodeID="genid8">
         <rdfs:label xml:lang="es">Callejero (escjr)</rdfs:label>
         <rdfs:label xml:lang="en">Street catalogue (escjr)</rdfs:label>
         <vocab:vocabularyIRI rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero"/>
+    </rdf:Description>
+    <rdf:Description rdf:nodeID="genid9">
+        <rdfs:label xml:lang="en">GeoSPARQL</rdfs:label>
+        <rdfs:label xml:lang="es">GeoSPARQL</rdfs:label>
+        <vocab:vocabularyIRI rdf:resource="http://www.opengis.net/ont/geosparql"/>
     </rdf:Description>
     
 
@@ -396,6 +397,27 @@
     
 
 
+    <!-- https://edint.es/def/catastro#hasCadastralReference -->
+
+
+    <owl:ObjectProperty rdf:about="https://edint.es/def/catastro#hasCadastralReference">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://edint.es/def/catastro#CadastralParcel"/>
+                    <rdf:Description rdf:about="https://edint.es/def/catastro#CadastralProperty"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="https://edint.es/def/catastro#CadastralReference"/>
+        <rdfs:comment xml:lang="es">Relación que relaciona una parcela catastral o una propiedad catastral con su referencia catastral.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relationship that relates a cadastral parcel or property with its cadastral reference.</rdfs:comment>
+        <rdfs:label xml:lang="en">has cadastral reference</rdfs:label>
+        <rdfs:label xml:lang="es">tiene referencia catastral</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://edint.es/def/catastro#hasClass -->
 
 
@@ -582,6 +604,20 @@
      -->
 
 
+    
+
+
+    <!-- https://edint.es/def/catastro#cadastralValue -->
+
+
+    <owl:DatatypeProperty rdf:about="https://edint.es/def/catastro#cadastralValue">
+        <rdfs:domain rdf:resource="https://edint.es/def/catastro#CadastralProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment xml:lang="en">Technical value of the land and buildings in rural and urban properties and properties with special characteristics, prepared by the Cadastral Management and Tax Cooperation Center, which serves as the taxable base for the property tax and as a reference value in other taxes.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Valor técnico del suelo y de las construcciones en los inmuebles rústicos y urbanos y de características especiales, elaborado por el Centro de Gestión Catastral y Cooperación Tributaria, que sirve de base imponible al impuesto sobre bienes inmuebles y como valor de referencia en otros tributos.</rdfs:comment>
+        <rdfs:label xml:lang="en">cadastral value</rdfs:label>
+        <rdfs:label xml:lang="es">valor catastral</rdfs:label>
+    </owl:DatatypeProperty>
     
 
 
@@ -783,6 +819,13 @@
     
 
 
+    <!-- http://xmlns.com/foaf/0.1/Organization -->
+
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
+    
+
+
     <!-- https://edint.es/def/catastro#CadastralConstruction -->
 
 
@@ -938,18 +981,12 @@
     
 
 
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Annotations
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
+    <!-- https://oeg.fi.upm.es/ -->
 
 
-    <rdf:Description rdf:about="https://oeg.fi.upm.es/">
+    <owl:NamedIndividual rdf:about="https://oeg.fi.upm.es/">
         <foaf:name>Ontology Engineering Group, UPM</foaf:name>
-    </rdf:Description>
+    </owl:NamedIndividual>
 </rdf:RDF>
 
 
