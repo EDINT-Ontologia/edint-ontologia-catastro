@@ -8,6 +8,7 @@ PREFIX edintcat: <https://edint.es/def/catastro#>
 PREFIX geo: <http://www.opengis.net/ont/geosparql#>
 PREFIX qudt: <http://qudt.org/schema/qudt/>
 PREFIX qudtunit: <http://qudt.org/vocab/unit/>
+PREFIX schema: <http://schema.org/>
 PREFIX callejero: <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#>
 
 # -----------------------------------------------------------------------------
@@ -19,7 +20,7 @@ SELECT ?parcel ?parcelLabel ?streetName ?number ?postalCode
        ?municipality ?province WHERE {
     ?parcel a edintcat:CadastralParcel ;
             rdfs:label ?parcelLabel ;
-            edintcat:hasAddress ?address .
+            schema:address ?address .
 
     ?address a callejero:Portal ;
              callejero:via ?street ;
@@ -70,7 +71,7 @@ SELECT ?property ?propertyLabel ?streetName ?number ?postalCode
        ?municipality ?province WHERE {
     ?property a edintcat:CadastralProperty ;
               rdfs:label ?propertyLabel ;
-              edintcat:hasAddress ?address .
+              schema:address ?address .
 
     ?address a callejero:Portal ;
              callejero:via ?street ;

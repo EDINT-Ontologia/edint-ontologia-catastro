@@ -6,6 +6,7 @@
 
 PREFIX edintcat: <https://edint.es/def/catastro#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX schema: <http://schema.org/>
 PREFIX callejero: <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#>
 
 # -----------------------------------------------------------------------------
@@ -51,7 +52,7 @@ SELECT ?property ?label ?use ?class ?participation WHERE {
 SELECT ?property ?label ?streetName ?number ?postalCode ?municipality ?province WHERE {
     ?property a edintcat:CadastralProperty ;
               rdfs:label ?label ;
-              edintcat:hasAddress ?address .
+              schema:address ?address .
 
     ?address a callejero:Portal ;
              callejero:via ?street ;
@@ -77,7 +78,7 @@ SELECT ?property ?label ?participation ?useLabel ?classLabel
               edintcat:hasUse ?use ;
               edintcat:hasClass ?class ;
               edintcat:hasCadastralReference ?ref ;
-              OPTIONAL { ?property edintcat:hasAddress ?address } .
+              OPTIONAL { ?property schema:address ?address } .
 
     ?use skos:prefLabel ?useLabel .
     ?class skos:prefLabel ?classLabel .
