@@ -411,13 +411,13 @@
                     <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/clase"/>
+                        <owl:hasValue rdf:resource="https://edint.es/kos/CadastralClass"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:range>
-        <rdfs:comment xml:lang="es">Relación que asigna una clasificación (urbano/rústico) a una parcela o inmueble. Los conceptos de clasificación se definen en el vocabulario SKOS externo en http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/clase.</rdfs:comment>
-        <rdfs:comment xml:lang="en">Relationship that assigns a classification (urban/rural) to a parcel or property. Classification concepts are defined in external SKOS vocabulary at http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/clase.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Relación que asigna una clasificación (urbano/rústico) a una parcela o inmueble. Los conceptos de clasificación se definen en el vocabulario SKOS externo en https://edint.es/kos/CadastralClass.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relationship that assigns a classification (urban/rural) to a parcel or property. Classification concepts are defined in external SKOS vocabulary at https://edint.es/kos/CadastralClass.</rdfs:comment>
         <rdfs:label xml:lang="en">has class</rdfs:label>
         <rdfs:label xml:lang="es">tiene clase</rdfs:label>
     </owl:ObjectProperty>
@@ -474,6 +474,7 @@
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="https://edint.es/def/catastro#CadastralConstruction"/>
                     <rdf:Description rdf:about="https://edint.es/def/catastro#CadastralProperty"/>
+                    <rdf:Description rdf:about="https://edint.es/def/catastro#CadastralParcel"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
@@ -483,13 +484,13 @@
                     <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
-                        <owl:hasValue rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/uso"/>
+                        <owl:hasValue rdf:resource="https://edint.es/kos/CadastralUse"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:range>
-        <rdfs:comment xml:lang="es">Relación que asigna un uso principal a un inmueble o construcción. Los conceptos de uso se definen en el vocabulario SKOS externo en http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/uso.</rdfs:comment>
-        <rdfs:comment xml:lang="en">Relationship that assigns a primary use to a property or construction. Use concepts are defined in the external SKOS vocabulary at http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/uso.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Relación que asigna un uso principal a un inmueble o construcción. Los conceptos de uso se definen en el vocabulario SKOS externo en https://edint.es/kos/CadastralUse.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Relationship that assigns a primary use to a property or construction. Use concepts are defined in the external SKOS vocabulary at https://edint.es/kos/CadastralUse.</rdfs:comment>
         <rdfs:label xml:lang="en">has use</rdfs:label>
         <rdfs:label xml:lang="es">tiene uso</rdfs:label>
     </owl:ObjectProperty>
@@ -906,15 +907,15 @@
     
 
 
-    <!-- http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/clase -->
+    <!-- https://edint.es/kos/CadastralClass/ -->
 
-    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/clase"/>
+    <owl:NamedIndividual rdf:about="https://edint.es/kos/CadastralClass/"/>
     
 
 
-    <!-- http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/uso -->
+    <!-- https://edint.es/kos/CadastralUse/ -->
 
-    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/uso"/>
+    <owl:NamedIndividual rdf:about="https://edint.es/kos/CadastralUse/"/>
     
 
 
