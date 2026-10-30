@@ -23,7 +23,7 @@
                                                                                      <http://purl.org/dc/terms/description> "Ontology for modeling Spanish Cadastre entities, focused on Parcels, Properties and Buildings. Reuses GeoSPARQL, INSPIRE concepts, and the Spanish street catalog (callejero) vocabulary."@en ,
                                                                                                                             "Ontología para modelar las entidades del Catastro Español, centrada en Parcelas, Inmuebles y Construcciones. Reutiliza GeoSPARQL, conceptos INSPIRE y el vocabulario de callejero español."@es ;
                                                                                      <http://purl.org/dc/terms/issued> "2026-09-17"^^xsd:date ;
-                                                                                     <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ;
+                                                                                     <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by-sa/4.0/> ;
                                                                                      <http://purl.org/dc/terms/modified> "2026-09-17"^^xsd:date ;
                                                                                      <http://purl.org/dc/terms/publisher> _:genid6 ;
                                                                                      <http://purl.org/dc/terms/title> "EDINT Spanish Cadastre Ontology"@en ,
