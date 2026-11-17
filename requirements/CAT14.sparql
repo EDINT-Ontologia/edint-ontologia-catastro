@@ -52,21 +52,14 @@ ORDER BY ?staircase ?floor ?door
 # -----------------------------------------------------------------------------
 
 SELECT ?constructionCountRange (COUNT(DISTINCT ?property) AS ?propertyCount) WHERE {
-    ?property a edintcat:CadastralProperty ;
-              edintcat:hasCadastralConstruction ?construction .
-
-    {
-        SELECT ?property (COUNT(?construction) AS ?cCount) WHERE {
-            ?property edintcat:hasCadastralConstruction ?construction .
-        }
-        GROUP BY ?property
-    }
-
-    BIND(
-        IF(?cCount = 1, "1 construction",
+    { SELECT ?property (COUNT(?construction) AS ?cCount) WHERE {
+        ?property a edintcat:CadastralProperty ;
+                  edintcat:hasCadastralConstruction ?construction .
+        } GROUP BY ?property }
+    BIND(IF(?cCount = 1, "1 construction",
         IF(?cCount > 1 && ?cCount <= 10, "2-10 constructions",
         IF(?cCount > 10 && ?cCount <= 50, "11-50 constructions",
-        IF(?cCount > 50, "50+ constructions", "Unknown")))) AS ?constructionCountRange
+        "50+ constructions"))) AS ?constructionCountRange)
 }
 GROUP BY ?constructionCountRange
 

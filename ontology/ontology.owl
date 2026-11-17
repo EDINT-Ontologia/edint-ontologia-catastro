@@ -19,7 +19,7 @@
      xmlns:edintcat="https://edint.es/def/catastro#"
      xmlns:qudtunit="http://qudt.org/vocab/unit/"
      xmlns:callejero="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#">
-    <owl:Ontology rdf:about="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero">
+    <owl:Ontology rdf:about="https://edint.es/def/catastro">
         <owl:versionIRI rdf:resource="https://edint.es/def/catastro/0.2.1"/>
         <owl:imports rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero"/>
         <owl:imports rdf:resource="http://www.opengis.net/ont/geosparql"/>
@@ -61,7 +61,7 @@
         <dcterms:description xml:lang="en">Ontology for modeling Spanish Cadastre entities, focused on Parcels, Properties and Buildings. Reuses GeoSPARQL, INSPIRE concepts, and the Spanish street catalog (callejero) vocabulary.</dcterms:description>
         <dcterms:description xml:lang="es">Ontología para modelar las entidades del Catastro Español, centrada en Parcelas, Inmuebles y Construcciones. Reutiliza GeoSPARQL, conceptos INSPIRE y el vocabulario de callejero español.</dcterms:description>
         <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-09-17</dcterms:issued>
-        <dcterms:license rdf:resource="https://creativecommons.org/licenses/by/4.0/"/>
+        <dcterms:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
         <dcterms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2026-09-17</dcterms:modified>
         <dcterms:publisher>
             <rdf:Description>
@@ -73,7 +73,7 @@
         <dcterms:title xml:lang="en">EDINT Spanish Cadastre Ontology</dcterms:title>
         <dcterms:title xml:lang="es">Ontología EDINT del Catastro Español</dcterms:title>
         <vann:preferredNamespacePrefix>edintcat</vann:preferredNamespacePrefix>
-        <vann:preferredNamespaceUri rdf:resource="https://edint.es/def/catastro#"/>
+        <vann:preferredNamespaceUri>https://edint.es/def/catastro#</vann:preferredNamespaceUri>
         <rdfs:comment xml:lang="en">Initial draft version focusing on core classes: CadastralParcel, CadastralProperty, and CadastralConstruction with their relationships and properties.</rdfs:comment>
         <rdfs:comment xml:lang="es">Versión inicial centrada en las clases principales: ParcelaCatastral, Inmueble y Construcción con sus relaciones y propiedades.</rdfs:comment>
         <rdfs:label xml:lang="es">Catastro Español</rdfs:label>
