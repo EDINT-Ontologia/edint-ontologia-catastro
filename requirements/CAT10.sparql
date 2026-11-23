@@ -8,6 +8,7 @@ PREFIX edintcat: <https://edint.es/def/catastro#>
 PREFIX geo: <http://www.opengis.net/ont/geosparql#>
 PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX schema: <http://schema.org/>
 PREFIX callejero: <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero#>
 
 # -----------------------------------------------------------------------------
@@ -71,7 +72,7 @@ SELECT ?construction ?label ?floor ?door ?municipality WHERE {
 
     ?property edintcat:onCadastralParcel ?parcel .
 
-    ?parcel edintcat:hasAddress ?address .
+    ?parcel schema:address ?address .
 
     ?address a callejero:Portal ;
              callejero:municipio ?municipality .
