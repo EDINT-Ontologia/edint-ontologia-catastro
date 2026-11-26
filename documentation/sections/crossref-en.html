@@ -45,7 +45,7 @@ This section provides details for each class and property defined by Spanish Cad
    </dd>
    <dt>is in domain of</dt>
    <dd>
-    <a href="#http://schema.org/address" title="http://schema.org/address">address</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasCadastralProperty" title="https://edint.es/def/catastro#hasCadastralProperty">has cadastral property</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasCadastralReference" title="https://edint.es/def/catastro#hasCadastralReference">has cadastral reference</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasClass" title="https://edint.es/def/catastro#hasClass">has class</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasParcelReference" title="https://edint.es/def/catastro#hasParcelReference">has parcel reference</a> <sup class="type-op" title="object property">op</sup>
+    <a href="#http://schema.org/address" title="http://schema.org/address">address</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasCadastralProperty" title="https://edint.es/def/catastro#hasCadastralProperty">has cadastral property</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasCadastralReference" title="https://edint.es/def/catastro#hasCadastralReference">has cadastral reference</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasClass" title="https://edint.es/def/catastro#hasClass">has class</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasParcelReference" title="https://edint.es/def/catastro#hasParcelReference">has parcel reference</a> <sup class="type-op" title="object property">op</sup>, <a href="#hasUse" title="https://edint.es/def/catastro#hasUse">has use</a> <sup class="type-op" title="object property">op</sup>
    </dd>
    <dt>is in range of</dt>
    <dd>
@@ -262,7 +262,7 @@ This section provides details for each class and property defined by Spanish Cad
   <h3>has class<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://edint.es/def/catastro#hasClass</p>
   <div class="comment">
-   <span class="markdown">Relationship that assigns a classification (urban/rural) to a parcel or property. Classification concepts are defined in external SKOS vocabulary at http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/clase.</span>
+   <span class="markdown">Relationship that assigns a classification (urban/rural) to a parcel or property. Classification concepts are defined in external SKOS vocabulary at https://edint.es/kos/CadastralClass.</span>
   </div>
   <div class="description">
    <dl>
@@ -272,7 +272,7 @@ This section provides details for each class and property defined by Spanish Cad
     </dd>
     <dt>has range</dt>
     <dd>
-     <a href="http://www.w3.org/2004/02/skos/core#Concept" target="_blank" title="http://www.w3.org/2004/02/skos/core#Concept">Concept</a> <sup class="type-c" title="class">c</sup> <span class="logic">and</span> (<a href="http://www.w3.org/2004/02/skos/core#inScheme" target="_blank" title="http://www.w3.org/2004/02/skos/core#inScheme">in Scheme</a> <sup class="type-op" title="object property">op</sup> <span class="logic">value</span> <a href="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/clase" target="_blank" title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/clase">clase</a> <sup class="type-ni" title="named individual">ni</sup>)
+     <a href="http://www.w3.org/2004/02/skos/core#Concept" target="_blank" title="http://www.w3.org/2004/02/skos/core#Concept">Concept</a> <sup class="type-c" title="class">c</sup> <span class="logic">and</span> (<a href="http://www.w3.org/2004/02/skos/core#inScheme" target="_blank" title="http://www.w3.org/2004/02/skos/core#inScheme">in Scheme</a> <sup class="type-op" title="object property">op</sup> <span class="logic">value</span> <a href="https://edint.es/kos/CadastralClass" target="_blank" title="https://edint.es/kos/CadastralClass">Cadastral Class</a> <sup class="type-ni" title="named individual">ni</sup>)
     </dd>
    </dl>
   </div>
@@ -350,17 +350,17 @@ This section provides details for each class and property defined by Spanish Cad
   <h3>has use<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
   <p><strong>IRI:</strong> https://edint.es/def/catastro#hasUse</p>
   <div class="comment">
-   <span class="markdown">Relationship that assigns a primary use to a property or construction. Use concepts are defined in the external SKOS vocabulary at http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/uso.</span>
+   <span class="markdown">Relationship that assigns a primary use to a property or construction. Use concepts are defined in the external SKOS vocabulary at https://edint.es/kos/CadastralUse.</span>
   </div>
   <div class="description">
    <dl>
     <dt>has domain</dt>
     <dd>
-     <a href="#CadastralConstruction" title="https://edint.es/def/catastro#CadastralConstruction">Cadastral Construction</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="#CadastralProperty" title="https://edint.es/def/catastro#CadastralProperty">Cadastral Property</a> <sup class="type-c" title="class">c</sup>
+     <a href="#CadastralConstruction" title="https://edint.es/def/catastro#CadastralConstruction">Cadastral Construction</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="#CadastralParcel" title="https://edint.es/def/catastro#CadastralParcel">Cadastral Parcel</a> <sup class="type-c" title="class">c</sup> <span class="logic">or</span> <a href="#CadastralProperty" title="https://edint.es/def/catastro#CadastralProperty">Cadastral Property</a> <sup class="type-c" title="class">c</sup>
     </dd>
     <dt>has range</dt>
     <dd>
-     <a href="http://www.w3.org/2004/02/skos/core#Concept" target="_blank" title="http://www.w3.org/2004/02/skos/core#Concept">Concept</a> <sup class="type-c" title="class">c</sup> <span class="logic">and</span> (<a href="http://www.w3.org/2004/02/skos/core#inScheme" target="_blank" title="http://www.w3.org/2004/02/skos/core#inScheme">in Scheme</a> <sup class="type-op" title="object property">op</sup> <span class="logic">value</span> <a href="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/uso" target="_blank" title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/uso">uso</a> <sup class="type-ni" title="named individual">ni</sup>)
+     <a href="http://www.w3.org/2004/02/skos/core#Concept" target="_blank" title="http://www.w3.org/2004/02/skos/core#Concept">Concept</a> <sup class="type-c" title="class">c</sup> <span class="logic">and</span> (<a href="http://www.w3.org/2004/02/skos/core#inScheme" target="_blank" title="http://www.w3.org/2004/02/skos/core#inScheme">in Scheme</a> <sup class="type-op" title="object property">op</sup> <span class="logic">value</span> <a href="https://edint.es/kos/CadastralUse" target="_blank" title="https://edint.es/kos/CadastralUse">Cadastral Use</a> <sup class="type-ni" title="named individual">ni</sup>)
     </dd>
    </dl>
   </div>

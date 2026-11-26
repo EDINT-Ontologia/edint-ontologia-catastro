@@ -271,13 +271,13 @@ xsd:gYear rdf:type rdfs:Datatype .
           rdfs:range [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
                                             [ rdf:type owl:Restriction ;
                                               owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
-                                              owl:hasValue <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/clase>
+                                              owl:hasValue <https://edint.es/kos/CadastralClass>
                                             ]
                                           ) ;
                        rdf:type owl:Class
                      ] ;
-          rdfs:comment "Relación que asigna una clasificación (urbano/rústico) a una parcela o inmueble. Los conceptos de clasificación se definen en el vocabulario SKOS externo en http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/clase."@es ,
-                       "Relationship that assigns a classification (urban/rural) to a parcel or property. Classification concepts are defined in external SKOS vocabulary at http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/clase."@en ;
+          rdfs:comment "Relación que asigna una clasificación (urbano/rústico) a una parcela o inmueble. Los conceptos de clasificación se definen en el vocabulario SKOS externo en https://edint.es/kos/CadastralClass."@es ,
+                       "Relationship that assigns a classification (urban/rural) to a parcel or property. Classification concepts are defined in external SKOS vocabulary at https://edint.es/kos/CadastralClass."@en ;
           rdfs:label "has class"@en ,
                      "tiene clase"@es .
 
@@ -319,19 +319,20 @@ xsd:gYear rdf:type rdfs:Datatype .
 :hasUse rdf:type owl:ObjectProperty ;
         rdfs:domain [ rdf:type owl:Class ;
                       owl:unionOf ( :CadastralConstruction
+                                    :CadastralParcel
                                     :CadastralProperty
                                   )
                     ] ;
         rdfs:range [ owl:intersectionOf ( <http://www.w3.org/2004/02/skos/core#Concept>
                                           [ rdf:type owl:Restriction ;
                                             owl:onProperty <http://www.w3.org/2004/02/skos/core#inScheme> ;
-                                            owl:hasValue <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/uso>
+                                            owl:hasValue <https://edint.es/kos/CadastralUse>
                                           ]
                                         ) ;
                      rdf:type owl:Class
                    ] ;
-        rdfs:comment "Relación que asigna un uso principal a un inmueble o construcción. Los conceptos de uso se definen en el vocabulario SKOS externo en http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/uso."@es ,
-                     "Relationship that assigns a primary use to a property or construction. Use concepts are defined in the external SKOS vocabulary at http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/uso."@en ;
+        rdfs:comment "Relación que asigna un uso principal a un inmueble o construcción. Los conceptos de uso se definen en el vocabulario SKOS externo en https://edint.es/kos/CadastralUse."@es ,
+                     "Relationship that assigns a primary use to a property or construction. Use concepts are defined in the external SKOS vocabulary at https://edint.es/kos/CadastralUse."@en ;
         rdfs:label "has use"@en ,
                    "tiene uso"@es .
 
@@ -631,12 +632,20 @@ xsd:gYear rdf:type rdfs:Datatype .
 #    Individuals
 #################################################################
 
-###  http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/clase
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/clase> rdf:type owl:NamedIndividual .
+###  https://edint.es/kos/CadastralClass
+<https://edint.es/kos/CadastralClass> rdf:type owl:NamedIndividual .
 
 
-###  http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/uso
-<http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/uso> rdf:type owl:NamedIndividual .
+###  https://edint.es/kos/CadastralUse
+<https://edint.es/kos/CadastralUse> rdf:type owl:NamedIndividual .
+
+
+###  https://edint.es/kos/CadastralClass/
+<https://edint.es/kos/CadastralClass/> rdf:type owl:NamedIndividual .
+
+
+###  https://edint.es/kos/CadastralUse/
+<https://edint.es/kos/CadastralUse/> rdf:type owl:NamedIndividual .
 
 
 ###  https://oeg.fi.upm.es/

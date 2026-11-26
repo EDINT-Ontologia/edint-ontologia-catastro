@@ -66,7 +66,7 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
    </dd>
    <dt>en dominio de</dt>
    <dd>
-    <a href="#http://schema.org/address" title="http://schema.org/address">dirección</a> <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#hasClass" title="https://edint.es/def/catastro#hasClass">tiene clase</a> <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#hasCadastralProperty" title="https://edint.es/def/catastro#hasCadastralProperty">tiene inmueble catastral</a> <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#hasCadastralReference" title="https://edint.es/def/catastro#hasCadastralReference">tiene referencia catastral</a> <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#hasParcelReference" title="https://edint.es/def/catastro#hasParcelReference">tiene referencia de parcela</a> <sup class="type-op" title="Propiedad entre objetos">op</sup>
+    <a href="#http://schema.org/address" title="http://schema.org/address">dirección</a> <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#hasClass" title="https://edint.es/def/catastro#hasClass">tiene clase</a> <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#hasCadastralProperty" title="https://edint.es/def/catastro#hasCadastralProperty">tiene inmueble catastral</a> <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#hasCadastralReference" title="https://edint.es/def/catastro#hasCadastralReference">tiene referencia catastral</a> <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#hasParcelReference" title="https://edint.es/def/catastro#hasParcelReference">tiene referencia de parcela</a> <sup class="type-op" title="Propiedad entre objetos">op</sup>, <a href="#hasUse" title="https://edint.es/def/catastro#hasUse">tiene uso</a> <sup class="type-op" title="Propiedad entre objetos">op</sup>
    </dd>
    <dt>en rango de</dt>
    <dd>
@@ -312,7 +312,7 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
   <h3>tiene clase<sup class="type-op" title="Propiedad entre objetos">op</sup> <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#objectproperties">Índice de propiedades de objetos</a> </span></h3>
   <p><strong>IRI:</strong> https://edint.es/def/catastro#hasClass</p>
   <div class="comment">
-   <span class="markdown">Relación que asigna una clasificación (urbano/rústico) a una parcela o inmueble. Los conceptos de clasificación se definen en el vocabulario SKOS externo en http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/clase.</span>
+   <span class="markdown">Relación que asigna una clasificación (urbano/rústico) a una parcela o inmueble. Los conceptos de clasificación se definen en el vocabulario SKOS externo en https://edint.es/kos/CadastralClass.</span>
   </div>
   <div class="description">
    <dl>
@@ -322,7 +322,7 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
     </dd>
     <dt>rango</dt>
     <dd>
-     <a href="http://www.w3.org/2004/02/skos/core#Concept" target="_blank" title="http://www.w3.org/2004/02/skos/core#Concept">Concept</a> <sup class="type-c" title="clase">c</sup> <span class="logic">and</span> (<a href="http://www.w3.org/2004/02/skos/core#inScheme" target="_blank" title="http://www.w3.org/2004/02/skos/core#inScheme">in Scheme</a> <sup class="type-op" title="Propiedad entre objetos">op</sup> <span class="logic">value</span> <a href="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/clase" target="_blank" title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/clase">clase</a> <sup class="type-ni" title="Individuo">ni</sup>)
+     <a href="http://www.w3.org/2004/02/skos/core#Concept" target="_blank" title="http://www.w3.org/2004/02/skos/core#Concept">Concept</a> <sup class="type-c" title="clase">c</sup> <span class="logic">and</span> (<a href="http://www.w3.org/2004/02/skos/core#inScheme" target="_blank" title="http://www.w3.org/2004/02/skos/core#inScheme">in Scheme</a> <sup class="type-op" title="Propiedad entre objetos">op</sup> <span class="logic">value</span> <a href="https://edint.es/kos/CadastralClass" target="_blank" title="https://edint.es/kos/CadastralClass">Cadastral Class</a> <sup class="type-ni" title="Individuo">ni</sup>)
     </dd>
    </dl>
   </div>
@@ -465,17 +465,17 @@ Esta secci&oacute;n introduce m&aacute;s detalles sobre cada clase y propiedad d
   <h3>tiene uso<sup class="type-op" title="Propiedad entre objetos">op</sup> <span class="backlink"> Volver a <a href="#toc">índice</a> o <a href="#objectproperties">Índice de propiedades de objetos</a> </span></h3>
   <p><strong>IRI:</strong> https://edint.es/def/catastro#hasUse</p>
   <div class="comment">
-   <span class="markdown">Relación que asigna un uso principal a un inmueble o construcción. Los conceptos de uso se definen en el vocabulario SKOS externo en http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/uso.</span>
+   <span class="markdown">Relación que asigna un uso principal a un inmueble o construcción. Los conceptos de uso se definen en el vocabulario SKOS externo en https://edint.es/kos/CadastralUse.</span>
   </div>
   <div class="description">
    <dl>
     <dt>dominio</dt>
     <dd>
-     <a href="#CadastralConstruction" title="https://edint.es/def/catastro#CadastralConstruction">Construcción Catastral</a> <sup class="type-c" title="clase">c</sup> <span class="logic">or</span> <a href="#CadastralProperty" title="https://edint.es/def/catastro#CadastralProperty">Inmueble Catastral</a> <sup class="type-c" title="clase">c</sup>
+     <a href="#CadastralConstruction" title="https://edint.es/def/catastro#CadastralConstruction">Construcción Catastral</a> <sup class="type-c" title="clase">c</sup> <span class="logic">or</span> <a href="#CadastralParcel" title="https://edint.es/def/catastro#CadastralParcel">Parcela Catastral</a> <sup class="type-c" title="clase">c</sup> <span class="logic">or</span> <a href="#CadastralProperty" title="https://edint.es/def/catastro#CadastralProperty">Inmueble Catastral</a> <sup class="type-c" title="clase">c</sup>
     </dd>
     <dt>rango</dt>
     <dd>
-     <a href="http://www.w3.org/2004/02/skos/core#Concept" target="_blank" title="http://www.w3.org/2004/02/skos/core#Concept">Concept</a> <sup class="type-c" title="clase">c</sup> <span class="logic">and</span> (<a href="http://www.w3.org/2004/02/skos/core#inScheme" target="_blank" title="http://www.w3.org/2004/02/skos/core#inScheme">in Scheme</a> <sup class="type-op" title="Propiedad entre objetos">op</sup> <span class="logic">value</span> <a href="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/uso" target="_blank" title="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/uso">uso</a> <sup class="type-ni" title="Individuo">ni</sup>)
+     <a href="http://www.w3.org/2004/02/skos/core#Concept" target="_blank" title="http://www.w3.org/2004/02/skos/core#Concept">Concept</a> <sup class="type-c" title="clase">c</sup> <span class="logic">and</span> (<a href="http://www.w3.org/2004/02/skos/core#inScheme" target="_blank" title="http://www.w3.org/2004/02/skos/core#inScheme">in Scheme</a> <sup class="type-op" title="Propiedad entre objetos">op</sup> <span class="logic">value</span> <a href="https://edint.es/kos/CadastralUse" target="_blank" title="https://edint.es/kos/CadastralUse">Cadastral Use</a> <sup class="type-ni" title="Individuo">ni</sup>)
     </dd>
    </dl>
   </div>
